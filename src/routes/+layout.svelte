@@ -1,4 +1,5 @@
 <script>
+	import '$lib/styles.scss';
 	import { page } from '$app/stores';
 </script>
 
@@ -6,4 +7,6 @@
 	<link rel="canonical" href="https://websites.umich.edu/~kendoclub{$page.url.pathname}" />
 </svelte:head>
 
-<slot />
+<main class="container">
+	<slot />
+</main>
