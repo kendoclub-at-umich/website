@@ -1,4 +1,5 @@
 <script>
+	import '$lib/styles.scss';
 	import { page } from '$app/stores';
 </script>
 
