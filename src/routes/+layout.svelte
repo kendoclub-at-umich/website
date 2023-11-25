@@ -7,4 +7,6 @@
 	<link rel="canonical" href="https://websites.umich.edu/~kendoclub{$page.url.pathname}" />
 </svelte:head>
 
-<slot />
+<main class="container">
+	<slot />
+</main>
