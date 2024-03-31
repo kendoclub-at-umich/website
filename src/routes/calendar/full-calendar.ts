@@ -2,10 +2,15 @@ import { Calendar } from '@fullcalendar/core';
 import dayGridPlugin from '@fullcalendar/daygrid';
 import listPlugin from '@fullcalendar/list';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
+import css from './full-calendar.css?inline';
 
 const calendarContainer = document.querySelector('#calendar-container')!;
 
 const shadowDom = calendarContainer.attachShadow({ mode: 'open' });
+
+const styleSheet = new CSSStyleSheet();
+styleSheet.replaceSync(css);
+shadowDom.adoptedStyleSheets = [styleSheet];
 
 const calendarElement = document.createElement('div');
 shadowDom.appendChild(calendarElement);
