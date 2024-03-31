@@ -29,3 +29,7 @@
 .fc-event:not(.fc-h-event) {
 	color: initial;
 }
+
+::selection {
+	background-color: var(--primary-focus);
+}
