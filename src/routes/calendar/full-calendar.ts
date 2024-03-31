@@ -16,7 +16,7 @@ const calendar = new Calendar(calendarElement, {
 	headerToolbar: {
 		left: 'prev,next today',
 		center: 'title',
-		right: 'dayGridMonth,listWeek'
+		right: 'dayGridMonth,listMonth'
 	},
 	googleCalendarApiKey: 'AIzaSyDHUqblOxNndbN7jUXvoKy8IugKLlSXbkE',
 	events: {
