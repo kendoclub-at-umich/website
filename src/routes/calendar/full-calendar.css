@@ -33,3 +33,7 @@
 ::selection {
 	background-color: var(--primary-focus);
 }
+
+h2 {
+	color: var(--h2-color);
+}
