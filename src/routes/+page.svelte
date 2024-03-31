@@ -5,6 +5,9 @@ Kendo is a Japanese martial art which literally translates to “The Way of the 
 sport which is played by means of one-on-one striking between opponents using shinai (sword made from
 bamboo slats) while wearing kendo-gu (protective armor).
 
+<h1>Who are we?</h1>
+<!-- TODO: fill -->
+
 <h1>How do you join?</h1>
 <ul>
 	<li>Come to practice</li>
