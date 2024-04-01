@@ -1,0 +1,39 @@
+:host {
+	--fc-page-bg-color: var(--background-color);
+	--fc-neutral-bg-color: var(--card-sectionning-background-color);
+	--fc-neutral-text-color: var(--color);
+	--fc-border-color: var(--muted-border-color);
+
+	--fc-button-text-color: var(--secondary-inverse);
+	--fc-button-bg-color: var(--secondary);
+	--fc-button-border-color: var(--fc-button-bg-color);
+	--fc-button-hover-bg-color: var(--secondary-hover);
+	--fc-button-hover-border-color: var(--fc-button-hover-bg-color);
+	--fc-button-active-bg-color: var(--fc-button-hover-bg-color);
+	--fc-button-active-border-color: var(--fc-button-active-bg-color);
+
+	--fc-event-bg-color: var(--primary);
+	--fc-event-border-color: var(--fc-event-bg-color);
+	--fc-event-text-color: var(--primary-inverse);
+	--fc-event-selected-overlay-color: transparent;
+
+	--fc-today-bg-color: var(--secondary-focus);
+
+	--fc-list-event-hover-bg-color: color-mix(
+		in lab,
+		var(--fc-neutral-bg-color),
+		var(--background-color)
+	);
+}
+
+.fc-event:not(.fc-h-event) {
+	color: initial;
+}
+
+::selection {
+	background-color: var(--primary-focus);
+}
+
+h2 {
+	color: var(--h2-color);
+}
