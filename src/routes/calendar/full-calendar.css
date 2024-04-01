@@ -26,6 +26,15 @@
 	);
 }
 
+.fc-h-event:hover {
+	--fc-event-bg-color: var(--primary-hover);
+	--fc-event-border-color: var(--fc-event-bg-color);
+}
+
+.fc-daygrid-dot-event:hover {
+	background: light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
+}
+
 .fc-event:not(.fc-h-event) {
 	color: initial;
 }
