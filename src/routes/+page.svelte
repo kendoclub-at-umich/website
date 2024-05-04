@@ -34,7 +34,7 @@ level to join us!
 <h3>Email us</h3>
 <ul>
 	<li>
-		You can find our email address in the <a href="/contact-info">Contact Info</a> page. We can answer
+		You can find our email address in the <a href="/contact-us">Contact Info</a> page. We can answer
 		additional questions you have and add you to our email list.
 	</li>
 </ul>
