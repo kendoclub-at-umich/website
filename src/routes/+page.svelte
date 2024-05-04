@@ -11,16 +11,17 @@ bamboo slats) while wearing kendo-gu (protective armor).
 <h1>How do you join?</h1>
 <ul>
 	<li>
-		Come to practice
+		Come to practice!
 		<ul>
 			<li>
-				You can come to any practice session you like (though you may find it easier to join closer
-				to the beginning of a new semester).
+				You may join any practice session you like (though you may find it easier to join closer to
+				the beginning of a new semester, as there are larger groups of complete beginners).
 			</li>
+			<li>Find our up-to-date practice schedule in the "Calendar" page.</li>
 			<li>
-				Please wear comfortable athletic clothes. Bottoms that cover the knee are preferred because
-				there is some kneeling involved. This is a barefoot sport, so please leave your shoes
-				outside the ballroom before entering.
+				Please wear comfortable athletic clothes. Wear bottoms that cover the knee because there is
+				some kneeling involved. Kendo is a barefoot sport, so please leave your shoes outside the
+				ballroom before entering.
 			</li>
 			<li>Masking is optional. Surgical or cloth masks are the best choices for breathability.</li>
 		</ul>
