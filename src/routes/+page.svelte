@@ -32,9 +32,3 @@ bamboo slats) while wearing kendo-gu (protective armor).
 		you have and add you to our email list.
 	</li>
 </ul>
-
-<style>
-	li {
-		list-style-type: disc;
-	}
-</style>
