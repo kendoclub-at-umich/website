@@ -11,6 +11,7 @@ bamboo slats) while wearing kendo-gu (protective armor).
 <h1>How do you join?</h1>
 
 <h3>Come to practice!</h3>
+<!-- TODO: hyperlinks for Calendar and Contact us pages -->
 <ul>
 	<li>
 		You may join any practice session you like (though you may find it easier to join closer to the
