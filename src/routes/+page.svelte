@@ -31,3 +31,12 @@ bamboo slats) while wearing kendo-gu (protective armor).
 		questions you have and add you to our email list.
 	</li>
 </ul>
+
+<style>
+	li {
+		list-style-type: disc;
+	}
+	li li {
+		list-style-type: circle;
+	}
+</style>
