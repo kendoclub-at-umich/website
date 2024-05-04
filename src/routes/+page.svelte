@@ -9,34 +9,31 @@ bamboo slats) while wearing kendo-gu (protective armor).
 <!-- TODO: fill -->
 
 <h1>How do you join?</h1>
+
+<h3>Come to practice!</h3>
 <ul>
 	<li>
-		Come to practice!
-		<ul>
-			<li>
-				You may join any practice session you like (though you may find it easier to join closer to
-				the beginning of a new semester, as there are larger groups of complete beginners).
-			</li>
-			<li>Find our up-to-date practice schedule in the "Calendar" page.</li>
-			<li>
-				Please wear comfortable athletic clothes. Wear bottoms that cover the knee because there is
-				some kneeling involved. Kendo is a barefoot sport, so please leave your shoes outside the
-				ballroom before entering.
-			</li>
-			<li>Masking is optional. Surgical or cloth masks are the best choices for breathability.</li>
-		</ul>
+		You may join any practice session you like (though you may find it easier to join closer to the
+		beginning of a new semester, as there are larger groups of complete beginners).
 	</li>
+	<li>Find our up-to-date practice schedule in the "Calendar" page.</li>
 	<li>
-		Email us at the email address listed on the "Contact Info" page. We can answer additional
-		questions you have and add you to our email list.
+		Please wear comfortable athletic clothes. Wear bottoms that cover the knee because there is some
+		kneeling involved. Kendo is a barefoot sport, so please leave your shoes outside the ballroom
+		before entering.
+	</li>
+	<li>Masking is optional. Surgical or cloth masks are the best choices for breathability.</li>
+</ul>
+<h3>Email us</h3>
+<ul>
+	<li>
+		You can find our email address in the "Contact Info" page. We can answer additional questions
+		you have and add you to our email list.
 	</li>
 </ul>
 
 <style>
 	li {
 		list-style-type: disc;
-	}
-	li li {
-		list-style-type: circle;
 	}
 </style>
