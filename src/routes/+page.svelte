@@ -13,13 +13,12 @@
 <h2>How do you join?</h2>
 
 <h3>Come to practice!</h3>
-<!-- TODO: hyperlinks for Calendar and Contact us pages -->
 <ul>
 	<li>
 		You may join any practice session you like (though you may find it easier to join closer to the
 		beginning of a new semester, as there are larger groups of complete beginners).
 	</li>
-	<li>Find our up-to-date practice schedule in the "Calendar" page.</li>
+	<li>Find our up-to-date practice schedule in the <a href="/calendar">Calendar</a> page.</li>
 	<li>
 		Please wear comfortable athletic clothes. Wear bottoms that cover the knee because there is some
 		kneeling involved. Kendo is a barefoot sport, so please leave your shoes outside the ballroom
@@ -27,10 +26,11 @@
 	</li>
 	<li>Masking is optional. Surgical or cloth masks are the best choices for breathability.</li>
 </ul>
+
 <h3>Email us</h3>
 <ul>
 	<li>
-		You can find our email address in the "Contact Info" page. We can answer additional questions
-		you have and add you to our email list.
+		You can find our email address in the <a href="/contact-info">Contact Info</a> page. We can answer
+		additional questions you have and add you to our email list.
 	</li>
 </ul>
