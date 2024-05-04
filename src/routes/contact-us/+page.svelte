@@ -13,12 +13,21 @@
 
 <figure>
 	<a href="https://www.facebook.com/groups/1038072369705184">
-		<img src={fb_logo} alt="Facebook logo" /></a
-	>
-</figure>
-
-<figure>
+		<img class="social-media" src={fb_logo} alt="Facebook logo" />
+	</a>
 	<a href="https://www.instagram.com/kendoumich/">
-		<img src={ig_logo} alt="Instagram logo" />
+		<img class="social-media" src={ig_logo} alt="Instagram logo" />
 	</a>
 </figure>
+
+<style>
+	.social-media {
+		padding: 1em;
+		width: 100px;
+		height: auto;
+	}
+
+	.social-media:hover {
+		opacity: 0.7;
+	}
+</style>
