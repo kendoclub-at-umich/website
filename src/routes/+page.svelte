@@ -8,7 +8,11 @@
 </p>
 
 <h2>Who are we?</h2>
-<!-- TODO: fill -->
+
+Kendo Club at the University of Michigan is led by students and instructed by highly experienced
+coaches. Our purpose is to provide an open and inviting opportunity for University of Michigan
+students and local community members to learn and practice Kendo. We invite everyone of any skill
+level to join us!
 
 <h2>How do you join?</h2>
 
