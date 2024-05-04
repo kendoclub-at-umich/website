@@ -1,9 +1,11 @@
 <h1>Welcome to Kendo Club!</h1>
 
 <h2>What is Kendo?</h2>
-Kendo is a Japanese martial art which literally translates to “The Way of the Sword”. It's an athletic
-sport which is played by means of one-on-one striking between opponents using shinai (sword made from
-bamboo slats) while wearing kendo-gu (protective armor).
+<p>
+	Kendo is a Japanese martial art which literally translates to “The Way of the Sword”. It's an
+	athletic sport which is played by means of one-on-one striking between opponents using shinai
+	(sword made from bamboo slats) while wearing kendo-gu (protective armor).
+</p>
 
 <h2>Who are we?</h2>
 <!-- TODO: fill -->
