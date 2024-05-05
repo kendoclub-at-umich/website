@@ -1,6 +1,6 @@
 <script>
-	import fb_logo from './Facebook_Logo_Primary.png';
-	import ig_logo from './Instagram_Glyph_Gradient.png';
+	import fbLogo from './Facebook_Logo_Primary.png';
+	import igLogo from './Instagram_Glyph_Gradient.png';
 </script>
 
 <h1>Contact Us</h1>
@@ -13,10 +13,10 @@
 
 <figure>
 	<a href="https://www.facebook.com/groups/1038072369705184">
-		<img class="social-media" src={fb_logo} alt="Facebook logo" />
+		<img class="social-media" src={fbLogo} alt="Facebook logo" />
 	</a>
 	<a href="https://www.instagram.com/kendoumich/">
-		<img class="social-media" src={ig_logo} alt="Instagram logo" />
+		<img class="social-media" src={igLogo} alt="Instagram logo" />
 	</a>
 </figure>
 
