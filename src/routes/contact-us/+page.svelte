@@ -1,6 +1,6 @@
 <script>
-	import fb_logo from '$lib/assets/Facebook_Logo_Primary.png';
-	import ig_logo from '$lib/assets/Instagram_Glyph_Gradient.png';
+	import fb_logo from './Facebook_Logo_Primary.png';
+	import ig_logo from './Instagram_Glyph_Gradient.png';
 </script>
 
 <h1>Contact Us</h1>
