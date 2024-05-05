@@ -1,7 +1,3 @@
-<script>
-	import motto from '$lib/assets/motto.jpg';
-</script>
-
 <h1>About Us</h1>
 
 <h2>History</h2>
