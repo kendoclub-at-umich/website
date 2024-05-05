@@ -28,7 +28,7 @@
 
 <h2>Motto</h2>
 
-<img src={motto} alt="motto" width="700px" style="padding-bottom:50px" />
+<p style="font-size:30px">心技一体</p>
 
 <p>
 	Our club motto reads "Shin Gi Ittai", which translates approximately to "The Spirit and Skill are
