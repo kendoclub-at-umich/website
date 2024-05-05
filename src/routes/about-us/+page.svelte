@@ -1,3 +1,7 @@
+<script>
+	import motto from '$lib/assets/motto.jpg';
+</script>
+
 <h1>About Us</h1>
 
 <h2>History</h2>
@@ -23,6 +27,8 @@
 </p>
 
 <h2>Motto</h2>
+
+<img src={motto} alt="motto" width="700px" style="padding-bottom:50px" />
 
 <p>
 	Our club motto reads "Shin Gi Ittai", which translates approximately to "The Spirit and Skill are
