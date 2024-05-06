@@ -38,8 +38,7 @@
 <h2>Constitution</h2>
 <p>
 	As required by the University of Michigan and the SOAR (Student Organization and Recognition)
-	Initiative,
-	<a href="https://websites.umich.edu/~kendoclub/resources/constitution.pdf">
-		a copy of our club constitution can be found here</a
-	>.
+	Initiative, <a href="https://maizepages.umich.edu/organization/kendoclub"
+		>our club constitution can be found on Maize pages.
+	</a>
 </p>
