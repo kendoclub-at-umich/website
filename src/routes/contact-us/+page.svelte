@@ -12,10 +12,10 @@
 <h2>Find us on:</h2>
 
 <a href="https://www.facebook.com/groups/1038072369705184">
-	<img class="social-media" src={fbLogo} alt="Facebook logo" />
+	<img class="social-media" src={fbLogo} alt="Facebook" />
 </a>
 <a href="https://www.instagram.com/kendoumich/">
-	<img class="social-media" src={igLogo} alt="Instagram logo" />
+	<img class="social-media" src={igLogo} alt="Instagram" />
 </a>
 
 <style>
