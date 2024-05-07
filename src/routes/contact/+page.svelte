@@ -12,10 +12,10 @@
 <h2>Find us on:</h2>
 
 <a href="https://www.facebook.com/groups/1038072369705184">
-	<img class="social-media" src={fbLogo} alt="Facebook" />
+	<img class="social-media" src={fbLogo} alt="Facebook" /> KendoClub@Michigan
 </a>
 <a href="https://www.instagram.com/kendoumich/">
-	<img class="social-media" src={igLogo} alt="Instagram" />
+	<img class="social-media" src={igLogo} alt="Instagram" /> @kendoumich
 </a>
 
 <style>
