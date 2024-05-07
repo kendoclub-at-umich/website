@@ -1,6 +1,6 @@
 <script>
-	import fbLogo from './Facebook_Logo_Primary.png';
-	import igLogo from './Instagram_Glyph_Gradient.png';
+	import fbLogo from './facebook-logo-primary.png';
+	import igLogo from './instagram-glyph-gradient.png';
 </script>
 
 <h1>Contact Us</h1>
