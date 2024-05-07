@@ -21,15 +21,10 @@
 <style>
 	.social-media {
 		--icon-width: 75px;
-		min-width: 29px;
 
 		box-sizing: content-box;
 		width: var(--icon-width);
 		height: auto;
 		padding: calc(var(--icon-width) / 4);
-	}
-
-	.social-media:hover {
-		opacity: 0.7;
 	}
 </style>
