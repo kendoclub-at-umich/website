@@ -20,6 +20,7 @@
 
 <h3>Come to practice!</h3>
 <ul>
+	<li>No prior experience needed!</li>
 	<li>
 		You may join any practice session you like (though you may find it easier to join closer to the
 		beginning of a new semester, as there are larger groups of complete beginners).
@@ -36,7 +37,30 @@
 <h3>Email us</h3>
 <ul>
 	<li>
-		You can find our email address in the <a href="/contact-us">Contact Info</a> page. We can answer
-		additional questions you have and add you to our email list.
+		You can find our email address in the <a href="/contact-us">Contact Us</a> page. We can answer additional
+		questions you have and add you to our email list (or remove you from it if you're no longer interested).
+	</li>
+</ul>
+
+<h3>Costs</h3>
+<ul>
+	<li>
+		Dues: Your first two practices are free. Afterwards, you must pay dues. These help us have space
+		to practice by contributing to practice room booking fees and organizational fees. Dues are $55
+		for one semester, and $80 for two semesters.
+	</li>
+	<li>
+		Equipment: For your first two practices, you may borrow a shinai (bamboo sword) from any club
+		member who graciously lends it to you. Afterwards, you will be offered the opportunity to
+		purchase your own equipment depending on what we have in stock. One shinai is about $30, and a
+		carrying bag is about $20.
+	</li>
+	<li>
+		Gym Membership: You are required to have a Umich rec sports membership. If you are a student
+		taking at least one class this term, it is included in your tuition. If you are a non-student,
+		consider multi-day passes or a membership. Whichever one is more economical depends on how often
+		you plan on joining practice. <a href="https://recsports.umich.edu/fitness/">
+			See the rec sports website for more details.
+		</a>
 	</li>
 </ul>
