@@ -37,7 +37,7 @@
 <h3>Email us</h3>
 <ul>
 	<li>
-		You can find our email address in the <a href="/contact-us">Contact Us</a> page. We can answer additional
+		You can find our email address in the <a href="/contact">Contact Us</a> page. We can answer additional
 		questions you have and add you to our email list (or remove you from it if you're no longer interested).
 	</li>
 </ul>
@@ -59,8 +59,7 @@
 		Gym Membership: You are required to have a Umich rec sports membership. If you are a student
 		taking at least one class this term, it is included in your tuition. If you are a non-student,
 		consider multi-day passes or a membership. Whichever one is more economical depends on how often
-		you plan on joining practice. See the <a href="https://recsports.umich.edu/fitness/">
-			rec sports website
-		</a> for more details.
+		you plan on joining practice. See the
+		<a href="https://recsports.umich.edu/fitness/"> rec sports website </a> for more details.
 	</li>
 </ul>
