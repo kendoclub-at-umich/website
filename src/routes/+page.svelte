@@ -59,8 +59,8 @@
 		Gym Membership: You are required to have a Umich rec sports membership. If you are a student
 		taking at least one class this term, it is included in your tuition. If you are a non-student,
 		consider multi-day passes or a membership. Whichever one is more economical depends on how often
-		you plan on joining practice. <a href="https://recsports.umich.edu/fitness/">
-			See the rec sports website for more details.
-		</a>
+		you plan on joining practice. See the <a href="https://recsports.umich.edu/fitness/">
+			rec sports website
+		</a> for more details.
 	</li>
 </ul>
