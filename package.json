@@ -10,7 +10,7 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write .",
-		"postinstall":"cp ./src/lib/_colors.scss ./node_modules/@picocss/pico/scss/colors/_index.scss || copy /y .\\src\\lib\\_colors.scss .\\node_modules\\@picocss\\pico\\scss\\colors\\_index.scss"
+		"postinstall": "cp ./src/lib/_colors.scss ./node_modules/@picocss/pico/scss/colors/_index.scss || copy /y .\\src\\lib\\_colors.scss .\\node_modules\\@picocss\\pico\\scss\\colors\\_index.scss"
 	},
 	"devDependencies": {
 		"@sveltejs/adapter-static": "^3.0.1",
