@@ -48,6 +48,8 @@
 	)
 );
 
+@use '@picocss/pico/scss/colors' as *;
+
 :root {
-	scrollbar-color: var(--pico-secondary-focus) var(--pico-muted-border-color);
+	scrollbar-color: light-dark($zinc-200, $slate-750) light-dark($zinc-50, $slate-850);
 }
