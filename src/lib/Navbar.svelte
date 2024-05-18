@@ -33,7 +33,8 @@
 
 <style>
 	header {
-		position: fixed;
+		position: sticky;
+		z-index: 2;
 		top: 0;
 		left: 0;
 		right: 0;
@@ -55,10 +56,5 @@
 		& > img {
 			height: 1lh;
 		}
-	}
-
-	header + :global(*) {
-		margin-top: calc(var(--font-size) * 2.25 + var(--nav-element-spacing-vertical) * 2);
-		padding-top: var(--font-size);
 	}
 </style>
