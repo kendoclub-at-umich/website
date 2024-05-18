@@ -20,3 +20,9 @@
 <main class="container">
 	<slot />
 </main>
+
+<style>
+	main {
+		padding-top: 32px;
+	}
+</style>
