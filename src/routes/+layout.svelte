@@ -35,8 +35,11 @@
 		top: 0;
 		left: 0;
 		right: 0;
-		background-color: light-dark(#ffffff, #001c39);
-		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+		background-color: color-mix(in lab, var(--pico-background-color) 90%, transparent);
+		backdrop-filter: blur(12px);
+		box-shadow:
+			0 3px 6px rgba(0, 0, 0, 0.16),
+			0 3px 6px rgba(0, 0, 0, 0.23);
 	}
 
 	.brand {
