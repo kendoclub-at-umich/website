@@ -16,7 +16,7 @@ const colors = /** @type {const} */ {
 		.correctLightness()
 		.colors(19),
 	slate: chroma
-		.scale([BLUE.brighten(4.5), BLUE, BLUE.darken(0.5)])
+		.scale([BLUE.brighten(4.5), BLUE.brighten(2).saturate(2), BLUE, BLUE.darken(0.5)])
 		.mode('lch')
 		.correctLightness()
 		.colors(19)
