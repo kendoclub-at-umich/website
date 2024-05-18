@@ -21,7 +21,6 @@
 			<ul>
 				<li>
 					<button
-						class="contrast"
 						aria-label={menuExpanded ? 'Close' : 'Menu'}
 						on:click={() => (menuExpanded = !menuExpanded)}
 					>
