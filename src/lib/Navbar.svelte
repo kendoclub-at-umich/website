@@ -1,10 +1,13 @@
 <script lang="ts">
 	import { page as currentPage } from '$app/stores';
+	import { mdiMenu, mdiClose } from '@mdi/js';
 
 	export let logoUrl: string;
 	export let siteName: string;
 	type Page = { name: string; url: string };
 	export let pages: readonly Page[];
+
+	let menuExpanded = false;
 </script>
 
 <header>
@@ -16,10 +19,23 @@
 				</li>
 			</ul>
 			<ul>
+				<li>
+					<button
+						aria-label={menuExpanded ? 'Close' : 'Menu'}
+						on:click={() => (menuExpanded = !menuExpanded)}
+					>
+						<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
+							<path fill="currentColor" d={menuExpanded ? mdiClose : mdiMenu} />
+						</svg>
+					</button>
+				</li>
+			</ul>
+			<ul class="menu" class:expanded={menuExpanded}>
 				{#each pages as page}
 					<li>
 						<a
 							href={page.url}
+							on:click={() => (menuExpanded = false)}
 							aria-current={$currentPage.url.pathname == page.url ? 'page' : undefined}
 						>
 							{page.name}
@@ -55,6 +71,61 @@
 
 		& > img {
 			height: 1lh;
+		}
+	}
+
+	@media (width >= 1024px) {
+		ul:has(button) {
+			display: none;
+		}
+	}
+
+	@media (width < 1024px) {
+		li:has(button) {
+			padding: 0;
+		}
+
+		button {
+			appearance: none;
+			background: none;
+			border: none;
+			display: grid;
+			place-items: center;
+		}
+
+		.menu:not(.expanded) {
+			display: none;
+		}
+
+		:global(:root):has(.menu.expanded) {
+			overflow: hidden;
+		}
+
+		.menu li {
+			display: contents;
+		}
+
+		.menu a {
+			display: block;
+			margin: 0;
+			padding: 12px 0;
+			font-size: 1.5em;
+			text-align: center;
+		}
+
+		.menu a[aria-current] {
+			font-weight: 700;
+		}
+
+		.menu {
+			display: block;
+			margin: 0;
+			position: absolute;
+			top: 100%;
+			bottom: calc(100% - 100dvh);
+			left: 0;
+			right: 0;
+			background-color: var(--pico-background-color);
 		}
 	}
 </style>
