@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { page as currentPage } from '$app/stores';
+
 	export let logoUrl: string;
 	export let siteName: string;
 	type Page = { name: string; url: string };
@@ -15,7 +17,14 @@
 			</ul>
 			<ul>
 				{#each pages as page}
-					<li><a href={page.url}>{page.name}</a></li>
+					<li>
+						<a
+							href={page.url}
+							aria-current={$currentPage.url.pathname == page.url ? 'page' : undefined}
+						>
+							{page.name}
+						</a>
+					</li>
 				{/each}
 			</ul>
 		</nav>
