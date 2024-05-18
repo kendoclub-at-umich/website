@@ -5,14 +5,14 @@
 	--fc-border-color: var(--pico-muted-border-color);
 
 	--fc-button-text-color: var(--pico-secondary-inverse);
-	--fc-button-bg-color: var(--pico-secondary);
+	--fc-button-bg-color: var(--pico-secondary-background);
 	--fc-button-border-color: var(--fc-button-bg-color);
-	--fc-button-hover-bg-color: var(--pico-secondary-hover);
+	--fc-button-hover-bg-color: var(--pico-secondary-hover-background);
 	--fc-button-hover-border-color: var(--fc-button-hover-bg-color);
 	--fc-button-active-bg-color: var(--fc-button-hover-bg-color);
 	--fc-button-active-border-color: var(--fc-button-active-bg-color);
 
-	--fc-event-bg-color: var(--pico-primary);
+	--fc-event-bg-color: var(--pico-primary-background);
 	--fc-event-border-color: var(--fc-event-bg-color);
 	--fc-event-text-color: var(--pico-primary-inverse);
 	--fc-event-selected-overlay-color: transparent;
@@ -27,7 +27,7 @@
 }
 
 .fc-h-event:hover {
-	--fc-event-bg-color: var(--pico-primary-hover);
+	--fc-event-bg-color: var(--pico-primary-hover-background);
 	--fc-event-border-color: var(--fc-event-bg-color);
 }
 

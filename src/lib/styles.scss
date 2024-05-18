@@ -50,6 +50,19 @@
 
 @use '@picocss/pico/scss/colors' as *;
 
+@media only screen and (prefers-color-scheme: light) {
+	:where(a:not([role='button'])),
+	[role='link'] {
+		--pico-color: #{$slate-550};
+		--pico-underline: #{rgba($slate-550, 0.5)};
+
+		&:is([aria-current]:not([aria-current='false']), :hover, :active, :focus) {
+			--pico-color: #{$slate-650};
+			--pico-underline: #{$slate-650};
+		}
+	}
+}
+
 :root {
 	scrollbar-color: light-dark($zinc-200, $slate-750) light-dark($zinc-50, $slate-850);
 }
