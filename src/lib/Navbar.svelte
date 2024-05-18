@@ -74,17 +74,18 @@
 		}
 	}
 
-	nav li:has(button) {
-		display: none;
+	@media (width >= 1024px) {
+		ul:has(button) {
+			display: none;
+		}
 	}
 
 	@media (width < 1024px) {
-		nav li:has(button) {
-			display: initial;
+		li:has(button) {
 			padding: 0;
 		}
 
-		nav button {
+		button {
 			appearance: none;
 			background: none;
 			border: none;
@@ -92,7 +93,7 @@
 			place-items: center;
 		}
 
-		nav .menu:not(.expanded) {
+		.menu:not(.expanded) {
 			display: none;
 		}
 
