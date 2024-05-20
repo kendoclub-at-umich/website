@@ -59,7 +59,7 @@
 		box-shadow:
 			0 3px 6px rgba(0, 0, 0, 0.16),
 			0 3px 6px rgba(0, 0, 0, 0.23);
-		transition: background-color 0.2s linear;
+		transition: background-color 0.1s linear;
 	}
 
 	.brand {
@@ -112,8 +112,8 @@
 			right: 0;
 			background-color: var(--pico-background-color);
 			transition:
-				opacity 0.2s linear,
-				visibility 0.2s linear;
+				opacity 0.1s linear,
+				visibility 0.1s linear;
 		}
 
 		.menu:not(.expanded) {
@@ -131,12 +131,12 @@
 			padding: 12px 0;
 			font-size: 1.5em;
 			text-align: center;
-			transition: transform 0.2s ease-out;
+			transition: transform 0.1s ease-out;
 		}
 
 		.menu:not(.expanded) a {
 			transform: translateY(-12px);
-			transition: transform 0.2s ease-in;
+			transition: transform 0.1s ease-in;
 		}
 
 		.menu a[aria-current] {
