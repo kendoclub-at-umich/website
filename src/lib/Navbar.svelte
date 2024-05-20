@@ -94,16 +94,6 @@
 			place-items: center;
 		}
 
-		.menu:not(.expanded) {
-			opacity: 0;
-			visibility: hidden;
-		}
-
-		.menu:not(.expanded) a {
-			transform: translateY(-12px);
-			transition: transform 0.2s ease-in;
-		}
-
 		:global(:root):has(.menu.expanded) {
 			overflow: hidden;
 		}
@@ -126,6 +116,11 @@
 				visibility 0.2s linear;
 		}
 
+		.menu:not(.expanded) {
+			opacity: 0;
+			visibility: hidden;
+		}
+
 		.menu li {
 			display: contents;
 		}
@@ -137,6 +132,11 @@
 			font-size: 1.5em;
 			text-align: center;
 			transition: transform 0.2s ease-out;
+		}
+
+		.menu:not(.expanded) a {
+			transform: translateY(-12px);
+			transition: transform 0.2s ease-in;
 		}
 
 		.menu a[aria-current] {
