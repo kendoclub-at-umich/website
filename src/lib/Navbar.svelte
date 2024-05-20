@@ -8,6 +8,9 @@
 	export let pages: readonly Page[];
 
 	let menuExpanded = false;
+
+	// close the menu if the url changes for any reason
+	$: $currentPage, (menuExpanded = false);
 </script>
 
 <header>
@@ -35,7 +38,6 @@
 					<li>
 						<a
 							href={page.url}
-							on:click={() => (menuExpanded = false)}
 							aria-current={$currentPage.url.pathname == page.url ? 'page' : undefined}
 						>
 							{page.name}
