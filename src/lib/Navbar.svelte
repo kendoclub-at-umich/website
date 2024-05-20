@@ -101,6 +101,17 @@
 			overflow: hidden;
 		}
 
+		.menu {
+			display: block;
+			margin: 0;
+			position: absolute;
+			top: 100%;
+			bottom: calc(100% - 100dvh);
+			left: 0;
+			right: 0;
+			background-color: var(--pico-background-color);
+		}
+
 		.menu li {
 			display: contents;
 		}
@@ -115,17 +126,6 @@
 
 		.menu a[aria-current] {
 			font-weight: 700;
-		}
-
-		.menu {
-			display: block;
-			margin: 0;
-			position: absolute;
-			top: 100%;
-			bottom: calc(100% - 100dvh);
-			left: 0;
-			right: 0;
-			background-color: var(--pico-background-color);
 		}
 	}
 </style>
