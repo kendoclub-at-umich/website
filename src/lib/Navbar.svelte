@@ -59,6 +59,7 @@
 		box-shadow:
 			0 3px 6px rgba(0, 0, 0, 0.16),
 			0 3px 6px rgba(0, 0, 0, 0.23);
+		transition: background-color 0.2s linear;
 	}
 
 	.brand {
@@ -94,11 +95,21 @@
 		}
 
 		.menu:not(.expanded) {
-			display: none;
+			opacity: 0;
+			visibility: hidden;
+		}
+
+		.menu:not(.expanded) a {
+			transform: translateY(-12px);
+			transition: transform 0.2s ease-in;
 		}
 
 		:global(:root):has(.menu.expanded) {
 			overflow: hidden;
+		}
+
+		header:has(.menu.expanded) {
+			background-color: var(--pico-background-color);
 		}
 
 		.menu {
@@ -110,6 +121,9 @@
 			left: 0;
 			right: 0;
 			background-color: var(--pico-background-color);
+			transition:
+				opacity 0.2s linear,
+				visibility 0.2s linear;
 		}
 
 		.menu li {
@@ -122,6 +136,7 @@
 			padding: 12px 0;
 			font-size: 1.5em;
 			text-align: center;
+			transition: transform 0.2s ease-out;
 		}
 
 		.menu a[aria-current] {
