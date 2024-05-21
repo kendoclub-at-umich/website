@@ -89,6 +89,7 @@
 			appearance: none;
 			background: none;
 			border: none;
+			color: inherit;
 			display: grid;
 			place-items: center;
 		}
