@@ -47,5 +47,6 @@
 <style>
 	.motto {
 		font-size: 1.5em;
+		letter-spacing: 0.1em;
 	}
 </style>
