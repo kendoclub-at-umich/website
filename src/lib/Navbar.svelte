@@ -15,7 +15,7 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="/" class="brand contrast" on:click={() => (menuExpanded = !menuExpanded)}>
+					<a href="/" class="brand contrast" on:click={() => (menuExpanded = false)}>
 						<img src={logoUrl} alt="" />{siteName}
 					</a>
 				</li>
