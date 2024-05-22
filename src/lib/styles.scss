@@ -1,5 +1,13 @@
 @use '@picocss/pico/scss/pico' with (
 	$theme-color: 'amber',
+	$breakpoints: (
+		lg: (
+			viewport: 80%
+		),
+		xl: (
+			viewport: 80%
+		)
+	),
 	$modules: (
 		// Theme
 		'themes/default': true,
