@@ -24,7 +24,7 @@
 
 <h2>Motto</h2>
 
-<p style="font-size:30px">心技一体</p>
+<p class="motto">心技一体</p>
 
 <p>
 	Our club motto reads "Shin Gi Ittai", which translates approximately to "The Spirit and Skill are
@@ -43,3 +43,9 @@
 		>Maize pages.
 	</a>
 </p>
+
+<style>
+	.motto {
+		font-size: 1.5em;
+	}
+</style>
