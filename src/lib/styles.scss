@@ -7,7 +7,7 @@
 		// Layout
 		'layout/document': true,
 		'layout/landmarks': true,
-		'layout/container': true,
+		'layout/container': false,
 		'layout/section': false,
 		'layout/grid': false,
 		'layout/overflow-auto': false,
@@ -65,4 +65,10 @@
 
 :root {
 	scrollbar-color: light-dark($zinc-200, $slate-750) light-dark($zinc-50, $slate-850);
+}
+
+.container {
+	max-width: min(40rem, calc(75dvw + 120px));
+	margin-inline: auto;
+	padding-inline: var(--pico-spacing);
 }
