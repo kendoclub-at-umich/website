@@ -24,7 +24,7 @@
 
 <h2>Motto</h2>
 
-<p style="font-size:30px">心技一体</p>
+<p class="motto">心技一体</p>
 
 <p>
 	Our club motto reads "Shin Gi Ittai", which translates approximately to "The Spirit and Skill are
@@ -38,8 +38,12 @@
 <h2>Constitution</h2>
 <p>
 	As required by the University of Michigan and the SOAR (Student Organization and Recognition)
-	Initiative, our club constitution can be found on <a
-		href="https://maizepages.umich.edu/organization/kendoclub"
-		>Maize pages.
-	</a>
+	Initiative, our club constitution can be found on
+	<a href="https://maizepages.umich.edu/organization/kendoclub">Maize pages</a>.
 </p>
+
+<style>
+	.motto {
+		font-size: 2.5em;
+	}
+</style>
