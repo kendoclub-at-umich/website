@@ -18,7 +18,9 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="/" class="brand contrast"><img src={logoUrl} alt="" />{siteName}</a>
+					<a href="/" class="brand contrast">
+						<img src={logoUrl} alt="" />{siteName}
+					</a>
 				</li>
 			</ul>
 			<ul>
@@ -92,6 +94,7 @@
 			appearance: none;
 			background: none;
 			border: none;
+			color: inherit;
 			display: grid;
 			place-items: center;
 		}
