@@ -59,3 +59,9 @@ h2 {
 .fc .fc-list .fc-scroller-liquid {
 	height: auto;
 }
+
+@media (width < 480px) {
+	.fc .fc-button.fc-today-button {
+		display: none;
+	}
+}
