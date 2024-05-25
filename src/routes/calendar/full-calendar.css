@@ -49,4 +49,13 @@ h2 {
 
 .fc .fc-view-harness {
 	min-height: 400px;
+
+	&:has(.fc-list) {
+		height: auto !important;
+		min-height: auto;
+	}
+}
+
+.fc .fc-list .fc-scroller-liquid {
+	height: auto;
 }
