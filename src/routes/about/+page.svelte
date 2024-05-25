@@ -3,14 +3,14 @@
 <h2>History</h2>
 <p>
 	Kendo Club at the University of Michigan was founded in the fall of 2001 and officially recognized
-	by the Midwest Kendo (MWKF) in the fall of 2002. Instruction of our club was originally lead by
-	Chika and Takashi Ezaki. Once they returned to Japan in 2003, it transitioned to Yukio Watanabe
-	and Joe Ponchart. After the ground work was laid out for a consistent practice space at the
-	University of Michigan, cross training with the Kendo club at Eastern Michigan University
-	continued and still continues to this day. Our shared history with EMU through Eastern Kendo
-	reaffirms our continued partnership as both clubs seek to advance and promote the practice of
-	Kendo in the Midwest. Many of our instructors and members train at both locations even to this
-	day.
+	by the Midwest Kendo Federation (MWKF) in the fall of 2002. Instruction of our club was originally
+	lead by Chika and Takashi Ezaki. Once they returned to Japan in 2003, it transitioned to Yukio
+	Watanabe and Joe Ponchart. After the groundwork was laid out for a consistent practice space at
+	the University of Michigan, cross training with
+	<a href="https://www.seishinkankendo.com/">Seishinkan Kendo</a> in Ypsilanti (formerly Eastern Kendo
+	Club) continued. Our shared history reaffirms our continued partnership as both clubs seek to advance
+	and promote the practice of Kendo in the Midwest. Many of our instructors and members train at both
+	locations even to this day.
 </p>
 <p>
 	Our club is classified as a student organization through the Michigan Student Assembly, the
@@ -24,7 +24,7 @@
 
 <h2>Motto</h2>
 
-<p style="font-size:30px">心技一体</p>
+<p class="motto">心技一体</p>
 
 <p>
 	Our club motto reads "Shin Gi Ittai", which translates approximately to "The Spirit and Skill are
@@ -38,8 +38,12 @@
 <h2>Constitution</h2>
 <p>
 	As required by the University of Michigan and the SOAR (Student Organization and Recognition)
-	Initiative, our club constitution can be found on <a
-		href="https://maizepages.umich.edu/organization/kendoclub"
-		>Maize pages.
-	</a>
+	Initiative, our club constitution can be found on
+	<a href="https://maizepages.umich.edu/organization/kendoclub">Maize pages</a>.
 </p>
+
+<style>
+	.motto {
+		font-size: 2.5em;
+	}
+</style>
