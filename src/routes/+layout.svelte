@@ -21,8 +21,35 @@
 	<slot />
 </main>
 
+<footer>
+	<div class="container">
+		<span>&copy; 2024 Kendo Club at the University of Michigan</span>
+		<span>
+			Code available on
+			<a class="contrast" href="https://github.com/kendoclub-at-umich/website">Github</a>
+		</span>
+	</div>
+</footer>
+
 <style>
+	:global(body) {
+		min-height: 100dvh;
+		display: grid;
+		grid-template-rows: auto minmax(auto, 1fr) auto;
+	}
 	main {
 		padding-top: 32px;
+	}
+	footer > div {
+		display: flex;
+		justify-content: space-between;
+		padding-block: 0.5lh;
+		font-weight: 200;
+		font-size: 0.75em;
+	}
+	@media (width<480px) {
+		footer > div {
+			flex-direction: column;
+		}
 	}
 </style>
