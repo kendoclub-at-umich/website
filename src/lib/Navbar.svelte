@@ -54,6 +54,7 @@
 
 <style>
 	header {
+		--menu-transition-time: 0.1s;
 		position: sticky;
 		z-index: 2;
 		top: 0;
@@ -64,7 +65,7 @@
 		box-shadow:
 			0 3px 6px rgba(0, 0, 0, 0.16),
 			0 3px 6px rgba(0, 0, 0, 0.23);
-		transition: background-color 0.1s linear;
+		transition: background-color var(--menu-transition-time) linear;
 	}
 
 	.brand {
@@ -118,9 +119,9 @@
 			right: 0;
 			background-color: var(--pico-background-color);
 			transition:
-				opacity 0.1s linear,
-				visibility 0.1s linear;
-			animation: hide 0.1s;
+				opacity var(--menu-transition-time) linear,
+				visibility var(--menu-transition-time) linear;
+			animation: hide var(--menu-transition-time);
 		}
 
 		.menu:not(.expanded) {
@@ -138,12 +139,12 @@
 			padding: 12px 0;
 			font-size: 1.5em;
 			text-align: center;
-			transition: transform 0.1s ease-out;
+			transition: transform var(--menu-transition-time) ease-out;
 		}
 
 		.menu:not(.expanded) a {
 			transform: translateY(-12px);
-			transition: transform 0.1s ease-in;
+			transition: transform var(--menu-transition-time) ease-in;
 		}
 
 		.menu a[aria-current] {
