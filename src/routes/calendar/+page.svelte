@@ -16,6 +16,6 @@
 	#calendar-container {
 		margin: 0 auto;
 		font-size: min(18px, 0.75em);
-		max-width: max(640px, calc(400vh / 3 - 270px));
+		max-width: max(640px, calc((4 / 3) * (100lvh - 200px)));
 	}
 </style>
