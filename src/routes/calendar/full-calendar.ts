@@ -4,6 +4,8 @@ import listPlugin from '@fullcalendar/list';
 import googleCalendarPlugin from '@fullcalendar/google-calendar';
 import css from './full-calendar.css?inline';
 
+const smallScreenQuery = matchMedia('(width < 768px)');
+
 const calendarContainer = document.querySelector('#calendar-container')!;
 
 const shadowDom = calendarContainer.attachShadow({ mode: 'open' });
@@ -17,7 +19,7 @@ shadowDom.appendChild(calendarElement);
 
 const calendar = new Calendar(calendarElement, {
 	plugins: [dayGridPlugin, listPlugin, googleCalendarPlugin],
-	initialView: 'dayGridMonth',
+	initialView: smallScreenQuery.matches ? 'listMonth' : 'dayGridMonth',
 	headerToolbar: {
 		left: 'prev,next today',
 		center: 'title',
