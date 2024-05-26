@@ -152,8 +152,8 @@
 	}
 
 	/*
-	 * This animation makes something fully hidden for the entire deration.
-	 * This is useful for disabling the fade in transition when the browser is resized
+	 * This animation makes something fully hidden for the entire duration.
+	 * This is useful for disabling the fade in transition when the browser is resized.
 	 */
 	@keyframes hide {
 		from {
