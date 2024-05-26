@@ -8,6 +8,9 @@
 	export let pages: readonly Page[];
 
 	let menuExpanded = false;
+
+	// close the menu if the url changes for any reason
+	$: $currentPage, (menuExpanded = false);
 </script>
 
 <header>
@@ -51,6 +54,7 @@
 
 <style>
 	header {
+		--menu-transition-time: 0.1s;
 		position: sticky;
 		z-index: 2;
 		top: 0;
@@ -61,6 +65,7 @@
 		box-shadow:
 			0 3px 6px rgba(0, 0, 0, 0.16),
 			0 3px 6px rgba(0, 0, 0, 0.23);
+		transition: background-color var(--menu-transition-time) linear;
 	}
 
 	.brand {
@@ -76,13 +81,13 @@
 		}
 	}
 
-	@media (width >= 1024px) {
+	@media (width >= 768px) {
 		ul:has(button) {
 			display: none;
 		}
 	}
 
-	@media (width < 1024px) {
+	@media (width < 768px) {
 		li:has(button) {
 			padding: 0;
 		}
@@ -96,12 +101,32 @@
 			place-items: center;
 		}
 
-		.menu:not(.expanded) {
-			display: none;
-		}
-
 		:global(:root):has(.menu.expanded) {
 			overflow: hidden;
+		}
+
+		header:has(.menu.expanded) {
+			background-color: var(--pico-background-color);
+		}
+
+		.menu {
+			display: block;
+			margin: 0;
+			position: absolute;
+			top: 100%;
+			bottom: calc(100% - 100dvh);
+			left: 0;
+			right: 0;
+			background-color: var(--pico-background-color);
+			transition:
+				opacity var(--menu-transition-time) linear,
+				visibility var(--menu-transition-time) linear;
+			animation: hide var(--menu-transition-time);
+		}
+
+		.menu:not(.expanded) {
+			opacity: 0;
+			visibility: hidden;
 		}
 
 		.menu li {
@@ -114,21 +139,29 @@
 			padding: 12px 0;
 			font-size: 1.5em;
 			text-align: center;
+			transition: transform var(--menu-transition-time) ease-out;
+		}
+
+		.menu:not(.expanded) a {
+			transform: translateY(-12px);
+			transition: transform var(--menu-transition-time) ease-in;
 		}
 
 		.menu a[aria-current] {
 			font-weight: 700;
 		}
+	}
 
-		.menu {
-			display: block;
-			margin: 0;
-			position: absolute;
-			top: 100%;
-			bottom: calc(100% - 100dvh);
-			left: 0;
-			right: 0;
-			background-color: var(--pico-background-color);
+	/*
+	 * This animation makes something fully hidden for the entire duration.
+	 * This is useful for disabling the fade in transition when the browser is resized.
+	 */
+	@keyframes hide {
+		from {
+			visibility: hidden;
+		}
+		to {
+			visibility: hidden;
 		}
 	}
 </style>
