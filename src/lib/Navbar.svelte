@@ -119,6 +119,7 @@
 			transition:
 				opacity 0.1s linear,
 				visibility 0.1s linear;
+			animation: hide 0.1s;
 		}
 
 		.menu:not(.expanded) {
@@ -146,6 +147,19 @@
 
 		.menu a[aria-current] {
 			font-weight: 700;
+		}
+	}
+
+	/*
+	 * This animation makes something fully hidden for the entire deration.
+	 * This is useful for disabling the fade in transition when the browser is resized
+	 */
+	@keyframes hide {
+		from {
+			visibility: hidden;
+		}
+		to {
+			visibility: hidden;
 		}
 	}
 </style>
