@@ -18,7 +18,7 @@
 		<nav>
 			<ul>
 				<li>
-					<a href="/" class="brand contrast">
+					<a href="/" class="brand contrast" on:click={() => (menuExpanded = false)}>
 						<img src={logoUrl} alt="" />{siteName}
 					</a>
 				</li>
@@ -40,6 +40,7 @@
 					<li>
 						<a
 							href={page.url}
+							on:click={() => (menuExpanded = false)}
 							aria-current={$currentPage.url.pathname == page.url ? 'page' : undefined}
 						>
 							{page.name}
