@@ -45,3 +45,4 @@ jobs:
       - uses: treosh/lighthouse-ci-action@v11
         with:
           configPath: '.lighthouserc.cjs'
+          temporaryPublicStorage: true
