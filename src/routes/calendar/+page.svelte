@@ -2,8 +2,8 @@
 	import { onMount } from 'svelte';
 
 	onMount(async () => {
-		const module = await import('./full-calendar');
-		module.generateCalendar();
+		const { generateCalendar } = await import('./full-calendar');
+		generateCalendar();
 	});
 </script>
 
