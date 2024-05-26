@@ -80,13 +80,13 @@
 		}
 	}
 
-	@media (width >= 1024px) {
+	@media (width >= 768px) {
 		ul:has(button) {
 			display: none;
 		}
 	}
 
-	@media (width < 1024px) {
+	@media (width < 768px) {
 		li:has(button) {
 			padding: 0;
 		}
