@@ -10,8 +10,6 @@
 
 <style>
 	:global(main:has(#calendar-container)) {
-		padding-inline: var(--pico-spacing);
-		width: auto;
 		max-width: none;
 	}
 
