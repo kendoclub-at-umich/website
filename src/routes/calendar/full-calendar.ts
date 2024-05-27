@@ -30,4 +30,5 @@ export function generateCalendar(calendarContainer: HTMLElement) {
 		}
 	});
 	calendar.render();
+	return calendar;
 }

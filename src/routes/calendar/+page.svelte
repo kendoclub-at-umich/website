@@ -1,11 +1,16 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	import type { Calendar } from '@fullcalendar/core/index.js';
+	import { onDestroy, onMount } from 'svelte';
 
 	let calendarContainer: HTMLDivElement;
+	let calendarToDestroy: Calendar;
 
 	onMount(async () => {
 		const { generateCalendar } = await import('./full-calendar');
-		generateCalendar(calendarContainer);
+		calendarToDestroy = generateCalendar(calendarContainer);
+	});
+	onDestroy(() => {
+		calendarToDestroy.destroy();
 	});
 </script>
 
