@@ -9,6 +9,8 @@
 		{ name: 'About Us', url: '/about' },
 		{ name: 'Contact Us', url: '/contact' }
 	] as const;
+
+	const copyright = __LICENSE_COPYRIGHT__;
 </script>
 
 <svelte:head>
@@ -23,7 +25,7 @@
 
 <footer>
 	<div class="container">
-		<span>&copy; 2024 Kendo Club at the University of Michigan</span>
+		<span>&copy; {copyright}</span>
 		<span>
 			Code available on
 			<a class="contrast" href="https://github.com/kendoclub-at-umich/website">Github</a>
