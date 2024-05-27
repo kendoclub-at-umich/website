@@ -3,14 +3,13 @@
 	import { page } from '$app/stores';
 	import Navbar from '$lib/Navbar.svelte';
 	import logoUrl from './logo.webp';
+	import copyright from 'license-copyright';
 
 	const pages = [
 		{ name: 'Calendar', url: '/calendar' },
 		{ name: 'About Us', url: '/about' },
 		{ name: 'Contact Us', url: '/contact' }
 	] as const;
-
-	const copyright = __LICENSE_COPYRIGHT__;
 </script>
 
 <svelte:head>

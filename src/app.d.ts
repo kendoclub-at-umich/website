@@ -7,8 +7,6 @@ declare global {
 		// interface PageData {}
 		// interface Platform {}
 	}
-
-	declare const __LICENSE_COPYRIGHT__: string;
 }
 
 export {};
