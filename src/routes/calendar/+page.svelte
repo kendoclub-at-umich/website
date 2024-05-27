@@ -1,20 +1,15 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
+	let calendarContainer: HTMLDivElement;
+
 	onMount(async () => {
-		const calendarContainer = document.querySelector('#calendar-container');
-		if (calendarContainer == null) {
-			throw new Error("calendarContainer doesn't exist.");
-		}
-		if (!(calendarContainer instanceof HTMLElement)) {
-			throw new Error('calendarContainer is not an HTML Element');
-		}
 		const { generateCalendar } = await import('./full-calendar');
 		generateCalendar(calendarContainer);
 	});
 </script>
 
-<div id="calendar-container" />
+<div id="calendar-container" bind:this={calendarContainer} />
 
 <style>
 	:global(main:has(#calendar-container)) {
