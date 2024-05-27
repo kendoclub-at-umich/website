@@ -6,9 +6,7 @@ import css from './full-calendar.css?inline';
 
 const smallScreenQuery = matchMedia('(width < 768px)');
 
-export function generateCalendar() {
-	const calendarContainer = document.querySelector('#calendar-container')!;
-
+export function generateCalendar(calendarContainer: HTMLElement) {
 	const shadowDom = calendarContainer.attachShadow({ mode: 'open' });
 
 	const styleSheet = new CSSStyleSheet();
