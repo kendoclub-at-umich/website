@@ -44,7 +44,7 @@
 	footer > div {
 		display: flex;
 		justify-content: space-between;
-		padding-block: 0.5lh;
+		padding-block: calc(var(--pico-spacing) / 2);
 		font-weight: 200;
 		font-size: 0.75em;
 	}
