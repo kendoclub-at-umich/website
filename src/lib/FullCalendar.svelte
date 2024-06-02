@@ -1,0 +1,58 @@
+<script lang="ts">
+	import { onDestroy, onMount } from 'svelte';
+	import { Calendar } from '@fullcalendar/core';
+	import dayGridPlugin from '@fullcalendar/daygrid';
+	import listPlugin from '@fullcalendar/list';
+	import googleCalendarPlugin from '@fullcalendar/google-calendar';
+	import shadowCss from './full-calendar-shadow.css?inline';
+
+	export let googleCalendarApiKey: string;
+	export let googleCalendarId: string;
+
+	let calendarContainer: HTMLDivElement;
+	let calendar: Calendar | undefined;
+
+	onMount(() => {
+		const smallScreenQuery = matchMedia('(width < 768px)');
+
+		const shadowDom = calendarContainer.attachShadow({ mode: 'open' });
+
+		const styleSheet = new CSSStyleSheet();
+		styleSheet.replaceSync(shadowCss);
+		shadowDom.adoptedStyleSheets = [styleSheet];
+
+		const calendarElement = document.createElement('div');
+		shadowDom.appendChild(calendarElement);
+
+		calendar = new Calendar(calendarElement, {
+			plugins: [dayGridPlugin, listPlugin, googleCalendarPlugin],
+			initialView: smallScreenQuery.matches ? 'listMonth' : 'dayGridMonth',
+			headerToolbar: {
+				left: 'prev,next today',
+				center: 'title',
+				right: 'dayGridMonth,listMonth'
+			},
+			googleCalendarApiKey,
+			events: { googleCalendarId }
+		});
+		calendar.render();
+	});
+
+	onDestroy(() => {
+		calendar?.destroy();
+	});
+</script>
+
+<div id="calendar-container" bind:this={calendarContainer} />
+
+<style>
+	:global(main:has(#calendar-container)) {
+		max-width: none;
+	}
+
+	#calendar-container {
+		margin: 0 auto;
+		font-size: min(18px, 0.75em);
+		max-width: max(640px, calc((4 / 3) * (100lvh - 225px)));
+	}
+</style>
