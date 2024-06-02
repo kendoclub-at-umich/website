@@ -10,5 +10,6 @@ export default defineConfig({
 	plugins: [
 		sveltekit(),
 		virtual({ 'license-copyright': `export default ${JSON.stringify(copyright)};` })
-	]
+	],
+	build: { sourcemap: true }
 });
