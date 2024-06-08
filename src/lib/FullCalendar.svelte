@@ -37,8 +37,14 @@
 			},
 			googleCalendarApiKey,
 			events: { googleCalendarId },
-			eventDidMount: ({ el, event }) => {
+			eventDidMount: ({ el, event, view }) => {
 				let component: EventInfo | undefined;
+				if (view.type == 'listMonth') {
+					el.querySelector('a')?.removeAttribute('href');
+				} else {
+					el.removeAttribute('href');
+				}
+				el.setAttribute('tabindex', '0');
 
 				tippy(el, {
 					interactive: true,
@@ -57,8 +63,7 @@
 			eventWillUnmount: ({ el }) => {
 				const instance = (el as ReferenceElement)._tippy;
 				instance?.destroy();
-			},
-			eventClick: ({ jsEvent }) => jsEvent.preventDefault()
+			}
 		});
 		calendar.render();
 	});
