@@ -7,6 +7,7 @@
 	import shadowCss from './full-calendar-shadow.css?inline';
 	import tippy, { type ReferenceElement } from 'tippy.js';
 	import 'tippy.js/dist/tippy.css';
+	import './tippy-theme.css';
 	import EventInfo from './EventInfo.svelte';
 
 	export let googleCalendarApiKey: string;
@@ -50,6 +51,7 @@
 					interactive: true,
 					appendTo: document.body,
 					placement: 'auto',
+					theme: 'kendo',
 					hideOnClick: false,
 					onShow: (instance) => {
 						const container = document.createElement('div');
