@@ -36,13 +36,13 @@
 
 {#if event.extendedProps.description != undefined}
 	<!-- eslint-disable-next-line svelte/no-at-html-tags -- because we trust the description from google calendar -->
-	<p>{@html event.extendedProps.description}</p>
+	<p class="description">{@html event.extendedProps.description}</p>
 {/if}
 
 <p><a href={event.url}>view in google calendar</a></p>
 
 <style>
-	p {
+	.description {
 		white-space: pre-wrap;
 	}
 </style>
