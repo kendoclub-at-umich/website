@@ -49,7 +49,8 @@
 				tippy(el, {
 					interactive: true,
 					appendTo: document.body,
-					placement: 'right',
+					placement: 'auto',
+					hideOnClick: false,
 					onShow: (instance) => {
 						const container = document.createElement('div');
 						component = new EventInfo({ target: container, props: { event } });
