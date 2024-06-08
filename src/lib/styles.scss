@@ -50,7 +50,11 @@
 
 @use '@picocss/pico/scss/colors' as *;
 
-@media only screen and (prefers-color-scheme: light) {
+:root {
+	--elevated-background-color: #{rgba($slate-900, 0.75)};
+}
+
+@media (prefers-color-scheme: light) {
 	:where(a:not([role='button'])),
 	[role='link'] {
 		--pico-color: #{$slate-550};
@@ -60,6 +64,29 @@
 			--pico-color: #{$slate-650};
 			--pico-underline: #{$slate-650};
 		}
+	}
+
+	:root {
+		// taken from https://tailwindcss.com/docs/box-shadow
+		--box-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+		--box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+		--box-shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+		--box-shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+		--box-shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+		--box-shadow-2xl: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+
+		// taken from https://tailwindcss.com/docs/drop-shadow
+		--drop-shadow-sm: drop-shadow(0 1px 1px rgb(0 0 0 / 0.05));
+		--drop-shadow: drop-shadow(0 1px 2px rgb(0 0 0 / 0.1)) drop-shadow(0 1px 1px rgb(0 0 0 / 0.06));
+		--drop-shadow-md: drop-shadow(0 4px 3px rgb(0 0 0 / 0.07))
+			drop-shadow(0 2px 2px rgb(0 0 0 / 0.06));
+		--drop-shadow-lg: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04))
+			drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+		--drop-shadow-xl: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+			drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+		--drop-shadow-2xl: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
+
+		--elevated-background-color: var(--pico-background-color);
 	}
 }
 
