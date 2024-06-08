@@ -20,5 +20,6 @@
 		"uofm",
 		"Watanabe",
 		"Yukio"
-	]
+	],
+	"eslint.validate": ["javascript", "typescript", "svelte"]
 }
