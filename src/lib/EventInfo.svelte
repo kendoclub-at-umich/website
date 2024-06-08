@@ -35,6 +35,7 @@
 {/if}
 
 {#if event.extendedProps.description != undefined}
+	<!-- eslint-disable-next-line svelte/no-at-html-tags -- because we trust the description from google calendar -->
 	<p>{@html event.extendedProps.description}</p>
 {/if}
 
