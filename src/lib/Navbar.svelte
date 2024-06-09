@@ -26,7 +26,7 @@
 
 <header class:elevated>
 	<div class="container">
-		<nav>
+		<nav class="navbar">
 			<ul>
 				<li>
 					<a href="/" class="brand contrast" on:click={() => (menuExpanded = false)}>
