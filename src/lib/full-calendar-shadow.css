@@ -64,6 +64,11 @@ h2 {
 	height: auto;
 }
 
+.fc-list .fc-event:focus::before,
+.fc-list .fc-event:focus::after {
+	content: none;
+}
+
 @media (width < 480px) {
 	.fc .fc-button.fc-today-button {
 		display: none;

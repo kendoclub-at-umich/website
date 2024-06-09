@@ -1,0 +1,19 @@
+.tippy-box[data-theme~='kendo'] {
+	background-color: var(--elevated-background-color);
+	backdrop-filter: blur(18px);
+	-webkit-backdrop-filter: blur(18px);
+	filter: var(--drop-shadow-2xl);
+
+	&[data-placement^='top'] > .tippy-arrow::before {
+		border-top-color: var(--elevated-background-color);
+	}
+	&[data-placement^='bottom'] > .tippy-arrow::before {
+		border-bottom-color: var(--elevated-background-color);
+	}
+	&[data-placement^='left'] > .tippy-arrow::before {
+		border-left-color: var(--elevated-background-color);
+	}
+	&[data-placement^='right'] > .tippy-arrow::before {
+		border-right-color: var(--elevated-background-color);
+	}
+}

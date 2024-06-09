@@ -5,6 +5,10 @@
 	import listPlugin from '@fullcalendar/list';
 	import googleCalendarPlugin from '@fullcalendar/google-calendar';
 	import shadowCss from './full-calendar-shadow.css?inline';
+	import tippy, { type ReferenceElement } from 'tippy.js';
+	import 'tippy.js/dist/tippy.css';
+	import './tippy-theme.css';
+	import EventInfo from './EventInfo.svelte';
 
 	export let googleCalendarApiKey: string;
 	export let googleCalendarId: string;
@@ -33,7 +37,36 @@
 				right: 'dayGridMonth,listMonth'
 			},
 			googleCalendarApiKey,
-			events: { googleCalendarId }
+			events: { googleCalendarId },
+			eventDidMount: ({ el, event, view }) => {
+				let component: EventInfo | undefined;
+				if (view.type == 'listMonth') {
+					el.querySelector('a')?.removeAttribute('href');
+				} else {
+					el.removeAttribute('href');
+				}
+				el.setAttribute('tabindex', '0');
+
+				tippy(el, {
+					interactive: true,
+					appendTo: document.body,
+					placement: 'auto',
+					theme: 'kendo',
+					hideOnClick: false,
+					onShow: (instance) => {
+						const container = document.createElement('div');
+						component = new EventInfo({ target: container, props: { event } });
+						instance.setContent(container);
+					},
+					onHidden: () => {
+						component?.$destroy();
+					}
+				});
+			},
+			eventWillUnmount: ({ el }) => {
+				const instance = (el as ReferenceElement)._tippy;
+				instance?.destroy();
+			}
 		});
 		calendar.render();
 	});
