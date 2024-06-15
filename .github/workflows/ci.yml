@@ -42,7 +42,7 @@ jobs:
         with:
           name: build
           path: build/
-      - uses: treosh/lighthouse-ci-action@v11
+      - uses: treosh/lighthouse-ci-action@v10
         with:
           configPath: '.lighthouserc.cjs'
           temporaryPublicStorage: true
