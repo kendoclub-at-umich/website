@@ -13,6 +13,7 @@
 </script>
 
 <svelte:head>
+	<link rel="icon" href={logoUrl} />
 	<link rel="canonical" href="https://websites.umich.edu/~kendoclub{$page.url.pathname}" />
 </svelte:head>
 
