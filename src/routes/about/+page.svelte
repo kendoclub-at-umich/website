@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>About Us | Kendo Club at the University of Michigan</title>
+</svelte:head>
+
 <h1>About Us</h1>
 
 <h2>History</h2>

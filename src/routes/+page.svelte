@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>Kendo Club at the University of Michigan</title>
+</svelte:head>
+
 <h2>What is Kendo?</h2>
 <p>
 	Kendo is a Japanese martial art which literally translates to “The Way of the Sword”. It's an
