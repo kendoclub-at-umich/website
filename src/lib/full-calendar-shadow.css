@@ -56,8 +56,17 @@ h2 {
 	}
 }
 
+.fc .fc-view.fc-list {
+	position: static;
+}
+
 .fc .fc-list .fc-scroller-liquid {
 	height: auto;
+}
+
+.fc-list .fc-event:focus::before,
+.fc-list .fc-event:focus::after {
+	content: none;
 }
 
 @media (width < 480px) {

@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page as currentPage } from '$app/stores';
 	import { mdiMenu, mdiClose } from '@mdi/js';
+	import { onMount } from 'svelte';
 
 	export let logoUrl: string;
 	export let siteName: string;
@@ -11,9 +12,19 @@
 
 	// close the menu if the url changes for any reason
 	$: $currentPage, (menuExpanded = false);
+
+	let elevated = false;
+
+	function checkIfElevated() {
+		elevated = window.scrollY >= 1;
+	}
+
+	onMount(checkIfElevated);
 </script>
 
-<header>
+<svelte:document on:scroll={checkIfElevated} />
+
+<header class:elevated>
 	<div class="container">
 		<nav>
 			<ul>
@@ -60,12 +71,17 @@
 		top: 0;
 		left: 0;
 		right: 0;
-		background-color: color-mix(in lab, var(--pico-background-color) 90%, transparent);
-		backdrop-filter: blur(12px);
-		box-shadow:
-			0 3px 6px rgba(0, 0, 0, 0.16),
-			0 3px 6px rgba(0, 0, 0, 0.23);
-		transition: background-color var(--menu-transition-time) linear;
+		background-color: var(--pico-background-color);
+		transition:
+			background-color var(--menu-transition-time) linear,
+			box-shadow var(--menu-transition-time) linear;
+	}
+
+	header.elevated {
+		background-color: var(--elevated-background-color);
+		backdrop-filter: blur(18px);
+		-webkit-backdrop-filter: blur(18px);
+		box-shadow: var(--box-shadow-md);
 	}
 
 	.brand {
