@@ -23,7 +23,7 @@
 	$: dateRange = dateFormatter.formatRange(event.start!, event.end!);
 </script>
 
-<p>{event.title}</p>
+<p class="heading">{event.title}</p>
 
 <p>{dateRange}</p>
 
@@ -60,6 +60,9 @@
 		vertical-align: middle;
 	}
 
+	.heading {
+		font-size: min(22px, 1.5em);
+	}
 	.description {
 		white-space: pre-wrap;
 	}
