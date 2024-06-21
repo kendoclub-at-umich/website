@@ -52,7 +52,7 @@
 	<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24px 24px">
 		<path fill="currentColor" d={mdiCalendar} />
 	</svg>
-<p><a href={event.url}>view in google calendar</a></p>
+	<a href={event.url}>View in Google Calendar</a>
 </p>
 
 <style>
