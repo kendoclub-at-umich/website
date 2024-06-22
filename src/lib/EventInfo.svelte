@@ -1,6 +1,8 @@
 <script lang="ts">
 	import type { EventImpl } from '@fullcalendar/core/internal';
-	import { mdiMapMarker, mdiText, mdiClock } from '@mdi/js';
+	import { mdiMapMarkerOutline, mdiText, mdiClockOutline } from '@mdi/js';
+
+	import { getFileIconByMimeType } from './mime-types';
 
 	export let event: EventImpl;
 
@@ -21,44 +23,67 @@
 	$: dateFormatter = event.allDay ? englishDateOnlyFormatter : englishDateTimeFormatter;
 
 	$: dateRange = dateFormatter.formatRange(event.start!, event.end!);
+
+	type Attachment = {
+		fileId: string;
+		fileUrl: string;
+		iconLink: string;
+		mimeType: string;
+		title: string;
+	};
+
+	type ExtendedProps = {
+		attachments: Attachment[];
+		description?: string;
+		location?: string;
+	};
+
+	$: extendedProps = event.extendedProps as ExtendedProps;
 </script>
 
 <div class="event-detail-grid">
 	<h3 class="header">{event.title}</h3>
 
-	<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24px 24px">
-		<path fill="currentColor" d={mdiClock} />
+	<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24 24">
+		<path fill="currentColor" d={mdiClockOutline} />
 	</svg>
 	<div>
 		{dateRange}
 	</div>
 
-	{#if event.extendedProps.location != undefined}
-		<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24px 24px">
-			<path fill="currentColor" d={mdiMapMarker} />
+	{#if extendedProps.location != undefined}
+		<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24 24">
+			<path fill="currentColor" d={mdiMapMarkerOutline} />
 		</svg>
 		<div>
-			<a href="https://www.google.com/maps/search/?api=1&query={event.extendedProps.location}">
-				{event.extendedProps.location}
+			<a href="https://www.google.com/maps/search/?api=1&query={extendedProps.location}">
+				{extendedProps.location}
 			</a>
 		</div>
 	{/if}
 
-	{#if event.extendedProps.description != undefined}
-		<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24px 24px">
+	{#if extendedProps.description != undefined}
+		<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24 24">
 			<path fill="currentColor" d={mdiText} />
 		</svg>
 		<div class="description">
 			<!-- eslint-disable-next-line svelte/no-at-html-tags -- because we trust the description from google calendar -->
-			{@html event.extendedProps.description}
+			{@html extendedProps.description}
 		</div>
 	{/if}
+
+	{#each extendedProps.attachments as attachment}
+		<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24 24">
+			<path fill="currentColor" d={getFileIconByMimeType(attachment.mimeType)}></path>
+		</svg>
+		<div><a href={attachment.fileUrl}>{attachment.title}</a></div>
+	{/each}
 </div>
 
 <style>
 	.event-detail-grid {
 		display: grid;
-		grid-template-columns: 24px 1fr;
+		grid-template-columns: auto 1fr;
 		gap: 8px;
 		align-items: center;
 		padding: 8px;
@@ -71,6 +96,7 @@
 	}
 	.description {
 		white-space: pre-wrap;
+		overflow-wrap: anywhere;
 	}
 	svg:has(+ .description) {
 		align-self: start;
