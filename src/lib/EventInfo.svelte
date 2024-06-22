@@ -44,7 +44,14 @@
 <div class="event-detail-grid">
 	<h3 class="header">{event.title}</h3>
 
-	<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24 24">
+	<svg
+		xmlns="http://www.w3.org/2000/svg"
+		height="24px"
+		width="24px"
+		viewBox="0 0 24 24"
+		role="img"
+		aria-label="Time"
+	>
 		<path fill="currentColor" d={mdiClockOutline} />
 	</svg>
 	<div>
@@ -52,7 +59,14 @@
 	</div>
 
 	{#if extendedProps.location != undefined}
-		<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24 24">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			height="24px"
+			width="24px"
+			viewBox="0 0 24 24"
+			role="img"
+			aria-label="Location"
+		>
 			<path fill="currentColor" d={mdiMapMarkerOutline} />
 		</svg>
 		<div>
@@ -63,7 +77,14 @@
 	{/if}
 
 	{#if extendedProps.description != undefined}
-		<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24 24">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			height="24px"
+			width="24px"
+			viewBox="0 0 24 24"
+			role="img"
+			aria-label="Description"
+		>
 			<path fill="currentColor" d={mdiText} />
 		</svg>
 		<div class="description">
@@ -73,7 +94,14 @@
 	{/if}
 
 	{#each extendedProps.attachments as attachment}
-		<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24 24">
+		<svg
+			xmlns="http://www.w3.org/2000/svg"
+			height="24px"
+			width="24px"
+			viewBox="0 0 24 24"
+			role="img"
+			aria-label="Attachment"
+		>
 			<path fill="currentColor" d={getFileIconByMimeType(attachment.mimeType)}></path>
 		</svg>
 		<div><a href={attachment.fileUrl}>{attachment.title}</a></div>
