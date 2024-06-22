@@ -1,6 +1,6 @@
 <script lang="ts">
 	import type { EventImpl } from '@fullcalendar/core/internal';
-	import { mdiMapMarker, mdiText, mdiCalendar } from '@mdi/js';
+	import { mdiMapMarker, mdiText, mdiClock } from '@mdi/js';
 
 	export let event: EventImpl;
 
@@ -23,47 +23,56 @@
 	$: dateRange = dateFormatter.formatRange(event.start!, event.end!);
 </script>
 
-<p class="heading">{event.title}</p>
+<div class="event-detail-grid">
+	<h3 class="header">{event.title}</h3>
 
-<p>{dateRange}</p>
+	<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24px 24px">
+		<path fill="currentColor" d={mdiClock} />
+	</svg>
+	<div>
+		{dateRange}
+	</div>
 
-{#if event.extendedProps.location != undefined}
-	<p>
+	{#if event.extendedProps.location != undefined}
 		<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24px 24px">
 			<path fill="currentColor" d={mdiMapMarker} />
 		</svg>
-		<a href="https://www.google.com/maps/search/?api=1&query={event.extendedProps.location}">
-			{event.extendedProps.location}
-		</a>
-	</p>
-{/if}
+		<div>
+			<a href="https://www.google.com/maps/search/?api=1&query={event.extendedProps.location}">
+				{event.extendedProps.location}
+			</a>
+		</div>
+	{/if}
 
-{#if event.extendedProps.description != undefined}
-	<p class="description">
+	{#if event.extendedProps.description != undefined}
 		<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24px 24px">
 			<path fill="currentColor" d={mdiText} />
-		</svg> <br />
-		<!-- eslint-disable-next-line svelte/no-at-html-tags -- because we trust the description from google calendar -->
-		{@html event.extendedProps.description}
-	</p>
-{/if}
-
-<p>
-	<svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" viewBox="0 0 24px 24px">
-		<path fill="currentColor" d={mdiCalendar} />
-	</svg>
-	<a href={event.url}>View in Google Calendar</a>
-</p>
+		</svg>
+		<div class="description">
+			<!-- eslint-disable-next-line svelte/no-at-html-tags -- because we trust the description from google calendar -->
+			{@html event.extendedProps.description}
+		</div>
+	{/if}
+</div>
 
 <style>
-	svg {
-		vertical-align: middle;
+	.event-detail-grid {
+		display: grid;
+		grid-template-columns: 24px 1fr;
+		gap: 8px;
+		align-items: center;
+		padding: 8px;
 	}
-
-	.heading {
-		font-size: min(22px, 1.5em);
+	.header {
+		font-size: 1.5em;
+		font-weight: 400;
+		margin-bottom: 4px;
+		grid-column: 1 / -1;
 	}
 	.description {
 		white-space: pre-wrap;
+	}
+	svg:has(+ .description) {
+		align-self: start;
 	}
 </style>
