@@ -26,6 +26,14 @@
 	the Midwest area.
 </p>
 
+<figure>
+	<enhanced:img
+		src="./red-panda-about.png"
+		alt="A red panda with he words &quot;about us&quot; written on it"
+	/>
+	<figcaption>Adorable red panda eats a leaf</figcaption>
+</figure>
+
 <h2>Motto</h2>
 
 <p class="motto">心技一体</p>

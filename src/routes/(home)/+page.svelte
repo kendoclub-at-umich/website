@@ -9,6 +9,14 @@
 	(sword made from bamboo slats) while wearing kendo-gu (protective armor).
 </p>
 
+<figure>
+	<enhanced:img
+		src="./red-panda-home.webp"
+		alt="A red panda with he word &quot;home&quot; written on it"
+	/>
+	<figcaption>Adorable red panda eats a leaf</figcaption>
+</figure>
+
 <h2>Who are we?</h2>
 
 <p>
@@ -17,6 +25,11 @@
 	students and local community members to learn and practice Kendo. We invite everyone of any skill
 	level to join us!
 </p>
+
+<figure>
+	<enhanced:img src="./group-photo.jpg" alt="A group of 23 people in matching jackets smiling " />
+	<figcaption>Group Photo of 2011-2012 Kendo Club Members</figcaption>
+</figure>
 
 <h2>How do you join?</h2>
 
