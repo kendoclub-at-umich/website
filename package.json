@@ -36,7 +36,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fullcalendar/core": "^6.1.11",
-		"@fullcalendar/daygrid": "^6.1.13",
+		"@fullcalendar/daygrid": "^6.1.14",
 		"@fullcalendar/google-calendar": "^6.1.11",
 		"@fullcalendar/list": "^6.1.14",
 		"@mdi/js": "^7.4.47",
