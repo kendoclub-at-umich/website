@@ -47,9 +47,7 @@
 <h3>Costs</h3>
 <ul>
 	<li>
-		Dues: Your first two practices are free. Afterwards, you must pay dues. These help us have space
-		to practice by contributing to practice room booking fees and organizational fees. Dues are $55
-		for one semester, and $80 for two semesters.
+		Dues: A fee is charged per semester to cover room booking. Your first two practices are free.
 	</li>
 	<li>
 		Equipment: For your first two practices, you may borrow a shinai (bamboo sword) from any club
