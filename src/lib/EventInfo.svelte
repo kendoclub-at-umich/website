@@ -2,6 +2,7 @@
 	import type { EventImpl } from '@fullcalendar/core/internal';
 	import { mdiMapMarkerOutline, mdiText, mdiClockOutline } from '@mdi/js';
 	import { getFileIconByMimeType } from './mime-types';
+	import SvgIcon from './SvgIcon.svelte';
 
 	export let event: EventImpl;
 
@@ -43,31 +44,13 @@
 <div class="event-detail-grid">
 	<h3 class="header">{event.title}</h3>
 
-	<svg
-		xmlns="http://www.w3.org/2000/svg"
-		height="24px"
-		width="24px"
-		viewBox="0 0 24 24"
-		role="img"
-		aria-label="Time"
-	>
-		<path fill="currentColor" d={mdiClockOutline} />
-	</svg>
+	<SvgIcon label="Time" path={mdiClockOutline} />
 	<div>
 		{dateRange}
 	</div>
 
 	{#if extendedProps.location != undefined}
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			height="24px"
-			width="24px"
-			viewBox="0 0 24 24"
-			role="img"
-			aria-label="Location"
-		>
-			<path fill="currentColor" d={mdiMapMarkerOutline} />
-		</svg>
+		<SvgIcon label="Location" path={mdiMapMarkerOutline} />
 		<div>
 			<a href="https://www.google.com/maps/search/?api=1&query={extendedProps.location}">
 				{extendedProps.location}
@@ -76,16 +59,7 @@
 	{/if}
 
 	{#if extendedProps.description != undefined}
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			height="24px"
-			width="24px"
-			viewBox="0 0 24 24"
-			role="img"
-			aria-label="Description"
-		>
-			<path fill="currentColor" d={mdiText} />
-		</svg>
+		<SvgIcon label="Description" path={mdiText} />
 		<div class="description">
 			<!-- eslint-disable-next-line svelte/no-at-html-tags -- because we trust the description from google calendar -->
 			{@html extendedProps.description}
@@ -93,16 +67,7 @@
 	{/if}
 
 	{#each extendedProps.attachments as attachment}
-		<svg
-			xmlns="http://www.w3.org/2000/svg"
-			height="24px"
-			width="24px"
-			viewBox="0 0 24 24"
-			role="img"
-			aria-label="Attachment"
-		>
-			<path fill="currentColor" d={getFileIconByMimeType(attachment.mimeType)}></path>
-		</svg>
+		<SvgIcon label="Attachment" path={getFileIconByMimeType(attachment.mimeType)} />
 		<div><a href={attachment.fileUrl}>{attachment.title}</a></div>
 	{/each}
 </div>
@@ -125,7 +90,7 @@
 		white-space: pre-wrap;
 		overflow-wrap: anywhere;
 	}
-	svg:has(+ .description) {
+	* :global(svg:has(+ .description)) {
 		align-self: start;
 	}
 </style>
