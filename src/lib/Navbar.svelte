@@ -93,6 +93,7 @@
 		font-weight: 700;
 
 		& > img {
+			aspect-ratio: 1;
 			height: 1lh;
 		}
 	}
