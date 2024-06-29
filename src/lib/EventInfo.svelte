@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { EventImpl } from '@fullcalendar/core/internal';
 	import { mdiMapMarkerOutline, mdiText, mdiClockOutline } from '@mdi/js';
-
 	import { getFileIconByMimeType } from './mime-types';
 
 	export let event: EventImpl;
