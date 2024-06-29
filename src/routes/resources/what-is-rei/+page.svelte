@@ -1,3 +1,7 @@
+<svelte:head>
+	<title>What is Rei? | Kendo Club at the University of Michigan</title>
+</svelte:head>
+
 <h1>What is Rei?</h1>
 
 <p>
