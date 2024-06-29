@@ -2,6 +2,7 @@
 	import { page as currentPage } from '$app/stores';
 	import { mdiMenu, mdiClose } from '@mdi/js';
 	import { onMount } from 'svelte';
+	import SvgIcon from './SvgIcon.svelte';
 
 	export let logoUrl: string;
 	export let siteName: string;
@@ -40,9 +41,7 @@
 						aria-label={menuExpanded ? 'Close' : 'Menu'}
 						on:click={() => (menuExpanded = !menuExpanded)}
 					>
-						<svg xmlns="http://www.w3.org/2000/svg" height="24" width="24" viewBox="0 0 24 24">
-							<path fill="currentColor" d={menuExpanded ? mdiClose : mdiMenu} />
-						</svg>
+						<SvgIcon label="" path={menuExpanded ? mdiClose : mdiMenu} />
 					</button>
 				</li>
 			</ul>
