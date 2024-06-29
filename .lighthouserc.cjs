@@ -1,7 +1,8 @@
 module.exports = {
 	ci: {
 		collect: {
-			staticDistDir: './build'
+			staticDistDir: './build',
+			autodiscoverUrlBlocklist: 'calendar.html'
 		},
 		assert: {
 			preset: 'lighthouse:no-pwa',
