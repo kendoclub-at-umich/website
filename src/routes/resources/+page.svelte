@@ -7,8 +7,8 @@
 <ul>
 	<li><a href="/resources/Kendo Beginner Guide.pdf">Kendo Beginner Guide.pdf</a></li>
 	<li>
-		<a href="/resources/Kendo Japanese Pronunciation and Definitions.pdf"
-			>Kendo Japanese Pronunciation and Definitions.pdf
+		<a href="/resources/Kendo Japanese Pronunciation and Definitions.pdf">
+			Kendo Japanese Pronunciation and Definitions.pdf
 		</a>
 	</li>
 	<li><a href="/resources/Lineup Opening Commands.pdf">Lineup Opening Commands.pdf</a></li>
