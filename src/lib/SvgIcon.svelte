@@ -13,3 +13,12 @@
 >
 	<path fill="currentColor" d={path} />
 </svg>
+
+<style>
+	:global(button):has(> svg) {
+		aspect-ratio: 1;
+		padding: var(--pico-form-element-spacing-vertical);
+		display: grid;
+		place-content: center;
+	}
+</style>

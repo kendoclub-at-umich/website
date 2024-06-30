@@ -16,14 +16,14 @@
 		'content/link': true,
 		'content/typography': true,
 		'content/embedded': false,
-		'content/button': false,
+		'content/button': true,
 		'content/table': false,
 		'content/code': false,
 		'content/figure': false,
 		'content/miscs': false,
 
 		// Forms
-		'forms/basics': false,
+		'forms/basics': true,
 		'forms/checkbox-radio-switch': false,
 		'forms/input-color': false,
 		'forms/input-date': false,
@@ -33,11 +33,11 @@
 
 		// Components
 		'components/accordion': false,
-		'components/card': false,
+		'components/card': true,
 		'components/dropdown': false,
-		'components/group': false,
+		'components/group': true,
 		'components/loading': false,
-		'components/modal': false,
+		'components/modal': true,
 		'components/nav': true,
 		'components/progress': false,
 		'components/tooltip': false,
