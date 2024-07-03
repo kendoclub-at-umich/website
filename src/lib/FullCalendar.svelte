@@ -18,6 +18,12 @@
 
 	let calendarContainer: HTMLDivElement;
 	let calendar: Calendar | undefined;
+	let selectedMonth = '';
+
+	const englishMonthFormatter = new Intl.DateTimeFormat('en-US', {
+		month: 'long',
+		year: 'numeric'
+	});
 
 	onMount(() => {
 		const smallScreenQuery = matchMedia('(width < 768px)');
@@ -31,25 +37,17 @@
 		const calendarElement = document.createElement('div');
 		shadowDom.appendChild(calendarElement);
 
-		console.log(googleCalendarId);
+		selectedMonth = englishMonthFormatter.format(new Date());
 
 		calendar = new Calendar(calendarElement, {
 			plugins: [dayGridPlugin, listPlugin, googleCalendarPlugin],
 			initialView: smallScreenQuery.matches ? 'listMonth' : 'dayGridMonth',
-			headerToolbar: {
-				left: 'prev,next today',
-				center: 'title',
-				right: 'dayGridMonth,listMonth'
-			},
-			customButtons: {
-				addToGoogleCalendar: { text: 'Add to Google Calendar', click: () => addToGoogleCalendar() },
-				addToOtherCalendar: { text: 'Add to Other Calendar', click: () => addToOtherCalendar() }
-			},
-			footerToolbar: {
-				left: 'addToGoogleCalendar addToOtherCalendar'
-			},
+			headerToolbar: false,
 			googleCalendarApiKey,
 			events: { googleCalendarId },
+			datesSet: () => {
+				selectedMonth = englishMonthFormatter.format(calendar?.getDate());
+			},
 			eventDidMount: ({ el, event, view }) => {
 				let component: EventInfo | undefined;
 				if (view.type == 'listMonth') {
@@ -133,7 +131,17 @@
 	];
 </script>
 
+<button on:click={() => calendar?.prev()}>previous</button>
+<button on:click={() => calendar?.next()}>next</button>
+<button on:click={() => calendar?.today()}>today</button>
+<span>{selectedMonth}</span>
+<button on:click={() => calendar?.changeView('dayGridMonth')}>month</button>
+<button on:click={() => calendar?.changeView('listMonth')}>list</button>
+
 <div id="calendar-container" bind:this={calendarContainer} />
+
+<button on:click={addToGoogleCalendar}>Add to Google Calendar</button>
+<button on:click={addToOtherCalendar}>Add to Other Calendar</button>
 
 <dialog bind:this={addToOtherCalendarDialog}>
 	<article>
