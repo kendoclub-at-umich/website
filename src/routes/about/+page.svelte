@@ -19,8 +19,8 @@
 <p>
 	Our club is classified as a student organization through the Michigan Student Assembly, the
 	student government of the University of Michigan. Our Kendo Club is also part of the
-	<a href="https://www.midwestkendofederation.org/">Midwest Kendo Federation (MWKF)</a>
-	which is the regional chapter under the
+	<a href="https://www.midwestkendofederation.org/">Midwest Kendo Federation (MWKF)</a>, which is
+	the regional chapter under the
 	<a href="https://www.auskf.org/">All United States Kendo Federation (AUSKF)</a>, the national
 	governing body for Kendo in this country. The MWKF is responsible for all Kendo clubs and Dojos in
 	the Midwest area.
