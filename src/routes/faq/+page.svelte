@@ -16,7 +16,7 @@
 	<p>
 		Before you put on bogu, we will teach you how to protect yourself and others from accidental
 		harm. It is an important part of Kendo to fight with respect and gratitude rather than force and
-		anger, so Kendo players always put their opponents’ safety above winning a sparring match.
+		anger, so Kendo players always put their opponent’s safety above winning a sparring match.
 		Safety routines in kendo training include regular inspection of shinai and bogu and proper
 		stretching before practice.
 	</p>
