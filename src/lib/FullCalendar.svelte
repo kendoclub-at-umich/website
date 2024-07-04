@@ -21,6 +21,7 @@
 	} from '@mdi/js';
 	import { wait } from './promise-helper';
 	import { showModal } from './modal';
+	import { browser } from '$app/environment';
 
 	export let googleCalendarApiKey: string;
 	export let googleCalendarId: string;
@@ -193,7 +194,7 @@
 
 		<div role="group">
 			<input value={icalUrl} readonly />
-			{#if 'clipboard' in navigator}
+			{#if browser && 'clipboard' in navigator}
 				<button class="secondary" on:click={copyToClipboard}>
 					<SvgIcon label="Copy" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
 				</button>
