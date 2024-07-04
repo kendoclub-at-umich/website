@@ -22,8 +22,8 @@
 	<a href="https://www.midwestkendofederation.org/">Midwest Kendo Federation (MWKF)</a>, which is
 	the regional chapter under the
 	<a href="https://www.auskf.org/">All United States Kendo Federation (AUSKF)</a>, the national
-	governing body for Kendo in this country. The MWKF is responsible for all Kendo clubs and Dojos in
-	the Midwest area.
+	governing body for Kendo. The MWKF is responsible for all Kendo clubs and Dojos in the Midwest
+	area.
 </p>
 
 <h2>Motto</h2>
