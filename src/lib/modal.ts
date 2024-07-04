@@ -2,8 +2,7 @@ export async function showModal(dialog: HTMLDialogElement) {
 	dialog.showModal();
 
 	const onClick = (event: MouseEvent) => {
-		const content = dialog.firstElementChild;
-		if (content != null && event.target != null && !content.contains(event.target as Element)) {
+		if (dialog == event.target) {
 			dialog.close();
 		}
 	};
