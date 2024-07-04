@@ -36,7 +36,11 @@
 		year: 'numeric'
 	});
 
+	let supportsAppleCalendar = false;
+
 	onMount(() => {
+		supportsAppleCalendar = /Mac|iPhone|iPad|iPod/.test(navigator.userAgent);
+
 		const smallScreenQuery = matchMedia('(width < 768px)');
 
 		const shadowDom = calendarContainer.attachShadow({ mode: 'open' });
@@ -103,7 +107,7 @@
 
 	let addToOtherCalendarDialog: HTMLDialogElement;
 
-	$: icalUrl = `https://calendar.google.com/calendar/ical/${googleCalendarId}/public/basic.ics`;
+	$: icalUrl = `calendar.google.com/calendar/ical/${googleCalendarId}/public/basic.ics`;
 
 	async function copyToClipboard() {
 		await navigator.clipboard.writeText(icalUrl);
@@ -113,21 +117,6 @@
 	}
 
 	let recentlyCopiedToClipboard = false;
-
-	const icalImportGuides = [
-		{
-			name: 'iPhone',
-			url: 'https://support.apple.com/guide/iphone/iph3d1110d4'
-		},
-		{
-			name: 'Mac',
-			url: 'https://support.apple.com/guide/calendar/icl1022'
-		},
-		{
-			name: 'Outlook',
-			url: 'https://support.microsoft.com/en-us/office/8e8364e1-400e-4c0f-a573-fe76b5a2d379'
-		}
-	];
 </script>
 
 <div class="calendar-wrapper">
@@ -183,6 +172,11 @@
 		>
 			Add to Google Calendar
 		</a>
+		{#if supportsAppleCalendar}
+			<a role="button" class="outline" href="webcal://{icalUrl}" target="_blank" rel="noreferrer">
+				Add to Apple Calendar
+			</a>
+		{/if}
 		<button class="outline" on:click={() => showModal(addToOtherCalendarDialog)}>
 			Add to Other Calendar
 		</button>
@@ -199,20 +193,12 @@
 
 		<div role="group">
 			<input value={icalUrl} readonly />
-			<button class="secondary" on:click={copyToClipboard}>
-				<SvgIcon label="Copy" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
-			</button>
+			{#if 'clipboard' in navigator}
+				<button class="secondary" on:click={copyToClipboard}>
+					<SvgIcon label="Copy" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
+				</button>
+			{/if}
 		</div>
-
-		<ul>
-			{#each icalImportGuides as guide}
-				<li><a href={guide.url}>Instructions for {guide.name}</a></li>
-			{/each}
-		</ul>
-
-		<a role="button" class="secondary" href="webcal://{icalUrl}" target="_blank" rel="noreferrer">
-			Open in default calendar app
-		</a>
 	</article>
 </dialog>
 
