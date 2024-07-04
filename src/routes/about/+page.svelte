@@ -34,9 +34,9 @@
 	Our club motto reads "Shin Gi Ittai", which translates approximately to "The Spirit and Skill are
 	One Body" or "The Heart and Technique are Together". This motto was one of several proposed by
 	Masaki Hori in the fall of 2004, and was chosen by our club officers and coaches to best represent
-	the ideals we strive for in our club. This motto is on our club tenugui (cloth head wrap worn
-	under helmet), which are traditionally given to club members before their first competition as a
-	sign of mutual support and encouragement.
+	the ideals we strive for in our club. This motto is on our club tenugui (cloth headband worn under
+	the helmet), which is traditionally given to club members before their first competition as a sign
+	of mutual support and encouragement.
 </p>
 
 <h2>Constitution</h2>
