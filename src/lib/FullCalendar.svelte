@@ -20,6 +20,7 @@
 		mdiViewSequential
 	} from '@mdi/js';
 	import { wait } from './promise-helper';
+	import { showModal } from './modal';
 
 	export let googleCalendarApiKey: string;
 	export let googleCalendarId: string;
@@ -182,7 +183,7 @@
 		>
 			Add to Google Calendar
 		</a>
-		<button class="outline" on:click={() => addToOtherCalendarDialog.showModal()}>
+		<button class="outline" on:click={() => showModal(addToOtherCalendarDialog)}>
 			Add to Other Calendar
 		</button>
 	</div>
