@@ -9,17 +9,15 @@ export async function showModal(dialog: HTMLDialogElement) {
 
 	dialog.addEventListener('click', onClick);
 
-	const returnValue = await waitForDialogToClose(dialog);
+	await waitForDialogToClose(dialog);
 
 	dialog.removeEventListener('click', onClick);
-
-	return returnValue;
 }
 
-function waitForDialogToClose(dialog: HTMLDialogElement): Promise<string> {
-	return new Promise((resolve) => {
+function waitForDialogToClose(dialog: HTMLDialogElement) {
+	return new Promise<void>((resolve) => {
 		dialog.addEventListener('close', () => {
-			resolve(dialog.returnValue);
+			resolve();
 		});
 	});
 }
