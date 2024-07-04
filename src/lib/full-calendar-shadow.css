@@ -64,9 +64,3 @@ h2 {
 .fc-list .fc-event:focus::after {
 	content: none;
 }
-
-@media (width < 480px) {
-	.fc .fc-button.fc-today-button {
-		display: none;
-	}
-}
