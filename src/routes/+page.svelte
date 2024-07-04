@@ -36,14 +36,6 @@
 	<li>Masking is optional. Surgical or cloth masks are the best choices for breathability.</li>
 </ul>
 
-<h3>Email us</h3>
-<ul>
-	<li>
-		You can find our email address in the <a href="/contact">Contact Us</a> page. We can answer additional
-		questions you have and add you to our email list (or remove you from it if you're no longer interested).
-	</li>
-</ul>
-
 <h3>Costs</h3>
 <ul>
 	<li>
@@ -63,3 +55,9 @@
 		<a href="https://recsports.umich.edu/fitness/"> rec sports website </a> for more details.
 	</li>
 </ul>
+
+<h2>Contact Us</h2>
+<p>
+	Please email <a href="mailto:kendoinfo@umich.edu">kendoinfo@umich.edu</a> with any additional questions
+	or to be added to our email list. We usually respond within a week.
+</p>
