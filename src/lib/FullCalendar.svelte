@@ -56,6 +56,7 @@
 			headerToolbar: false,
 			googleCalendarApiKey,
 			events: { googleCalendarId },
+			aspectRatio: 4 / 3,
 			datesSet: () => {
 				selectedMonth = englishMonthFormatter.format(calendar?.getDate());
 			},
@@ -167,7 +168,9 @@
 		</button>
 	</div>
 
-	<div id="calendar-container" bind:this={calendarContainer} />
+	<div id="calendar-container" bind:this={calendarContainer}>
+		<div class="placeholder"></div>
+	</div>
 
 	<div class="bottom">
 		<a
@@ -222,7 +225,7 @@
 		--pico-form-element-spacing-horizontal: 12px;
 		--pico-line-height: 1;
 		margin: 0 auto;
-		max-width: max(640px, calc((4 / 3) * (100lvh - (5.5rem + 72px))));
+		max-width: max(640px, calc((4 / 3) * (100lvh - (4.25rem + 104px))));
 		display: grid;
 		grid-template-columns: 1fr auto 1fr;
 		align-items: center;
@@ -282,5 +285,9 @@
 	#calendar-container {
 		grid-column: 1 / -1;
 		font-size: min(18px, 0.75em);
+
+		& .placeholder {
+			aspect-ratio: 4/3;
+		}
 	}
 </style>
