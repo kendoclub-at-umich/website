@@ -13,8 +13,8 @@
 	at the University of Michigan, cross training with
 	<a href="https://www.seishinkankendo.com/">Seishinkan Kendo</a> in Ypsilanti (formerly Eastern Kendo
 	Club) continued. Our shared history reaffirms our continued partnership as both clubs seek to advance
-	and promote the practice of Kendo in the Midwest. Many of our instructors and members train at both
-	locations even to this day.
+	and promote the practice of Kendo in the Midwest. Many of our instructors and members continue to train
+	at both locations.
 </p>
 <p>
 	Our club is classified as a student organization through the Michigan Student Assembly, the
