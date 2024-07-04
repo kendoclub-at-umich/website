@@ -4,7 +4,7 @@
 
 <h2>What is Kendo?</h2>
 <p>
-	Kendo is a Japanese martial art which literally translates to “The Way of the Sword”. It's an
+	Kendo is a Japanese martial art which literally translates to “The Way of the Sword”. It is an
 	athletic sport which is played by means of one-on-one striking between opponents using shinai
 	(sword made from bamboo slats) while wearing kendo-gu (protective armor).
 </p>
@@ -25,15 +25,14 @@
 	<li>No prior experience needed!</li>
 	<li>
 		You may join any practice session you like (though you may find it easier to join closer to the
-		beginning of a new semester, as there are larger groups of complete beginners).
+		beginning of a new semester when there are larger groups of complete beginners).
 	</li>
 	<li>Find our up-to-date practice schedule in the <a href="/calendar">Calendar</a> page.</li>
 	<li>
-		Please wear comfortable athletic clothes. Wear bottoms that cover the knee because there is some
+		Please wear comfortable athletic clothes. Wear pants that cover the knee because there is some
 		kneeling involved. Kendo is a barefoot sport, so please leave your shoes outside the ballroom
 		before entering.
 	</li>
-	<li>Masking is optional. Surgical or cloth masks are the best choices for breathability.</li>
 </ul>
 
 <h3>Costs</h3>
@@ -42,16 +41,14 @@
 		Dues: A fee is charged per semester to cover room booking. Your first two practices are free.
 	</li>
 	<li>
-		Equipment: For your first two practices, you may borrow a shinai (bamboo sword) from any club
-		member who graciously lends it to you. Afterwards, you will be offered the opportunity to
-		purchase your own equipment depending on what we have in stock. One shinai is about $30, and a
-		carrying bag is about $20.
+		Equipment: For your first two practices, you may borrow a shinai (bamboo sword) from a club
+		member. Afterwards, you will be offered the opportunity to purchase your own equipment depending
+		on what's in stock. One shinai is about $30, and a carrying bag is about $20.
 	</li>
 	<li>
 		Gym Membership: You are required to have a Umich rec sports membership. If you are a student
-		taking at least one class this term, it is included in your tuition. If you are a non-student,
-		consider multi-day passes or a membership. Whichever one is more economical depends on how often
-		you plan on joining practice. See the
+		taking at least one class, it is included in your tuition. If you are a non-student, consider a
+		multi-day pass or a membership, depending on how often you plan on joining practice. See the
 		<a href="https://recsports.umich.edu/fitness/"> rec sports website </a> for more details.
 	</li>
 </ul>
