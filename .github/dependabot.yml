@@ -14,3 +14,4 @@ updates:
       day: sunday
     commit-message:
       prefix: 'build: ⬆️ '
+    open-pull-requests-limit: 10
