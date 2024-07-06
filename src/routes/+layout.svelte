@@ -8,6 +8,7 @@
 	const pages = [
 		{ name: 'Calendar', url: '/calendar' },
 		{ name: 'About Us', url: '/about' },
+		{ name: 'FAQ', url: '/faq' },
 		{ name: 'Resources', url: '/resources' }
 	] as const;
 </script>
