@@ -26,6 +26,17 @@
 	area.
 </p>
 
+<figure>
+	<enhanced:img
+		src="./putting-on-bogu.jpg"
+		sizes="min(798px, 100vw)"
+		alt="A club member sitting with most of their armor on, putting on the helmet."
+	/>
+	<figcaption>
+		Club member putting on the part of his bogu that will protect his head, the men.
+	</figcaption>
+</figure>
+
 <h2>Motto</h2>
 
 <p class="motto">心技一体</p>

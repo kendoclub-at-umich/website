@@ -1,4 +1,5 @@
 import { sveltekit } from '@sveltejs/kit/vite';
+import { enhancedImages } from '@sveltejs/enhanced-img';
 import { defineConfig } from 'vite';
 import virtual from '@rollup/plugin-virtual';
 import { readFileSync } from 'node:fs';
@@ -8,6 +9,7 @@ const copyright = /Copyright \(c\) ([0-9]{4}( [A-Z]?[a-z]+)+)/.exec(license)![1]
 
 export default defineConfig({
 	plugins: [
+		enhancedImages(),
 		sveltekit(),
 		virtual({ 'license-copyright': `export default ${JSON.stringify(copyright)};` })
 	],
