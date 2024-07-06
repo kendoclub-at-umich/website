@@ -41,6 +41,7 @@
 	}
 	main {
 		padding-top: 32px;
+		padding-bottom: env(safe-area-inset-bottom);
 	}
 	footer > div {
 		display: flex;
