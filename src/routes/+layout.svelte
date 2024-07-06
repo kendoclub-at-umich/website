@@ -8,6 +8,7 @@
 	const pages = [
 		{ name: 'Calendar', url: '/calendar' },
 		{ name: 'About Us', url: '/about' },
+		{ name: 'FAQ', url: '/faq' },
 		{ name: 'Resources', url: '/resources' }
 	] as const;
 </script>
@@ -39,9 +40,12 @@
 		display: grid;
 		grid-template-rows: auto minmax(auto, 1fr) auto;
 	}
+
 	main {
 		padding-top: 32px;
+		padding-bottom: env(safe-area-inset-bottom);
 	}
+
 	footer > div {
 		display: flex;
 		justify-content: space-between;
@@ -49,6 +53,7 @@
 		font-weight: 200;
 		font-size: 0.75em;
 	}
+
 	@media (width<480px) {
 		footer > div {
 			flex-direction: column;

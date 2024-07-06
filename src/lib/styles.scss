@@ -20,7 +20,7 @@
 		'content/table': false,
 		'content/code': false,
 		'content/figure': true,
-		'content/miscs': false,
+		'content/miscs': true,
 
 		// Forms
 		'forms/basics': false,
@@ -32,7 +32,7 @@
 		'forms/input-search': false,
 
 		// Components
-		'components/accordion': false,
+		'components/accordion': true,
 		'components/card': false,
 		'components/dropdown': false,
 		'components/group': false,
@@ -98,5 +98,6 @@
 	width: 100%;
 	max-width: min(40rem, calc(75dvw + 120px));
 	margin-inline: auto;
-	padding-inline: var(--pico-spacing);
+	padding-left: max(var(--pico-spacing), env(safe-area-inset-left));
+	padding-right: max(var(--pico-spacing), env(safe-area-inset-right));
 }

@@ -63,6 +63,10 @@
 </header>
 
 <style>
+	.container {
+		padding-top: env(safe-area-inset-top);
+	}
+
 	header {
 		--menu-transition-time: 0.1s;
 		position: sticky;
