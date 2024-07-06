@@ -28,8 +28,12 @@
 </p>
 
 <figure>
-	<enhanced:img src="./group-photo.jpg" alt="A group of 23 people in matching jackets smiling " />
-	<figcaption>Group Photo of 2011-2012 Kendo Club Members</figcaption>
+	<enhanced:img
+		src="./group-photo.jpg"
+		sizes="min(798px, 100vw)"
+		alt="A group of 20 people in kendo armor with serious faces"
+	/>
+	<figcaption>Group Photo of 2024 Kendo Club Members</figcaption>
 </figure>
 
 <h2>How do you join?</h2>
