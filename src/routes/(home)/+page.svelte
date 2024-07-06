@@ -11,10 +11,10 @@
 
 <figure>
 	<enhanced:img
-		src="./red-panda-home.webp"
-		alt="A red panda with he word &quot;home&quot; written on it"
+		src="./combat-kamae-position.jpg"
+		alt="Two club members in kendo armor holding bamboo practice swords, facing each other in the ready position."
 	/>
-	<figcaption>Adorable red panda eats a leaf</figcaption>
+	<figcaption>Two club members hold their shinai in kamae position, ready to strike.</figcaption>
 </figure>
 
 <h2>Who are we?</h2>
