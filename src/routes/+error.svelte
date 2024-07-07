@@ -6,7 +6,10 @@
 	<title>{$page.status} | Kendo Club at the University of Michigan</title>
 </svelte:head>
 
-<h1><span class="primary-color">{$page.status}</span> {$page.error?.message}</h1>
+<h1>
+	<span class="status-code">{$page.status}</span>
+	<span class="error-message">{$page.error?.message}</span>
+</h1>
 
 <style>
 	h1 {
@@ -14,7 +17,11 @@
 		text-align: center;
 	}
 
-	.primary-color {
+	.status-code {
 		color: var(--pico-primary);
+	}
+
+	.error-message {
+		font-weight: 400;
 	}
 </style>
