@@ -33,7 +33,7 @@
 		sizes="min(798px, 100vw)"
 		alt="A group of 20 people in kendo armor with serious faces"
 	/>
-	<figcaption>Group Photo of 2024 Kendo Club Members</figcaption>
+	<figcaption>Group photo of 2024 club members</figcaption>
 </figure>
 
 <h2>How do you join?</h2>
