@@ -30,7 +30,7 @@
 	<enhanced:img
 		src="./group-photo-2011.jpg"
 		sizes="min(798px, 100vw)"
-		alt="24 club members posing for a group photo, smiling."
+		alt="24 club members posing in bogu or regular clothing, smiling."
 	/>
 	<figcaption>Group photo of the club members in 2011!</figcaption>
 </figure>
