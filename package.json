@@ -14,7 +14,7 @@
 	},
 	"devDependencies": {
 		"@rollup/plugin-virtual": "^3.0.2",
-		"@sveltejs/adapter-static": "^3.0.2",
+		"@sveltejs/adapter-netlify": "^4.3.1",
 		"@sveltejs/enhanced-img": "^0.3.0",
 		"@sveltejs/kit": "^2.5.18",
 		"@sveltejs/vite-plugin-svelte": "^3.1.1",
