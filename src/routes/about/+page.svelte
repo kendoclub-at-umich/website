@@ -28,13 +28,11 @@
 
 <figure>
 	<enhanced:img
-		src="./putting-on-bogu.jpg"
+		src="./group-photo-2011.jpg"
 		sizes="min(798px, 100vw)"
-		alt="A club member sitting with most of their armor on, putting on the helmet."
+		alt="24 club members posing for a group photo, smiling."
 	/>
-	<figcaption>
-		Club member putting on the part of his bogu that will protect his head, the men.
-	</figcaption>
+	<figcaption>Group photo of the club members in 2011!</figcaption>
 </figure>
 
 <h2>Motto</h2>
@@ -49,6 +47,17 @@
 	the helmet), which is traditionally given to club members before their first competition as a sign
 	of mutual support and encouragement.
 </p>
+
+<figure>
+	<enhanced:img
+		src="./putting-on-bogu.jpg"
+		sizes="min(798px, 100vw)"
+		alt="A club member sitting with most of their armor on, putting on the helmet."
+	/>
+	<figcaption>
+		Club member putting on the part of his bogu that will protect his head, the men.
+	</figcaption>
+</figure>
 
 <h2>Constitution</h2>
 <p>
