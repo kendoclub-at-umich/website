@@ -8,8 +8,7 @@ module.exports = {
 		assert: {
 			preset: 'lighthouse:no-pwa',
 			assertions: {
-				'csp-xss': 'off',
-				'meta-description': 'warn' // TODO: remove this as part of #115
+				'csp-xss': 'off'
 			}
 		}
 	}
