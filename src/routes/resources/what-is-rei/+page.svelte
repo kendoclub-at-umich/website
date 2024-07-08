@@ -181,7 +181,7 @@
 	blog on the Internet and I would like to quote a recent post relevant to this discussion:
 </p>
 <blockquote>
-	"If the instructor cadre that you train is arrogant, out of shape, and out of touch with what your
+	If the instructor cadre that you train is arrogant, out of shape, and out of touch with what your
 	unit’s goals and missions are, then look in the mirror. Perhaps you are as well. Each Marine that
 	an instructor trains may be the Marine that is beside him some night in a fight. Sure, there are
 	Marines who pick it up faster than others; they are the fun ones to work with. But the mirror of
@@ -197,7 +197,7 @@
 	participated. They answered, “Been there, done that. Now it’s their turn.” At this point, I
 	introduced myself, got a mokuju from the stack, and asked to see some technique from the MAIs.
 	Both replied that “as an instructor they could only train themselves away from students…
-	instructors should never look bad.” I stopped the drill and have both instructors on probation."
+	instructors should never look bad.” I stopped the drill and have both instructors on probation.
 	<footer>
 		<cite>
 			— "Development and Realization for Martial Arts Instructors" Lieutenant Colonel George H.
