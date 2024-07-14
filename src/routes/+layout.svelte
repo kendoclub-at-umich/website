@@ -11,11 +11,27 @@
 		{ name: 'FAQ', url: '/faq' },
 		{ name: 'Resources', url: '/resources' }
 	] as const;
+
+	/**
+	 * @param url the url of the page
+	 * @returns the single canonical url for this page
+	 * @example ```ts
+	 * "https://michigankendo.com"            => "https://michigankendo.com"
+	 * "https://michigankendo.com/"           => "https://michigankendo.com"
+	 * "https://michigankendo.com/about"      => "https://michigankendo.com/about"
+	 * "https://michigankendo.com/about.html" => "https://michigankendo.com/about"
+	 * "https://michigankendo.com/index.html" => "https://michigankendo.com"
+	 * "https://kendoclub.netlify.app/about"  => "https://michigankendo.com/about"
+	 * ```
+	 */
+	function getCanonicalUrl(url: URL) {
+		return `https://michigankendo.com${url.pathname.replace(/\/?(index)?(\.html)?$/, '')}`;
+	}
 </script>
 
 <svelte:head>
 	<link rel="icon" href={logoUrl} />
-	<link rel="canonical" href="https://websites.umich.edu/~kendoclub{$page.url.pathname}" />
+	<link rel="canonical" href={getCanonicalUrl($page.url)} />
 </svelte:head>
 
 <Navbar {logoUrl} siteName="Kendo Club at Umich" {pages} />
