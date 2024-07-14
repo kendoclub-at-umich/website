@@ -1,5 +1,8 @@
 # Kendo Club Website
 
+[![Continuous Integration](https://github.com/kendoclub-at-umich/website/actions/workflows/ci.yml/badge.svg)](https://github.com/kendoclub-at-umich/website/actions/workflows/ci.yml?query=branch%3Amain)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/9e2a62d6-8618-406d-962d-d49396f7f17b/deploy-status)](https://app.netlify.com/sites/kendoclub/deploys)
+
 The website for Kendo Club at the University of Michigan.
 
 ## Developing
