@@ -38,7 +38,7 @@
 	"dependencies": {
 		"@fullcalendar/core": "^6.1.11",
 		"@fullcalendar/daygrid": "^6.1.15",
-		"@fullcalendar/google-calendar": "^6.1.14",
+		"@fullcalendar/google-calendar": "^6.1.15",
 		"@fullcalendar/list": "^6.1.15",
 		"@mdi/js": "^7.4.47",
 		"@picocss/pico": "^2.0.6",
