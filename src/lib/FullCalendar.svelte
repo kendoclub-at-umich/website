@@ -118,6 +118,34 @@
 	}
 
 	let recentlyCopiedToClipboard = false;
+
+	let previousTouch: Touch | undefined;
+
+	function onTouchStart(event: TouchEvent) {
+		previousTouch = event.touches[0];
+	}
+
+	function onTouchEnd(event: TouchEvent) {
+		if (event.touches.length > 0 || previousTouch == undefined) {
+			return;
+		}
+
+		const currentTouch = event.changedTouches[0];
+		const xDistance = currentTouch.clientX - previousTouch.clientX;
+		const yDistance = currentTouch.clientY - previousTouch.clientY;
+
+		if (Math.abs(yDistance) > Math.abs(xDistance) || Math.abs(xDistance) < 24) {
+			return;
+		}
+
+		if (xDistance > 0) {
+			calendar?.prev();
+		} else {
+			calendar?.next();
+		}
+
+		previousTouch = undefined;
+	}
 </script>
 
 <div class="calendar-wrapper">
@@ -159,7 +187,12 @@
 		</button>
 	</div>
 
-	<div id="calendar-container" bind:this={calendarContainer}>
+	<div
+		id="calendar-container"
+		bind:this={calendarContainer}
+		on:touchstart={onTouchStart}
+		on:touchend={onTouchEnd}
+	>
 		<div class="placeholder"></div>
 	</div>
 
