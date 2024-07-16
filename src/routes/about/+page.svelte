@@ -1,4 +1,5 @@
 <svelte:head>
+	<meta name="description" content="Kendo Club at Umich was founded in 2001. Join our community of experienced and passionate learners!" />
 	<title>About Us | Kendo Club at the University of Michigan</title>
 </svelte:head>
 
