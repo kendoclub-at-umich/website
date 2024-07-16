@@ -1,5 +1,5 @@
 <svelte:head>
-	<meta name="description" content="Join us and practice Kendo, a traditional Japanese martial art using swords. Open to all. No experience needed." />
+	<meta name="description" content="Join to practice Kendo, a traditional Japanese martial art using swords. Open to all. No experience needed." />
 	<title>Kendo Club at the University of Michigan</title>
 </svelte:head>
 
