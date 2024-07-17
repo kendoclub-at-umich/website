@@ -3,6 +3,7 @@
 </script>
 
 <svelte:head>
+	<meta name="description" content="View the club's practice days, times, and locations, as well as upcoming kendo events in the area. " />
 	<title>Calendar | Kendo Club at the University of Michigan</title>
 </svelte:head>
 
