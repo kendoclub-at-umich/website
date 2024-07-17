@@ -2,7 +2,7 @@
 	<title>About Us | Kendo Club at the University of Michigan</title>
 	<meta
 		name="description"
-		content="Kendo Club at Umich was founded in 2001. Join this community of experienced and passionate learners!"
+		content="Kendo Club at Umich was founded in 2001. Learn more about this group's rich history."
 	/>
 </svelte:head>
 
