@@ -13,7 +13,7 @@
 	</li>
 	<li><a href="/resources/Lineup Opening Commands.pdf">Lineup Opening Commands.pdf</a></li>
 	<li><a href="/resources/Lineup Closing Commands.pdf">Lineup Closing Commands.pdf</a></li>
-	<li><a href="/resources/Uniform Buying Guide.pdf">Uniform Buying Guide.pdf</a></li>
+	<li><a href="/resources/uniform-buying-guide">Uniform Buying Guide</a></li>
 	<li>
 		<a href="/resources/Parts of a Shinai and How To Hold It.pdf">
 			Parts of a Shinai and How To Hold It.pdf
