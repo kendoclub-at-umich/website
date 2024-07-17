@@ -1,5 +1,9 @@
 <svelte:head>
 	<title>What is Rei? | Kendo Club at the University of Michigan</title>
+	<meta
+		name="description"
+		content="Read an enlightening perspective about rei, an important part of kendo philosophy ."
+	/>
 </svelte:head>
 
 <h1>What is Rei?</h1>

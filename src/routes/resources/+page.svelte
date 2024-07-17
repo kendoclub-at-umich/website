@@ -1,5 +1,9 @@
 <svelte:head>
 	<title>Resources | Kendo Club at the University of Michigan</title>
+	<meta
+		name="description"
+		content="Learn more about kendo, from practical tips to philosophy, at any experience level."
+	/>
 </svelte:head>
 
 <h1>Resources</h1>
