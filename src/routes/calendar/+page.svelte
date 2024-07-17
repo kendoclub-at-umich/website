@@ -6,7 +6,7 @@
 	<title>Calendar | Kendo Club at the University of Michigan</title>
 	<meta
 		name="description"
-		content="View the club's practice days, times, and locations, as well as upcoming kendo events in the area. "
+		content="Find details about club practices and upcoming kendo events in the area. "
 	/>
 </svelte:head>
 
