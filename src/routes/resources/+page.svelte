@@ -5,7 +5,7 @@
 <h1>Resources</h1>
 
 <ul>
-	<li><a href="/resources/Kendo Beginner Guide.pdf">Kendo Beginner Guide.pdf</a></li>
+	<li><a href="/resources/kendo-beginner-guide">Kendo Beginner Guide</a></li>
 	<li>
 		<a href="/resources/Kendo Japanese Pronunciation and Definitions.pdf">
 			Kendo Japanese Pronunciation and Definitions.pdf
