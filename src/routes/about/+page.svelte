@@ -2,7 +2,7 @@
 	<title>About Us | Kendo Club at the University of Michigan</title>
 	<meta
 		name="description"
-		content="Kendo Club at Umich is an official Voluntary Student Organization, practicing since 2001. Read more about the history and motto."
+		content="Kendo Club at Umich is an official Voluntary Student Organization, practicing since 2001. Read about the club's history and motto."
 	/>
 </svelte:head>
 
