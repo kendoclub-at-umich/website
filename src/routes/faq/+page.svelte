@@ -2,7 +2,7 @@
 	<title>FAQ | Kendo Club at the University of Michigan</title>
 	<meta
 		name="description"
-		content="Answers frequently asked questions about starting kendo and practicing at our club."
+		content="Frequently asked questions about beginning kendo and practicing with our club."
 	/>
 </svelte:head>
 
