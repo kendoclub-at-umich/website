@@ -6,7 +6,12 @@
 	/>
 </svelte:head>
 
-<h1>What is Rei?</h1>
+<hgroup>
+	<h1>What is Rei?</h1>
+	<p>
+		<cite>by Ken Wakabayashi, February 2006</cite>
+	</p>
+</hgroup>
 
 <p>
 	Several years ago, I had an opportunity to speak with Takashi Ezaki sensei, one of the founding
@@ -244,8 +249,4 @@
 	knowledge of the activity we enjoy. We employ a system of mentorship based on this idea of mutual
 	obligation, both between the mentor and the mentee, and it is through this concept of "rei" that
 	keeps it tied together.
-</p>
-
-<p>
-	<cite>— by Ken Wakabayashi, February 2006.</cite>
 </p>
