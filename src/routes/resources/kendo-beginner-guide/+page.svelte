@@ -167,7 +167,7 @@
 <table>
 	<tr><td>Ya-me</td><td>Stop what you are doing.</td></tr>
 	<tr><td>Haji-me</td><td>Start</td></tr>
-	<tr><td>Men, Kote, Do, Tsu-ki</td>Head, Right forearm, Lower right abdomen, Throat.<td></td></tr>
+	<tr><td>Men, Kote, Do, Tsu-ki</td><td>Head, Right forearm, Lower right abdomen, Throat.</td></tr>
 	<tr><td>Suburi</td><td>To cut, or a type of cut: Men suburi, cutting the head</td></tr>
 	<tr><td>Joge suburi</td><td>Giant stretching cut, used in warm ups</td></tr>
 	<tr><td>Oni-gai-shimasu</td><td>Let’s begin</td></tr>
