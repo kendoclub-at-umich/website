@@ -11,8 +11,8 @@
 			Kendo Japanese Pronunciation and Definitions.pdf
 		</a>
 	</li>
-	<li><a href="/resources/Lineup Opening Commands.pdf">Lineup Opening Commands.pdf</a></li>
-	<li><a href="/resources/Lineup Closing Commands.pdf">Lineup Closing Commands.pdf</a></li>
+	<li><a href="/resources/lineup-opening-commands">Lineup Opening Commands</a></li>
+	<li><a href="/resources/lineup-closing-commands">Lineup Closing Commands</a></li>
 	<li><a href="/resources/uniform-buying-guide">Uniform Buying Guide</a></li>
 	<li>
 		<a href="/resources/Parts of a Shinai and How To Hold It.pdf">
