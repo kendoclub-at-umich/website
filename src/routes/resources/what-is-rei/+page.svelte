@@ -247,5 +247,5 @@
 </p>
 
 <p>
-	<cite>— by Ken Wakabayashi February 2006.</cite>
+	<cite>— by Ken Wakabayashi, February 2006.</cite>
 </p>
