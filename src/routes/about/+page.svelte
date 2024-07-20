@@ -2,7 +2,7 @@
 	<title>About Us | Kendo Club at the University of Michigan</title>
 	<meta
 		name="description"
-		content="Kendo Club at Umich was founded in 2001. Learn more about this group's rich history."
+		content="Kendo Club at Umich is an official Voluntary Student Organization, practicing since 2001. Read more about the history and motto."
 	/>
 </svelte:head>
 
@@ -69,8 +69,7 @@
 	<a href="https://campusinvolvement.umich.edu/content/voluntary-student-organizations">
 		Voluntary Student Organization
 	</a>
-	by the University of Michigan and the SOAR (Student Organization and Recognition)
-	Initiative, our club constitution can be found on
+	by the University of Michigan. Our club constitution can be found on
 	<a href="https://maizepages.umich.edu/organization/kendoclub">Maize pages</a>.
 </p>
 
