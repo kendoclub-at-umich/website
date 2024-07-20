@@ -2,7 +2,7 @@
 	<title>What is Rei? | Kendo Club at the University of Michigan</title>
 	<meta
 		name="description"
-		content="Read an enlightening perspective about rei, an important part of kendo philosophy ."
+		content="Read an enlightening perspective about rei, an important part of kendo philosophy, by Ken Wakabayashi."
 	/>
 </svelte:head>
 
