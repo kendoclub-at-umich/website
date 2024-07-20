@@ -2,7 +2,7 @@
 	<title>Kendo Club at the University of Michigan</title>
 	<meta
 		name="description"
-		content="Join to practice Kendo, a traditional Japanese martial art using swords. Open to all. No experience needed."
+		content="Student-led club at Umich that practices Kendo, a Japanese martial art using swords. No experience needed. Open to everyone."
 	/>
 </svelte:head>
 
