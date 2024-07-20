@@ -1,5 +1,9 @@
 <svelte:head>
 	<title>Kendo Beginner Guide | Kendo Club at the University of Michigan</title>
+	<meta
+		name="description"
+		content="Useful things to know when joining the Kendo Club at Umich, including club expectations, the philosophy of rei, Japanese vocabulary, and the benefits of kendo."
+	/>
 </svelte:head>
 
 <h1>What to Expect as a Beginner and What is Expected</h1>
