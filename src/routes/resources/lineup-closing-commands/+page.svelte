@@ -1,5 +1,9 @@
 <svelte:head>
 	<title>Lineup Closing Commands | Kendo Club at the University of Michigan</title>
+	<meta
+		name="description"
+		content="Commands said during lineup at the end of practice, with instructions, English pronunciation, and Japanese characters."
+	/>
 </svelte:head>
 
 <hgroup>
