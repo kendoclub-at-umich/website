@@ -1,5 +1,9 @@
 <svelte:head>
 	<title>Kendo Club at the University of Michigan</title>
+	<meta
+		name="description"
+		content="Student-led club at Umich that practices kendo, a Japanese martial art using swords. No experience needed. Open to everyone."
+	/>
 </svelte:head>
 
 <h2>What is Kendo?</h2>
