@@ -1,8 +1,12 @@
 <svelte:head>
-	<title>Uniform Buying Guide | Kendo Club at the University of Michigan</title>
+	<title>Things to Consider When Buying a Uniform | Kendo Club at the University of Michigan</title>
+	<meta
+		name="description"
+		content="Things to consider when buying a kendo uniform top (gi) and pants (hakama), such as fabric, color, and dye."
+	/>
 </svelte:head>
 
-<h1>Keiko-gi and Hakama Buying Guide for Beginners at UofM</h1>
+<h1>Things to Consider When Buying a Uniform</h1>
 
 <p>
 	This is a short buying guide intended for beginners who are considering purchasing a kendo
