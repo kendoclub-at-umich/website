@@ -1,5 +1,9 @@
 <svelte:head>
 	<title>FAQ | Kendo Club at the University of Michigan</title>
+	<meta
+		name="description"
+		content="Frequently asked questions about beginning kendo and practicing with our club."
+	/>
 </svelte:head>
 
 <h1>Frequently Asked Questions</h1>

@@ -4,6 +4,10 @@
 
 <svelte:head>
 	<title>Calendar | Kendo Club at the University of Michigan</title>
+	<meta
+		name="description"
+		content="Club practice times and information about upcoming kendo events."
+	/>
 </svelte:head>
 
 <FullCalendar
