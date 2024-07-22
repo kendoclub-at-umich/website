@@ -1,8 +1,10 @@
+// @ts-check
+
 import adapter from '@sveltejs/adapter-netlify';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 
 /** @type {import('@sveltejs/kit').Config} */
-const config = {
+export default {
 	preprocess: vitePreprocess(),
 
 	kit: {
@@ -10,5 +12,3 @@ const config = {
 		inlineStyleThreshold: 256
 	}
 };
-
-export default config;
