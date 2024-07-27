@@ -20,7 +20,6 @@
 	let calendar: Calendar | undefined;
 
 	let addToOtherCalendarDialog: HTMLDialogElement;
-	let copyButtonClicked = false;
 
 	onMount(() => {
 		const smallScreenQuery = matchMedia('(width < 768px)');
@@ -99,10 +98,14 @@
 	});
 
 	$: icalUrl = `calendar.google.com/calendar/ical/${googleCalendarId}/public/basic.ics`;
+	let recentlyCopiedToClipboard = false;
 
 	async function copyIcalUrl() {
 		await navigator.clipboard.writeText(icalUrl);
-		copyButtonClicked = true;
+		recentlyCopiedToClipboard = true;
+		setTimeout(() => {
+			recentlyCopiedToClipboard = false;
+		}, 2_000);
 	}
 </script>
 
@@ -128,7 +131,7 @@
 			<input value={icalUrl} readonly />
 			{#if browser && 'clipboard' in navigator}
 				<button aria-label="Copy" on:click={copyIcalUrl}>
-					<SvgIcon label="" path={copyButtonClicked ? mdiCheck : mdiContentCopy} />
+					<SvgIcon label="" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
 				</button>
 			{/if}
 		</div>
