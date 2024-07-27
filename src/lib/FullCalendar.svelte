@@ -9,7 +9,7 @@
 	import 'tippy.js/dist/tippy.css';
 	import './tippy-theme.css';
 	import EventInfo from './EventInfo.svelte';
-	import { mdiContentCopy } from '@mdi/js';
+	import { mdiCheck, mdiContentCopy } from '@mdi/js';
 	import SvgIcon from './SvgIcon.svelte';
 	import { browser } from '$app/environment';
 
@@ -20,6 +20,7 @@
 	let calendar: Calendar | undefined;
 
 	let addToOtherCalendarDialog: HTMLDialogElement;
+	let copyButtonClicked = false;
 
 	onMount(() => {
 		const smallScreenQuery = matchMedia('(width < 768px)');
@@ -53,7 +54,9 @@
 				},
 				addToOtherCalendar: {
 					text: 'Add to Other Calendar',
-					click: () => addToOtherCalendarDialog.showModal()
+					click: () => {
+						addToOtherCalendarDialog.showModal();
+					}
 				}
 			},
 			googleCalendarApiKey,
@@ -96,8 +99,10 @@
 	});
 
 	$: icalUrl = `calendar.google.com/calendar/ical/${googleCalendarId}/public/basic.ics`;
-	function copyIcalUrl() {
-		navigator.clipboard.writeText(icalUrl);
+
+	async function copyIcalUrl() {
+		await navigator.clipboard.writeText(icalUrl);
+		copyButtonClicked = true;
 	}
 </script>
 
@@ -123,7 +128,7 @@
 			<input value={icalUrl} readonly />
 			{#if browser && 'clipboard' in navigator}
 				<button aria-label="Copy" on:click={copyIcalUrl}>
-					<SvgIcon label="" path={mdiContentCopy} />
+					<SvgIcon label="" path={copyButtonClicked ? mdiCheck : mdiContentCopy} />
 				</button>
 			{/if}
 		</div>
