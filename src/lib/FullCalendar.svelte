@@ -124,8 +124,8 @@
 	<article>
 		<h2>Add to Your Calendar</h2>
 		<p>
-			Copy the iCal link and paste it into your Calendar app to have the up-to-date events show up
-			on your own calendar.
+			Copy the iCal url into your calendar app to automatically add Kendo Club events to your
+			calendar.
 		</p>
 		<div role="group">
 			<input value={icalUrl} readonly />
