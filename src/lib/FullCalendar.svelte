@@ -36,6 +36,17 @@
 				center: 'title',
 				right: 'dayGridMonth,listMonth'
 			},
+			footerToolbar: {
+				left: 'addToGoogleCalendar'
+			},
+			customButtons: {
+				addToGoogleCalendar: {
+					text: 'Add to Google Calendar',
+					click: () => {
+						window.open('https://calendar.google.com/calendar/r?cid=' + googleCalendarId, '_blank');
+					}
+				}
+			},
 			googleCalendarApiKey,
 			events: { googleCalendarId },
 			eventDidMount: ({ el, event, view }) => {
