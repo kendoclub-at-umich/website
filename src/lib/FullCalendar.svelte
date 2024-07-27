@@ -11,6 +11,7 @@
 	import EventInfo from './EventInfo.svelte';
 	import { mdiContentCopy } from '@mdi/js';
 	import SvgIcon from './SvgIcon.svelte';
+	import { browser } from '$app/environment';
 
 	export let googleCalendarApiKey: string;
 	export let googleCalendarId: string;
@@ -120,9 +121,11 @@
 		</p>
 		<div role="group">
 			<input value={icalUrl} readonly />
-			<button aria-label="Copy" on:click={copyIcalUrl}>
-				<SvgIcon label="" path={mdiContentCopy} />
-			</button>
+			{#if browser && 'clipboard' in navigator}
+				<button aria-label="Copy" on:click={copyIcalUrl}>
+					<SvgIcon label="" path={mdiContentCopy} />
+				</button>
+			{/if}
 		</div>
 	</article>
 </dialog>
