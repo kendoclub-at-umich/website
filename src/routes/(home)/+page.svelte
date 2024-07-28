@@ -63,9 +63,9 @@
 		Dues: A fee is charged per semester to cover room booking. Your first two practices are free.
 	</li>
 	<li>
-		Equipment: For your first two practices, you may borrow a shinai (bamboo sword) from a club
-		member. Afterwards, you will be offered the opportunity to purchase your own equipment depending
-		on what's in stock. One shinai is about $30, and a carrying bag is about $20.
+		Equipment: For your first two practices, come early to borrow a shinai (bamboo sword) from a
+		club member. Afterwards, you may be offered the opportunity to purchase your own equipment
+		depending on what's available.
 	</li>
 	<li>
 		Gym Membership: You are required to have a Umich rec sports membership. If you are a student
