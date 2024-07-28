@@ -117,6 +117,7 @@
 			background: none;
 			border: none;
 			color: inherit;
+			margin: -6px;
 		}
 
 		:global(:root):has(.menu.expanded) {
