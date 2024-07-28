@@ -21,7 +21,7 @@
 	} from '@mdi/js';
 	import { wait } from './promise-helper';
 	import { browser } from '$app/environment';
-	import { modal } from './actions';
+	import Modal from './Modal.svelte';
 
 	export let googleCalendarApiKey: string;
 	export let googleCalendarId: string;
@@ -106,7 +106,7 @@
 		calendar?.destroy();
 	});
 
-	let addToOtherCalendarDialog: HTMLDialogElement;
+	let showAddToOtherCalendarDialog = false;
 
 	$: icalUrl = `calendar.google.com/calendar/ical/${googleCalendarId}/public/basic.ics`;
 
@@ -211,29 +211,27 @@
 				Add to Apple Calendar
 			</a>
 		{/if}
-		<button class="outline" on:click={() => addToOtherCalendarDialog.showModal()}>
+		<button class="outline" on:click={() => (showAddToOtherCalendarDialog = true)}>
 			Add to Other Calendar
 		</button>
 	</div>
 </div>
 
-<dialog bind:this={addToOtherCalendarDialog} use:modal>
-	<article>
-		<h2>Add to Your Calendar</h2>
-		<p>
-			Copy the iCal url into your calendar app to automatically add Kendo Club events to your
-			calendar.
-		</p>
-		<div role="group">
-			<input value={icalUrl} readonly />
-			{#if browser && 'clipboard' in navigator}
-				<button aria-label="Copy" class="secondary" on:click={copyIcalUrl}>
-					<SvgIcon label="" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
-				</button>
-			{/if}
-		</div>
-	</article>
-</dialog>
+<Modal bind:open={showAddToOtherCalendarDialog}>
+	<h2>Add to Your Calendar</h2>
+	<p>
+		Copy the iCal url into your calendar app to automatically add Kendo Club events to your
+		calendar.
+	</p>
+	<div role="group">
+		<input value={icalUrl} readonly />
+		{#if browser && 'clipboard' in navigator}
+			<button aria-label="Copy" class="secondary" on:click={copyIcalUrl}>
+				<SvgIcon label="" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
+			</button>
+		{/if}
+	</div>
+</Modal>
 
 <style>
 	:global(main:has(#calendar-container)) {
