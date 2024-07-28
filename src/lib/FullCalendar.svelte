@@ -190,8 +190,8 @@
 	<div
 		id="calendar-container"
 		bind:this={calendarContainer}
-		on:touchstart={onTouchStart}
-		on:touchend={onTouchEnd}
+		on:touchstart|passive={onTouchStart}
+		on:touchend|passive={onTouchEnd}
 	>
 		<div class="placeholder"></div>
 	</div>
