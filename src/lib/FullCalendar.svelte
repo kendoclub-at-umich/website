@@ -110,14 +110,14 @@
 
 	$: icalUrl = `calendar.google.com/calendar/ical/${googleCalendarId}/public/basic.ics`;
 
-	async function copyToClipboard() {
+	let recentlyCopiedToClipboard = false;
+
+	async function copyIcalUrl() {
 		await navigator.clipboard.writeText(icalUrl);
 		recentlyCopiedToClipboard = true;
 		await wait(2_000);
 		recentlyCopiedToClipboard = false;
 	}
-
-	let recentlyCopiedToClipboard = false;
 
 	let previousTouch: Touch | undefined;
 
@@ -219,17 +219,16 @@
 
 <dialog bind:this={addToOtherCalendarDialog}>
 	<article>
-		<h2>Add to your Calendar</h2>
+		<h2>Add to Your Calendar</h2>
 		<p>
-			Copy this iCalendar url into your Calendar app to automatically add Kendo Club at Umich events
-			to your calendar.
+			Copy the iCal url into your calendar app to automatically add Kendo Club events to your
+			calendar.
 		</p>
-
 		<div role="group">
 			<input value={icalUrl} readonly />
 			{#if browser && 'clipboard' in navigator}
-				<button class="secondary" on:click={copyToClipboard}>
-					<SvgIcon label="Copy" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
+				<button aria-label="Copy" class="secondary" on:click={copyIcalUrl}>
+					<SvgIcon label="" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
 				</button>
 			{/if}
 		</div>
