@@ -20,8 +20,8 @@
 		mdiViewSequential
 	} from '@mdi/js';
 	import { wait } from './promise-helper';
-	import { showModal } from './modal';
 	import { browser } from '$app/environment';
+	import { modal } from './actions';
 
 	export let googleCalendarApiKey: string;
 	export let googleCalendarId: string;
@@ -211,13 +211,13 @@
 				Add to Apple Calendar
 			</a>
 		{/if}
-		<button class="outline" on:click={() => showModal(addToOtherCalendarDialog)}>
+		<button class="outline" on:click={() => addToOtherCalendarDialog.showModal()}>
 			Add to Other Calendar
 		</button>
 	</div>
 </div>
 
-<dialog bind:this={addToOtherCalendarDialog}>
+<dialog bind:this={addToOtherCalendarDialog} use:modal>
 	<article>
 		<h2>Add to Your Calendar</h2>
 		<p>
