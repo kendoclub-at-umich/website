@@ -113,7 +113,7 @@
 	let recentlyCopiedToClipboard = false;
 
 	async function copyIcalUrl() {
-		await navigator.clipboard.writeText(icalUrl);
+		await navigator.clipboard.writeText('https://' + icalUrl);
 		recentlyCopiedToClipboard = true;
 		await wait(2_000);
 		recentlyCopiedToClipboard = false;
@@ -224,7 +224,7 @@
 		calendar.
 	</p>
 	<div role="group">
-		<input value={icalUrl} readonly />
+		<input value="https://{icalUrl}" readonly />
 		{#if browser && 'clipboard' in navigator}
 			<button aria-label="Copy" class="secondary" on:click={copyIcalUrl}>
 				<SvgIcon label="" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
