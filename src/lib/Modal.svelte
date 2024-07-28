@@ -15,3 +15,9 @@
 		<slot></slot>
 	</article>
 </dialog>
+
+<style>
+	article > :global(:last-child) {
+		margin-block-end: 0;
+	}
+</style>
