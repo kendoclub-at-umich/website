@@ -19,7 +19,7 @@
 		sizes="min(798px, 100vw)"
 		alt="Two club members in kendo armor holding bamboo practice swords, facing each other in the ready position."
 	/>
-	<figcaption>Two club members hold their shinai in kamae position, ready to strike.</figcaption>
+	<figcaption>Two club members hold their shinai, ready to strike.</figcaption>
 </figure>
 
 <h2>Who are we?</h2>
