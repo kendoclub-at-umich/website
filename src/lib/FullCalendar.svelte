@@ -123,10 +123,7 @@
 >
 	<article>
 		<h2>Add to Your Calendar</h2>
-		<p>
-			Copy the iCal url into your calendar app to automatically add Kendo Club events to your
-			calendar.
-		</p>
+		<p>Subscribe to the Kendo Club calendar in your calendar app using this iCal link.</p>
 		<div role="group">
 			<input value={'https://' + icalUrl} readonly />
 			{#if browser && 'clipboard' in navigator}
