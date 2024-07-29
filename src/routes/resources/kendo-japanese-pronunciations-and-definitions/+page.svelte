@@ -444,7 +444,81 @@
 		partners, usually at the beginning and end of practice.
 	</dd>
 
-	<dt></dt>
+	<dt>Keiko (geiko): 稽古 【けいこ, げいこ】</dt>
+	<dd>Practice</dd>
+
+	<dt>Mitori Geiko: 見取り【みとり】</dt>
+	<dd>The practice of learning by watching others</dd>
+
+	<dt>Uchikomi (geiko): 打ち込み 【うちこみ】</dt>
+	<dd>Practice involving the repetition of one strike</dd>
+
+	<dt>wo ute: を打て【をうて】</dt>
+	<dd>Strike (target, ie men). (Instructional command)</dd>
+
+	<dt>Kakari-geiko: 掛かり稽古【かかりげいこ】</dt>
+	<dd>
+		(attacking practice) practice where the receiver only opens for variety of target areas and the
+		attacker strikes
+	</dd>
+
+	<dt>Aikakari-geiko: 相掛かり稽古【あいかかりげいこ】</dt>
+	<dd>(attacking practice) simultaneously attacking practice</dd>
+
+	<dt>Ji-geiko: 地稽古【じげいこ】</dt>
+	<dd>open sparring practice</dd>
+
+	<dt>Hikitate ji-geiko: 引き立て地稽古【ひきたて】</dt>
+	<dd>
+		(‘to favor’ or ‘to promote’) open sparring practice between two individuals of differing rank
+	</dd>
+
+	<dt>Gokaku ji-geiko: 互角地稽古【ごかく】</dt>
+	<dd>(‘of equal rank’) open sparring practice between two individuals of similar rank</dd>
+
+	<dt>Shiai ji-geiko (ji-geiko) 試合地稽古【しあい】</dt>
+	<dd>competition sparring</dd>
+
+	<dt>. Ippon shoubu: 一本勝負 【いっぽんしょうぶ】</dt>
+	<dd>1 point match/first point wins match</dd>
+
+	<dt>Hansoku: 反則 【はんそく】</dt>
+	<dd>a foul/penalty (call). Two hansoku equals a full point deduction.</dd>
+
+	<dt>Wakare: 別れ 【わかれ】</dt>
+	<dd>(command) separate/split up – time continues</dd>
+
+	<dt>Enchou: 延長 【えんちょう】</dt>
+	<dd>overtime, sudden death overtime</dd>
+
+	<dt>Maai: 間合い 【まあい】(?)</dt>
+	<dd>
+		the ideal maximum distance between two opponents. This is different for each person and can take
+		a long time to develop or extend it.
+	</dd>
+
+	<dt>Issoku-ittou: 一束一刀 【いっそくいっとう】</dt>
+	<dd>“One step, one sword”</dd>
+
+	<dt>To-ma : 遠間 【とおま】</dt>
+	<dd>“distant interval”</dd>
+
+	<dt>Tsubazeriai : 鍔迫り合い 【つばぜりあい】</dt>
+	<dd>
+		(forcefully meeting at the tsuba) Where the two opponents are pressed against each other using
+		the hips to drive forward, the arms are braced against each of their own chest protectors
+		creating a pocket of open space. Both opponents are waiting for the optimum moment to either go
+		through or strike while going backward.
+	</dd>
+
+	<dt>Taiatari: 体当たり; 体当り 【たいあたり】</dt>
+	<dd>ramming attack, body blow</dd>
+
+	<dt>Chikama : 近間 【ちかま】</dt>
+	<dd>“close interval”</dd>
+
+	<dt>Ai-uchi: 相打ち【あいうち】</dt>
+	<dd>simultaneously striking one another</dd>
 </dl>
 
 <style>
