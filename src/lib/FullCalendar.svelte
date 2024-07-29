@@ -9,12 +9,17 @@
 	import 'tippy.js/dist/tippy.css';
 	import './tippy-theme.css';
 	import EventInfo from './EventInfo.svelte';
+	import { mdiCheck, mdiContentCopy } from '@mdi/js';
+	import SvgIcon from './SvgIcon.svelte';
+	import { browser } from '$app/environment';
 
 	export let googleCalendarApiKey: string;
 	export let googleCalendarId: string;
 
 	let calendarContainer: HTMLDivElement;
 	let calendar: Calendar | undefined;
+
+	let addToOtherCalendarDialog: HTMLDialogElement;
 
 	onMount(() => {
 		const smallScreenQuery = matchMedia('(width < 768px)');
@@ -35,6 +40,23 @@
 				left: 'prev,next today',
 				center: 'title',
 				right: 'dayGridMonth,listMonth'
+			},
+			footerToolbar: {
+				left: 'addToGoogleCalendar addToOtherCalendar'
+			},
+			customButtons: {
+				addToGoogleCalendar: {
+					text: 'Add to Google Calendar',
+					click: () => {
+						window.open('https://calendar.google.com/calendar/r?cid=' + googleCalendarId, '_blank');
+					}
+				},
+				addToOtherCalendar: {
+					text: 'Add to Other Calendar',
+					click: () => {
+						addToOtherCalendarDialog.showModal();
+					}
+				}
 			},
 			googleCalendarApiKey,
 			events: { googleCalendarId },
@@ -74,9 +96,47 @@
 	onDestroy(() => {
 		calendar?.destroy();
 	});
+
+	$: icalUrl = `calendar.google.com/calendar/ical/${googleCalendarId}/public/basic.ics`;
+	let recentlyCopiedToClipboard = false;
+
+	async function copyIcalUrl() {
+		await navigator.clipboard.writeText(icalUrl);
+		recentlyCopiedToClipboard = true;
+		setTimeout(() => {
+			recentlyCopiedToClipboard = false;
+		}, 2_000);
+	}
 </script>
 
 <div id="calendar-container" bind:this={calendarContainer} />
+
+<!-- Reason: Dialog can be closed with esc key, so it's already able to be interacted with -->
+<!-- svelte-ignore a11y-click-events-have-key-events  a11y-no-noninteractive-element-interactions-->
+<dialog
+	bind:this={addToOtherCalendarDialog}
+	on:click={(event) => {
+		if (event.target == addToOtherCalendarDialog) {
+			addToOtherCalendarDialog.close();
+		}
+	}}
+>
+	<article>
+		<h2>Add to Your Calendar</h2>
+		<p>
+			Copy the iCal url into your calendar app to automatically add Kendo Club events to your
+			calendar.
+		</p>
+		<div role="group">
+			<input value={icalUrl} readonly />
+			{#if browser && 'clipboard' in navigator}
+				<button aria-label="Copy" on:click={copyIcalUrl}>
+					<SvgIcon label="" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
+				</button>
+			{/if}
+		</div>
+	</article>
+</dialog>
 
 <style>
 	:global(main:has(#calendar-container)) {
