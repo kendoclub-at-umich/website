@@ -101,7 +101,7 @@
 	let recentlyCopiedToClipboard = false;
 
 	async function copyIcalUrl() {
-		await navigator.clipboard.writeText(icalUrl);
+		await navigator.clipboard.writeText('https://' + icalUrl);
 		recentlyCopiedToClipboard = true;
 		setTimeout(() => {
 			recentlyCopiedToClipboard = false;
@@ -124,11 +124,10 @@
 	<article>
 		<h2>Add to Your Calendar</h2>
 		<p>
-			Copy the iCal url into your calendar app to automatically add Kendo Club events to your
-			calendar.
+			Copy this iCal url into your calendar app to subscribe to the Kendo Club at Umich calendar.
 		</p>
 		<div role="group">
-			<input value={icalUrl} readonly />
+			<input value={'https://' + icalUrl} readonly />
 			{#if browser && 'clipboard' in navigator}
 				<button aria-label="Copy" on:click={copyIcalUrl}>
 					<SvgIcon label="" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
