@@ -310,8 +310,6 @@
 	<dt>Go-Jyu</dt>
 	<dd>fifty</dd>
 
-	<br />
-
 	<dt>[number] kai: 回 【かい】</dt>
 	<dd>number of times (postpositional counter for occurrences). Ex. San-Jyu kai: Thirty times</dd>
 
