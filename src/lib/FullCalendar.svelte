@@ -124,7 +124,7 @@
 	<article>
 		<h2>Add to Your Calendar</h2>
 		<p>
-			Copy this iCal link into your calendar app to subscribe to the Kendo Club at Umich calendar.
+			Copy this iCal url into your calendar app to subscribe to the Kendo Club at Umich calendar.
 		</p>
 		<div role="group">
 			<input value={'https://' + icalUrl} readonly />
