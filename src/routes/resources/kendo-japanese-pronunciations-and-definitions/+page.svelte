@@ -477,7 +477,7 @@
 	<dt>Shiai ji-geiko (ji-geiko) 試合地稽古【しあい】</dt>
 	<dd>competition sparring</dd>
 
-	<dt>. Ippon shoubu: 一本勝負 【いっぽんしょうぶ】</dt>
+	<dt>Ippon shoubu: 一本勝負 【いっぽんしょうぶ】</dt>
 	<dd>1 point match/first point wins match</dd>
 
 	<dt>Hansoku: 反則 【はんそく】</dt>
@@ -518,6 +518,108 @@
 	<dt>Ai-uchi: 相打ち【あいうち】</dt>
 	<dd>simultaneously striking one another</dd>
 </dl>
+
+<h3>Kata 形【かた】- forms</h3>
+<dl>
+	<dt>[number]pon-me/hon-me 本目 【ぽんめ/ほんめ】</dt>
+	<dd>postpositional counter for referring to kata</dd>
+
+	<dt>Ippon-me: 一本目【いっぽんめ】</dt>
+	<dt>Nihon-me: 二本目【にほんめ】</dt>
+	<dt>Sanbon-me: 三本目 【さんぼんめ】</dt>
+	<dt>Yonhon-me: 四本目 【よんほんめ】</dt>
+	<dt>Gohon-me: 五本目【ごほんめ】</dt>
+	<dt>Roppon-me: 六本目 【ろっぽんめ】</dt>
+	<dt>Nanahon-me: 七本目 【ななほんめ】</dt>
+	<dt>Hachihon-me/happon-me: 八本目 【はちほん; はっぽん】</dt>
+	<dt>Kyuuhon-me: 九本目【きゅうほんめ】</dt>
+	<dt>Juppon-me: 一本目【じゅぽんめ】</dt>
+
+	<dt>Uchidachi: 打太刀【うちだち】</dt>
+	<dd>
+		The leader or attacker in a form/kata. The uchidachi always loses. This is to imply that being
+		the attacker is not always best approach to a situation.
+	</dd>
+
+	<dt>Shidachi: 仕太刀 【しだち】</dt>
+	<dd>The responder to the provocations of the uchidachi</dd>
+
+	<dt>Motodachi: 元立ち【もとだち】</dt>
+	<dd>The name given to the reciever during waza /nonkata practice</dd>
+</dl>
+
+<h3>Concepts</h3>
+<dl>
+	<dt>Zanshin: 残心 【ざんしん】</dt>
+	<dd>
+		(‘kokoro wo nokosu’- I leave my spirit behind, ‘kokoro ga nokoru’ – my spirit remains) follow
+		through.
+	</dd>
+
+	<dt>Seme: 攻め 【せめ】</dt>
+	<dd>Attack</dd>
+
+	<dt>Sutemi: 捨て身; 捨身 【すてみ】</dt>
+	<dd>
+		(lit. To throw away one’s life) At the risk of one’s life. Without reservation, total
+		commitment.
+	</dd>
+
+	<dt>Ki ken tai icchi 気剣体一 致【きけんたいっち】</dt>
+	<dd>
+		(lit. the spirit, sword, body are one.) Can mean that there is no true distinction between the
+		spirit, sword, body and mind in kendo.
+	</dd>
+
+	<dt>Enzan no metsuke 遠山の目付け【えざんのめつけ】</dt>
+	<dd>
+		(lit: looking as if gazing at a far away mountain) To see everything in proper perspective, not
+		focusing on a particular detail to the point of not seeing something else.
+	</dd>
+
+	<dt>Kiai 気合い【きあい】</dt>
+	<dd>
+		Showing of one’s fighting spirit, drawing from the “hara” or center of ones being. Sometimes
+		used to goad an opponent on.
+	</dd>
+
+	<dt>Mitsu no sen 三つの先【みつのせん】</dt>
+	<dd>“The three advantageous positions”</dd>
+
+	<dt>Sen sen no sen 先々の先【せんせんのせん】</dt>
+	<dd>
+		To put oneself at an advantage by preceiving one’s opponent’s intention, and striking before the
+		opponent has a chance to realize their attack (ie. debana waza).
+	</dd>
+
+	<dt>Sen 先【せん】</dt>
+	<dd>
+		To take an opponent’s initiative after they have begun an attack (nuki waza). This strategy is
+		exemplified in the first and second kata.
+	</dd>
+
+	<dt>Tai no sen 待の先【たいのせん】also Go no sen 後の先 【ごのせん】</dt>
+	<dd>
+		“Wait” or “after”. To endure an opponent’s attack and counterattack after the opponent’s
+		momentum is gone.
+	</dd>
+</dl>
+
+<h2>A very short guide to pronunciation:</h2>
+<p>
+	The following table is a “quick” pronunciation guide to Japanese characters if you are confused
+	about how a term is pronounced. There really is no replacement for hearing someone speak the terms
+	correctly, so please use this portion of the glossary as a very rough guide.
+</p>
+<p>
+	Japanese letters other than vowels are made up of two sounds, a hard consonant and a vowel sound.
+	Japanese vowels tend to be “short vowel” sounds in English. Each column in the table corresponds
+	to one particular consonant, and each row of the table corresponds to a certain vowel sound. The
+	first column is made up of all vowel sounds. Several spaces in the table are left blank because
+	several letters in the Japanese alphabet have been eliminated. This table uses only “hiragana”
+	characters, because almost all of the terms in this list use this character set. A separate
+	character set called “katakana” exists for words from other languages.
+</p>
 
 <style>
 	dt {
