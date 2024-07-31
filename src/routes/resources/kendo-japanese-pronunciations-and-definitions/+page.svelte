@@ -31,7 +31,7 @@
 	Japanese speakers and native Japanese speakers alike. If you try to find definitions of kendo
 	terms on your own, please keep that in mind.
 </p>
-<p>As an example, here are three words pronounced "kendo" with different meanings:</p>
+<p>As an example, here are three words pronounced “kendo” with different meanings:</p>
 <dl>
 	<dt>Kendo: 権道 【けんどう】</dt>
 	<dd>inappropriate means to a worthy end; expediency</dd>
@@ -620,6 +620,97 @@
 	characters, because almost all of the terms in this list use this character set. A separate
 	character set called “katakana” exists for words from other languages.
 </p>
+<table dir="ltr">
+	<tr>
+		<td> </td>
+		<td>“K”</td><td>“S”</td><td>“T”</td><td>“N”</td><td>“H”</td>
+		<td>“M”</td><td>“Y”</td><td>“R”</td><td>“W”</td><td>“N”</td>
+	</tr>
+	<tr>
+		<td>a あ</td>
+		<td>ka か</td><td>sa さ</td><td>ta た</td><td>na な</td><td>ha は</td>
+		<td>ma ま</td><td>ya や</td><td>ra ら</td><td>wa わ</td><td>n ん</td>
+	</tr>
+	<tr>
+		<td>i い</td>
+		<td>ki き</td><td>shi し</td><td>chi ち</td><td>ni に</td><td>hi ひ</td>
+		<td>mi み</td><td> </td><td>ri り</td><td> </td><td> </td>
+	</tr>
+	<tr>
+		<td>u う</td>
+		<td>ku く</td><td>su す</td><td>tsu つ</td><td>nu ぬ</td><td>hu ふ</td>
+		<td>mu む</td><td>yu ゆ</td><td>ru る</td><td> </td><td> </td>
+	</tr>
+	<tr>
+		<td>e え</td>
+		<td>ke け</td><td>se せ</td><td>te て</td><td>ne ね</td><td>he/e へ</td>
+		<td>me め</td><td> </td><td>re れ</td><td> </td><td> </td>
+	</tr>
+	<tr>
+		<td>o お</td>
+		<td>ko こ</td><td>so そ</td><td>to と</td><td>no の</td><td>ho ほ</td>
+		<td>mo も</td><td>yo よ</td><td>ro ろ</td><td>wo を</td><td> </td>
+	</tr>
+</table>
+<p dir="ltr">
+	Here are some example English words that correspond to one letter from each column and row:
+</p>
+<table>
+	<tr>
+		<td><b>a</b>pply</td><td><b>ke</b>el</td><td><b>so</b>on</td><td><b>te</b>nnis</td>
+		<td><b>kno</b>ll</td><td><b>ha</b>lt</td><td><b>me</b></td><td><b>you</b></td>
+		<td><b>re</b>sult</td><td><b>wa</b>lk</td><td><b>n</b>o</td>
+	</tr>
+</table>
+<p>
+	Several columns are characters that are further modified by the addition of quotes or a small
+	circle – both are placed in the upper right corner of the character they modify. This changes the
+	consonants at the beginning of the character respectively:
+</p>
+<table dir="ltr">
+	<tr>
+		<td> </td><td>“G”</td><td>“Z”</td><td>“D”</td><td>“B”</td><td>“P”</td>
+	</tr>
+	<tr>
+		<td>“a”</td><td>ga が</td><td>za ざ</td><td>da だ</td><td>ba ば</td><td>pa ぱ</td>
+	</tr>
+	<tr>
+		<td>“i”</td><td>gi ぎ</td><td>ji じ</td><td>ji ぢ</td><td>bi び</td><td>pi ぴ</td>
+	</tr>
+	<tr>
+		<td>“u”</td><td>gu ぐ</td><td>zu ず</td><td>zu づ</td><td>bu ぶ</td><td>pu ぷ</td>
+	</tr>
+	<tr>
+		<td>“e”</td><td>ge げ</td><td>ze ぜ</td><td>de で</td><td>be べ</td><td>pe ペ</td>
+	</tr>
+	<tr>
+		<td>“o”</td><td>go ご</td><td>zo ぞ</td><td>do ど</td><td>bo ぼ</td><td>po ぽ</td>
+	</tr>
+</table>
+<p>
+	Certain characters may be written small in combination with others to produce additional
+	syllables. Similar to abbreviations, these small characters denote that the sound is to be
+	underaccented than if it were written largely. Some examples are shown below:
+</p>
+<table>
+	<tr>
+		<td> </td><td>き “ki”</td><td>に “ni”</td><td>ひ “hi”</td>
+		<td>ま “mi”</td><td>り “ri”</td><td>し “shi”</td><td>ち “chi”</td>
+	</tr>
+	<tr>
+		<td>“ya” ゃ</td><td>kya きゃ</td><td>nya にゃ</td><td>hya ひゃ</td>
+		<td>mya まゃ</td><td>rya りゃ</td><td>sha しゃ</td><td>cha ちゃ</td>
+	</tr>
+	<tr>
+		<td>“yu” ゅ</td><td>kyu きゅ</td><td>nyu にゅ</td><td>hyu ひゅ</td>
+		<td>myu まゅ</td><td>ryu りゅ</td><td>shu しゅ</td><td>chu ちゅ</td>
+	</tr>
+	<tr>
+		<td>“yo” ょ</td><td>kyo きょ</td><td>nyo にょ</td><td>hyo ひょ</td>
+		<td>myo まょ</td><td>ryo りょ</td><td>sho しょ</td><td>cho ちょ</td>
+	</tr>
+</table>
+<p>Please feel free to explore the web or seek additional instruction/information.</p>
 
 <style>
 	dt {
