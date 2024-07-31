@@ -525,15 +525,34 @@
 	<dd>postpositional counter for referring to kata</dd>
 
 	<dt>Ippon-me: 一本目【いっぽんめ】</dt>
+	<dd>First kata</dd>
+
 	<dt>Nihon-me: 二本目【にほんめ】</dt>
+	<dd>Second kata</dd>
+
 	<dt>Sanbon-me: 三本目 【さんぼんめ】</dt>
+	<dd>Third kata</dd>
+
 	<dt>Yonhon-me: 四本目 【よんほんめ】</dt>
+	<dd>Fourth kata</dd>
+
 	<dt>Gohon-me: 五本目【ごほんめ】</dt>
+	<dd>Fifth kata</dd>
+
 	<dt>Roppon-me: 六本目 【ろっぽんめ】</dt>
+	<dd>Sixth kata</dd>
+
 	<dt>Nanahon-me: 七本目 【ななほんめ】</dt>
+	<dd>Seventh kata</dd>
+
 	<dt>Hachihon-me/happon-me: 八本目 【はちほん; はっぽん】</dt>
+	<dd>Eighth kata</dd>
+
 	<dt>Kyuuhon-me: 九本目【きゅうほんめ】</dt>
+	<dd>Ninth kata</dd>
+
 	<dt>Juppon-me: 一本目【じゅぽんめ】</dt>
+	<dd>Tenth kata</dd>
 
 	<dt>Uchidachi: 打太刀【うちだち】</dt>
 	<dd>
