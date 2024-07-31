@@ -13,7 +13,7 @@
 	This document is intended to define and provide a basic pronunciation key for basic Japanese used
 	during kendo practices. The many of our definitions are taken from Jim Breen’s World Wide Web
 	Japanese Online Dictionary, which can be found at
-	<a href="https://www.edrdg.org/cgi-bin/wwwjdic/"> https://www.edrdg.org/cgi-bin/wwwjdic/ </a>, and
+	<a href="https://www.edrdg.org/cgi-bin/wwwjdic/">https://www.edrdg.org/cgi-bin/wwwjdic/</a>, and
 	also from the All U.S. Kendo Federation Website at
 	<a href="https://www.auskf.org/info/what-is-kendo">https://www.auskf.org/info/what-is-kendo</a>.
 	They are great resources.
