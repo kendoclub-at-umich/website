@@ -641,7 +641,7 @@
 </p>
 <table dir="ltr">
 	<tr>
-		<td> </td>
+		<td></td>
 		<th scope="col">“K”</th><th scope="col">“S”</th><th scope="col">“T”</th><th scope="col">“N”</th>
 		<th scope="col">“H”</th><th scope="col">“M”</th><th scope="col">“Y”</th><th scope="col">“R”</th>
 		<th scope="col">“W”</th><th scope="col">“N”</th>
@@ -654,22 +654,22 @@
 	<tr>
 		<th scope="row">i い</th>
 		<td>ki き</td><td>shi し</td><td>chi ち</td><td>ni に</td><td>hi ひ</td>
-		<td>mi み</td><td> </td><td>ri り</td><td> </td><td> </td>
+		<td>mi み</td><td></td><td>ri り</td><td></td><td></td>
 	</tr>
 	<tr>
 		<th scope="row">u う</th>
 		<td>ku く</td><td>su す</td><td>tsu つ</td><td>nu ぬ</td><td>hu ふ</td>
-		<td>mu む</td><td>yu ゆ</td><td>ru る</td><td> </td><td> </td>
+		<td>mu む</td><td>yu ゆ</td><td>ru る</td><td></td><td></td>
 	</tr>
 	<tr>
 		<th scope="row">e え</th>
 		<td>ke け</td><td>se せ</td><td>te て</td><td>ne ね</td><td>he/e へ</td>
-		<td>me め</td><td> </td><td>re れ</td><td> </td><td> </td>
+		<td>me め</td><td></td><td>re れ</td><td></td><td></td>
 	</tr>
 	<tr>
 		<th scope="row">o お</th>
 		<td>ko こ</td><td>so そ</td><td>to と</td><td>no の</td><td>ho ほ</td>
-		<td>mo も</td><td>yo よ</td><td>ro ろ</td><td>wo を</td><td> </td>
+		<td>mo も</td><td>yo よ</td><td>ro ろ</td><td>wo を</td><td></td>
 	</tr>
 </table>
 <p>Here are some example English words that correspond to one letter from each column and row:</p>
@@ -687,7 +687,7 @@
 </p>
 <table dir="ltr">
 	<tr>
-		<td> </td>
+		<td></td>
 		<th scope="col">“G”</th><th scope="col">“Z”</th><th scope="col">“D”</th>
 		<th scope="col">“B”</th><th scope="col">“P”</th>
 	</tr>
@@ -719,7 +719,7 @@
 </p>
 <table dir="ltr">
 	<tr>
-		<td> </td>
+		<td></td>
 		<th scope="col">き “ki”</th><th scope="col">に “ni”</th><th scope="col">ひ “hi”</th>
 		<th scope="col">ま “mi”</th><th scope="col">り “ri”</th><th scope="col">し “shi”</th>
 		<th scope="col">ち “chi”</th>
