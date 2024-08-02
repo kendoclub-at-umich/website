@@ -672,9 +672,7 @@
 		<td>mo も</td><td>yo よ</td><td>ro ろ</td><td>wo を</td><td> </td>
 	</tr>
 </table>
-<p dir="ltr">
-	Here are some example English words that correspond to one letter from each column and row:
-</p>
+<p>Here are some example English words that correspond to one letter from each column and row:</p>
 <table>
 	<tr>
 		<td><b>a</b>pply</td><td><b>ke</b>el</td><td><b>so</b>on</td><td><b>te</b>nnis</td>
@@ -719,7 +717,7 @@
 	syllables. Similar to abbreviations, these small characters denote that the sound is to be
 	underaccented than if it were written largely. Some examples are shown below:
 </p>
-<table>
+<table dir="ltr">
 	<tr>
 		<td> </td>
 		<th scope="col">き “ki”</th><th scope="col">に “ni”</th><th scope="col">ひ “hi”</th>
