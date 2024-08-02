@@ -126,7 +126,7 @@
 	<dd>a practitioner of kendo, fencer</dd>
 
 	<dt>Kendoka: 剣道家【けんどうか】</dt>
-	<dd>a practioner of kendo, fencer</dd>
+	<dd>a practitioner of kendo, fencer</dd>
 
 	<dt>Senshu: 選手 【せんしゅ】</dt>
 	<dd>player, competitor</dd>
