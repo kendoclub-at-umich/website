@@ -639,8 +639,7 @@
 	characters, because almost all of the terms in this list use this character set. A separate
 	character set called “katakana” exists for words from other languages.
 </p>
-<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-<table dir="ltr" tabindex="0">
+<table dir="ltr">
 	<tr>
 		<td> </td>
 		<th scope="col">“K”</th><th scope="col">“S”</th><th scope="col">“T”</th><th scope="col">“N”</th>
@@ -674,8 +673,7 @@
 	</tr>
 </table>
 <p>Here are some example English words that correspond to one letter from each column and row:</p>
-<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-<table tabindex="0">
+<table>
 	<tr>
 		<td><b>a</b>pply</td><td><b>ke</b>el</td><td><b>so</b>on</td><td><b>te</b>nnis</td>
 		<td><b>kno</b>ll</td><td><b>ha</b>lt</td><td><b>me</b></td><td><b>you</b></td>
@@ -687,8 +685,7 @@
 	circle – both are placed in the upper right corner of the character they modify. This changes the
 	consonants at the beginning of the character respectively:
 </p>
-<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-<table dir="ltr" tabindex="0">
+<table dir="ltr">
 	<tr>
 		<td> </td>
 		<th scope="col">“G”</th><th scope="col">“Z”</th><th scope="col">“D”</th>
@@ -720,9 +717,7 @@
 	syllables. Similar to abbreviations, these small characters denote that the sound is to be
 	underaccented than if it were written largely. Some examples are shown below:
 </p>
-
-<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
-<table dir="ltr" tabindex="0">
+<table dir="ltr">
 	<tr>
 		<td> </td>
 		<th scope="col">き “ki”</th><th scope="col">に “ni”</th><th scope="col">ひ “hi”</th>
