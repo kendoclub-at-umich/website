@@ -1,4 +1,5 @@
 .tippy-box[data-theme~='kendo'] {
+	color: var(--pico-color);
 	background-color: var(--elevated-background-color);
 	backdrop-filter: blur(18px);
 	-webkit-backdrop-filter: blur(18px);
