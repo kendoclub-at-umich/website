@@ -639,7 +639,7 @@
 	characters, because almost all of the terms in this list use this character set. A separate
 	character set called “katakana” exists for words from other languages.
 </p>
-<table dir="ltr">
+<table>
 	<tr>
 		<td></td>
 		<th scope="col">“K”</th><th scope="col">“S”</th><th scope="col">“T”</th><th scope="col">“N”</th>
@@ -685,7 +685,7 @@
 	circle – both are placed in the upper right corner of the character they modify. This changes the
 	consonants at the beginning of the character respectively:
 </p>
-<table dir="ltr">
+<table>
 	<tr>
 		<td></td>
 		<th scope="col">“G”</th><th scope="col">“Z”</th><th scope="col">“D”</th>
@@ -717,7 +717,7 @@
 	syllables. Similar to abbreviations, these small characters denote that the sound is to be
 	underaccented than if it were written largely. Some examples are shown below:
 </p>
-<table dir="ltr">
+<table>
 	<tr>
 		<td></td>
 		<th scope="col">き “ki”</th><th scope="col">に “ni”</th><th scope="col">ひ “hi”</th>
