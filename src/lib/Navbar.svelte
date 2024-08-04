@@ -180,6 +180,10 @@
 		header.elevated {
 			box-shadow: none;
 		}
+
+		ul:not(:has(.brand)) {
+			display: none;
+		}
 	}
 
 	/*
