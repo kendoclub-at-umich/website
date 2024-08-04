@@ -172,6 +172,16 @@
 		}
 	}
 
+	@media print {
+		header {
+			position: relative;
+		}
+
+		header.elevated {
+			box-shadow: none;
+		}
+	}
+
 	/*
 	 * This animation makes something fully hidden for the entire duration.
 	 * This is useful for disabling the fade in transition when the browser is resized.
