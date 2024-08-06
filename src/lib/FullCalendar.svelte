@@ -232,7 +232,7 @@
 
 <style>
 	:global(main:has(#calendar-container)) {
-		max-width: none;
+		width: 100%;
 	}
 
 	.calendar-wrapper {
