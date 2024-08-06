@@ -95,8 +95,7 @@
 }
 
 .container {
-	width: 100%;
-	max-width: min(40rem, calc(75dvw + 120px));
+	width: min(40rem, 75dvw + 120px, 100vw);
 	margin-inline: auto;
 	padding-left: max(var(--pico-spacing), env(safe-area-inset-left));
 	padding-right: max(var(--pico-spacing), env(safe-area-inset-right));
