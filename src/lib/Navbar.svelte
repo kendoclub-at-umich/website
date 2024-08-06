@@ -12,7 +12,7 @@
 	let menuExpanded = false;
 
 	// close the menu if the url changes for any reason
-	$: $currentPage, (menuExpanded = false);
+	$: menuExpanded = ($currentPage, false);
 
 	let elevated = false;
 
