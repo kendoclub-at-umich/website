@@ -8,8 +8,8 @@
 <ul>
 	<li><a href="/resources/kendo-beginner-guide">Kendo Beginner Guide</a></li>
 	<li>
-		<a href="/resources/Kendo Japanese Pronunciation and Definitions.pdf">
-			Kendo Japanese Pronunciation and Definitions.pdf
+		<a href="/resources/kendo-japanese-pronunciations-and-definitions">
+			Kendo Japanese Pronunciations and Definitions
 		</a>
 	</li>
 	<li><a href="/resources/lineup-opening-commands">Lineup Opening Commands</a></li>
