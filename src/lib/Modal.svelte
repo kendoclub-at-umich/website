@@ -5,7 +5,9 @@
 
 	let dialog: HTMLDialogElement;
 
-	$: browser && open && dialog.showModal();
+	$: if (browser && open) {
+		dialog.showModal();
+	}
 </script>
 
 <!-- Reason: Dialog can be closed with esc key, so it's already able to be interacted with -->
