@@ -90,7 +90,7 @@
 <div class="double-floated">
 	<figure class="float-left">
 		<enhanced:img
-			src="./arm-position-front-view.jpg?w=400;350;200"
+			src="./arm-position-front-view.png?w=400;350;200"
 			sizes="(min-width:1280px) 400px,(min-width:450px) 350px, (min-width:0px) 200px"
 			alt="Woman in kendo uniform facing forward, demonstrating arm position."
 		/>
@@ -98,7 +98,7 @@
 
 	<figure class="float-right">
 		<enhanced:img
-			src="./arm-position-side-view.jpg?w=400;350;200"
+			src="./arm-position-side-view.png?w=400;350;200"
 			sizes="(min-width:1280px) 400px,(min-width:450px) 350px, (min-width:0px) 200px"
 			alt="Woman in kendo uniform facing right, demonstrating arm position."
 		/>
@@ -116,7 +116,7 @@
 <div class="double-floated">
 	<figure class="float-left">
 		<enhanced:img
-			src="./arm-position-side-view-hands-apart.jpg?w=400;350;200"
+			src="./arm-position-side-view-hands-apart.png?w=400;350;200"
 			sizes="(min-width:1280px) 400px, (min-width:450px) 350px, (min-width:0px) 200px"
 			alt="Woman in kendo uniform facing right, demonstrating arm position. Hands apart showing where to place on a shinai."
 		/>
@@ -124,7 +124,7 @@
 
 	<figure class="float-right">
 		<enhanced:img
-			src="./left-hand-shinai-grip.jpg?w=400;350;200"
+			src="./left-hand-shinai-grip.png?w=400;350;200"
 			sizes="(min-width:1280px) 400px, (min-width:450px) 350px, (min-width:0px) 200px"
 			alt="Close up of left hand correctly holding the shinai handle at the very bottom. Nails are painted a pearly pink."
 		/>
@@ -210,7 +210,7 @@
 <div class="inline">
 	<figure>
 		<enhanced:img
-			src="./both-hands-shinai-grip-side-view.jpg?w=400;350;200"
+			src="./both-hands-shinai-grip-side-view.png?w=400;350;200"
 			sizes="(min-width:1280px) 400px,(min-width:450px) 350px, (min-width:0px) 200px"
 			alt="Woman in kendo uniform facing right, holding a shinai correctly. Left hand is at the bottom of the shinai handle. Right hand is directly under the hand guard."
 		/>
