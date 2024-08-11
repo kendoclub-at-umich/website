@@ -139,7 +139,8 @@
 
 <style>
 	:global(main:has(#calendar-container)) {
-		max-width: none;
+		width: auto;
+		margin-inline: 0;
 	}
 
 	#calendar-container {
