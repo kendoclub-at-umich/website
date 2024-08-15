@@ -1,8 +1,11 @@
+<script>
+	import MetaTags from '$lib/MetaTags.svelte';
+</script>
+
 <svelte:head>
-	<title>Kendo Club at the University of Michigan</title>
-	<meta
-		name="description"
-		content="Student-led club at Umich that practices kendo, a Japanese martial art using swords. No experience needed. Open to everyone."
+	<MetaTags
+		title="Kendo Club at the University of Michigan"
+		description="Student-led club at Umich that practices kendo, a Japanese martial art using swords. No experience needed. Open to everyone."
 	/>
 </svelte:head>
 
