@@ -130,8 +130,7 @@
 
 <style>
 	:global(main:has(#full-calendar)) {
-		width: auto;
-		margin-inline: 0;
+		width: 100%;
 	}
 
 	#full-calendar {
