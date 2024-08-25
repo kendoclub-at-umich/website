@@ -41,7 +41,7 @@
 	$: extendedProps = event.extendedProps as ExtendedProps;
 </script>
 
-<div class="event-detail-grid pico">
+<div class="event-detail-grid">
 	<h3 class="header">{event.title}</h3>
 
 	<SvgIcon label="Time" path={mdiClockOutline} />
