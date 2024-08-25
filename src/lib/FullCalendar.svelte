@@ -144,5 +144,6 @@
 	button {
 		display: grid;
 		place-items: center;
+		padding: var(--pico-form-element-spacing-vertical);
 	}
 </style>
