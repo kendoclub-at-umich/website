@@ -1,4 +1,4 @@
-:host {
+.fc {
 	--fc-page-bg-color: var(--pico-background-color);
 	--fc-neutral-bg-color: var(--pico-muted-border-color);
 	--fc-neutral-text-color: var(--pico-color);
@@ -35,11 +35,11 @@
 	background: light-dark(rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.1));
 }
 
-::selection {
+.fc ::selection {
 	background-color: var(--pico-primary-focus);
 }
 
-h2 {
+.fc h2 {
 	color: var(--pico-h2-color);
 }
 

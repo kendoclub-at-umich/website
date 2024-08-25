@@ -4,7 +4,7 @@
 	import dayGridPlugin from '@fullcalendar/daygrid';
 	import listPlugin from '@fullcalendar/list';
 	import googleCalendarPlugin from '@fullcalendar/google-calendar';
-	import shadowCss from './full-calendar-shadow.css?inline';
+	import './full-calendar.css';
 	import tippy, { type ReferenceElement } from 'tippy.js';
 	import 'tippy.js/dist/tippy.css';
 	import './tippy-theme.css';
@@ -26,7 +26,7 @@
 	export let googleCalendarApiKey: string;
 	export let googleCalendarId: string;
 
-	let calendarContainer: HTMLDivElement;
+	let calendarElement: HTMLDivElement;
 	let calendar: Calendar | undefined;
 	let selectedMonth = '';
 	let currentMonth = '';
@@ -43,15 +43,6 @@
 		supportsAppleCalendar = /Mac|iPhone|iPad|iPod/.test(navigator.userAgent);
 
 		const smallScreenQuery = matchMedia('(width < 768px)');
-
-		const shadowDom = calendarContainer.attachShadow({ mode: 'open' });
-
-		const styleSheet = new CSSStyleSheet();
-		styleSheet.replaceSync(shadowCss);
-		shadowDom.adoptedStyleSheets = [styleSheet];
-
-		const calendarElement = document.createElement('div');
-		shadowDom.appendChild(calendarElement);
 
 		currentMonth = englishMonthFormatter.format(new Date());
 		selectedMonth = currentMonth;
@@ -188,8 +179,8 @@
 	</div>
 
 	<div
-		id="calendar-container"
-		bind:this={calendarContainer}
+		id="full-calendar"
+		bind:this={calendarElement}
 		on:touchstart|passive={onTouchStart}
 		on:touchend|passive={onTouchEnd}
 	>
@@ -231,7 +222,7 @@
 </Modal>
 
 <style>
-	:global(main:has(#calendar-container)) {
+	:global(main:has(#full-calendar)) {
 		width: 100%;
 	}
 
@@ -297,7 +288,7 @@
 		}
 	}
 
-	#calendar-container {
+	#full-calendar {
 		grid-column: 1 / -1;
 		font-size: min(18px, 0.75em);
 
