@@ -25,7 +25,7 @@
 
 <svelte:document on:scroll={checkIfElevated} />
 
-<header class:elevated>
+<header class="pico" class:elevated>
 	<div class="container">
 		<nav>
 			<ul>
