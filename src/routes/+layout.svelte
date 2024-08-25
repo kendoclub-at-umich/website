@@ -36,11 +36,11 @@
 
 <Navbar {logoUrl} siteName="Kendo Club at Umich" {pages} />
 
-<main class="container" class:pico={$page.route.id != '/calendar'}>
+<main class="container">
 	<slot />
 </main>
 
-<footer class="pico">
+<footer>
 	<div class="container">
 		<span>&copy; {copyright}</span>
 		<span>
