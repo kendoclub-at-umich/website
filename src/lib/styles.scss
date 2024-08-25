@@ -100,3 +100,19 @@
 	padding-left: max(var(--pico-spacing), env(safe-area-inset-left));
 	padding-right: max(var(--pico-spacing), env(safe-area-inset-right));
 }
+
+@media print {
+	.container {
+		width: 100%;
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+hgroup {
+	break-after: avoid;
+}
