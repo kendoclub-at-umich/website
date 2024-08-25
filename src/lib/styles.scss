@@ -1,5 +1,5 @@
 @use '@picocss/pico/scss/pico' with (
-	$parent-selector: ':where(.pico)',
+	$parent-selector: ':where(:not(.no-pico, .no-pico *)) >',
 	$theme-color: 'amber',
 	$modules: (
 		// Theme

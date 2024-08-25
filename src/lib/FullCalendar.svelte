@@ -180,6 +180,7 @@
 
 	<div
 		id="full-calendar"
+		class="no-pico"
 		bind:this={calendarElement}
 		on:touchstart|passive={onTouchStart}
 		on:touchend|passive={onTouchEnd}
