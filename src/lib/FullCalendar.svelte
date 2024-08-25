@@ -4,7 +4,7 @@
 	import dayGridPlugin from '@fullcalendar/daygrid';
 	import listPlugin from '@fullcalendar/list';
 	import googleCalendarPlugin from '@fullcalendar/google-calendar';
-	import shadowCss from './full-calendar-shadow.css?inline';
+	import './full-calendar.css';
 	import tippy, { type ReferenceElement } from 'tippy.js';
 	import 'tippy.js/dist/tippy.css';
 	import './tippy-theme.css';
@@ -16,22 +16,13 @@
 	export let googleCalendarApiKey: string;
 	export let googleCalendarId: string;
 
-	let calendarContainer: HTMLDivElement;
+	let calendarElement: HTMLDivElement;
 	let calendar: Calendar | undefined;
 
 	let addToOtherCalendarDialog: HTMLDialogElement;
 
 	onMount(() => {
 		const smallScreenQuery = matchMedia('(width < 768px)');
-
-		const shadowDom = calendarContainer.attachShadow({ mode: 'open' });
-
-		const styleSheet = new CSSStyleSheet();
-		styleSheet.replaceSync(shadowCss);
-		shadowDom.adoptedStyleSheets = [styleSheet];
-
-		const calendarElement = document.createElement('div');
-		shadowDom.appendChild(calendarElement);
 
 		calendar = new Calendar(calendarElement, {
 			plugins: [dayGridPlugin, listPlugin, googleCalendarPlugin],
@@ -109,7 +100,7 @@
 	}
 </script>
 
-<div id="calendar-container" bind:this={calendarContainer} />
+<div id="full-calendar" bind:this={calendarElement} />
 
 <!-- Reason: Dialog can be closed with esc key, so it's already able to be interacted with -->
 <!-- svelte-ignore a11y-click-events-have-key-events  a11y-no-noninteractive-element-interactions-->
@@ -138,11 +129,11 @@
 </dialog>
 
 <style>
-	:global(main:has(#calendar-container)) {
-		max-width: none;
+	:global(main:has(#full-calendar)) {
+		width: 100%;
 	}
 
-	#calendar-container {
+	#full-calendar {
 		margin: 0 auto;
 		font-size: min(18px, 0.75em);
 		max-width: max(640px, calc((4 / 3) * (100lvh - 225px)));

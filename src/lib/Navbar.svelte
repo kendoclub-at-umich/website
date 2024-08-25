@@ -25,7 +25,7 @@
 
 <svelte:document on:scroll={checkIfElevated} />
 
-<header class:elevated>
+<header class="pico" class:elevated>
 	<div class="container">
 		<nav>
 			<ul>
@@ -169,6 +169,20 @@
 
 		.menu a[aria-current] {
 			font-weight: 700;
+		}
+	}
+
+	@media print {
+		header {
+			position: relative;
+		}
+
+		header.elevated {
+			box-shadow: none;
+		}
+
+		ul:not(:has(.brand)) {
+			display: none;
 		}
 	}
 
