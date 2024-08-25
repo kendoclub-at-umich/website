@@ -254,6 +254,6 @@
 		display: inline-block;
 	}
 	div.double-floated figure {
-		max-width: 35%;
+		max-width: 25%;
 	}
 </style>
