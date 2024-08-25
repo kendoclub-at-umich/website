@@ -104,29 +104,31 @@
 
 <!-- Reason: Dialog can be closed with esc key, so it's already able to be interacted with -->
 <!-- svelte-ignore a11y-click-events-have-key-events  a11y-no-noninteractive-element-interactions-->
-<dialog
-	bind:this={addToOtherCalendarDialog}
-	on:click={(event) => {
-		if (event.target == addToOtherCalendarDialog) {
-			addToOtherCalendarDialog.close();
-		}
-	}}
->
-	<article>
-		<h2>Add to Your Calendar</h2>
-		<p>
-			Copy this iCal url into your calendar app to subscribe to the Kendo Club at Umich calendar.
-		</p>
-		<div role="group">
-			<input value={'https://' + icalUrl} readonly />
-			{#if browser && 'clipboard' in navigator}
-				<button aria-label="Copy" on:click={copyIcalUrl}>
-					<SvgIcon label="" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
-				</button>
-			{/if}
-		</div>
-	</article>
-</dialog>
+<div class="pico">
+	<dialog
+		bind:this={addToOtherCalendarDialog}
+		on:click={(event) => {
+			if (event.target == addToOtherCalendarDialog) {
+				addToOtherCalendarDialog.close();
+			}
+		}}
+	>
+		<article>
+			<h2>Add to Your Calendar</h2>
+			<p>
+				Copy this iCal url into your calendar app to subscribe to the Kendo Club at Umich calendar.
+			</p>
+			<div role="group">
+				<input value={'https://' + icalUrl} readonly />
+				{#if browser && 'clipboard' in navigator}
+					<button aria-label="Copy" on:click={copyIcalUrl}>
+						<SvgIcon label="" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
+					</button>
+				{/if}
+			</div>
+		</article>
+	</dialog>
+</div>
 
 <style>
 	:global(main:has(#full-calendar)) {
