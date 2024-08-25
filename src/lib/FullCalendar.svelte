@@ -120,7 +120,7 @@
 		<div role="group">
 			<input value={'https://' + icalUrl} readonly />
 			{#if browser && 'clipboard' in navigator}
-				<button aria-label="Copy" on:click={copyIcalUrl}>
+				<button class="copy-button" aria-label="Copy" on:click={copyIcalUrl}>
 					<SvgIcon label="" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
 				</button>
 			{/if}
@@ -137,5 +137,11 @@
 		margin: 0 auto;
 		font-size: min(18px, 0.75em);
 		max-width: max(640px, calc((4 / 3) * (100lvh - 225px)));
+	}
+
+	.copy-button {
+		display: grid;
+		place-items: center;
+		padding: var(--pico-form-element-spacing-vertical);
 	}
 </style>
