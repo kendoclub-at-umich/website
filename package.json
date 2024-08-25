@@ -17,7 +17,7 @@
 		"@rollup/plugin-virtual": "^3.0.2",
 		"@sveltejs/adapter-netlify": "^4.3.3",
 		"@sveltejs/enhanced-img": "^0.3.3",
-		"@sveltejs/kit": "^2.5.22",
+		"@sveltejs/kit": "^2.5.24",
 		"@sveltejs/vite-plugin-svelte": "^3.1.1",
 		"@types/eslint__js": "^8.42.3",
 		"@types/node": "^22.5.0",
