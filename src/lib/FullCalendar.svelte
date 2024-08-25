@@ -140,4 +140,9 @@
 		font-size: min(18px, 0.75em);
 		max-width: max(640px, calc((4 / 3) * (100lvh - 225px)));
 	}
+
+	button {
+		display: grid;
+		place-items: center;
+	}
 </style>
