@@ -25,17 +25,17 @@ export default ts.config(
 			}
 		},
 		rules: {
-			eqeqeq: ['warn', 'smart'],
+			eqeqeq: ['error', 'smart'],
 			'svelte/block-lang': ['error', { script: 'ts' }],
-			'svelte/spaced-html-comment': 'warn',
-			'@typescript-eslint/array-type': 'warn',
-			'@typescript-eslint/prefer-find': 'warn',
-			'@typescript-eslint/prefer-for-of': 'warn',
-			'@typescript-eslint/prefer-includes': 'warn',
-			'@typescript-eslint/prefer-nullish-coalescing': 'warn',
-			'@typescript-eslint/prefer-optional-chain': 'warn',
-			'@typescript-eslint/prefer-regexp-exec': 'warn',
-			'@typescript-eslint/prefer-string-starts-ends-with': 'warn'
+			'svelte/spaced-html-comment': 'error',
+			'@typescript-eslint/array-type': 'error',
+			'@typescript-eslint/prefer-find': 'error',
+			'@typescript-eslint/prefer-for-of': 'error',
+			'@typescript-eslint/prefer-includes': 'error',
+			'@typescript-eslint/prefer-nullish-coalescing': 'error',
+			'@typescript-eslint/prefer-optional-chain': 'error',
+			'@typescript-eslint/prefer-regexp-exec': 'error',
+			'@typescript-eslint/prefer-string-starts-ends-with': 'error'
 		}
 	},
 	{
