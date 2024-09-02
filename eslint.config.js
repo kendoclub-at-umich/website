@@ -9,6 +9,7 @@ import globals from 'globals';
 export default ts.config(
 	js.configs.recommended,
 	...ts.configs.strictTypeChecked,
+	...ts.configs.stylisticTypeChecked,
 	...svelte.configs['flat/recommended'],
 	prettier,
 	...svelte.configs['flat/prettier'],
@@ -28,14 +29,9 @@ export default ts.config(
 			eqeqeq: ['error', 'smart'],
 			'svelte/block-lang': ['error', { script: 'ts' }],
 			'svelte/spaced-html-comment': 'error',
-			'@typescript-eslint/array-type': 'error',
-			'@typescript-eslint/prefer-find': 'error',
-			'@typescript-eslint/prefer-for-of': 'error',
-			'@typescript-eslint/prefer-includes': 'error',
-			'@typescript-eslint/prefer-nullish-coalescing': 'error',
-			'@typescript-eslint/prefer-optional-chain': 'error',
-			'@typescript-eslint/prefer-regexp-exec': 'error',
-			'@typescript-eslint/prefer-string-starts-ends-with': 'error'
+			'@typescript-eslint/consistent-indexed-object-style': 'off',
+			'@typescript-eslint/consistent-type-definitions': 'off',
+			'@typescript-eslint/no-inferrable-types': 'off'
 		}
 	},
 	{
