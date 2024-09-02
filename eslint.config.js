@@ -26,6 +26,7 @@ export default ts.config(
 			}
 		},
 		rules: {
+			curly: 'error',
 			eqeqeq: ['error', 'smart'],
 			'svelte/block-lang': ['error', { script: 'ts' }],
 			'svelte/spaced-html-comment': 'error',
