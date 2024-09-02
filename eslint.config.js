@@ -8,7 +8,7 @@ import globals from 'globals';
 
 export default ts.config(
 	js.configs.recommended,
-	...ts.configs.recommended,
+	...ts.configs.strict,
 	...svelte.configs['flat/recommended'],
 	prettier,
 	...svelte.configs['flat/prettier'],

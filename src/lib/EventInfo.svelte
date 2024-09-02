@@ -22,6 +22,7 @@
 
 	$: dateFormatter = event.allDay ? englishDateOnlyFormatter : englishDateTimeFormatter;
 
+	// eslint-disable-next-line @typescript-eslint/no-non-null-assertion -- Google Calendar events always have a start and end date
 	$: dateRange = dateFormatter.formatRange(event.start!, event.end!);
 
 	type Attachment = {
