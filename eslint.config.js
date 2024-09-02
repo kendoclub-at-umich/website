@@ -13,6 +13,12 @@ export default ts.config(
 	prettier,
 	...svelte.configs['flat/prettier'],
 	{
+		rules: {
+			'svelte/block-lang': ['error', { script: 'ts' }],
+			'svelte/spaced-html-comment': 'warn'
+		}
+	},
+	{
 		languageOptions: {
 			globals: {
 				...globals.browser,
