@@ -14,6 +14,7 @@ export default ts.config(
 	...svelte.configs['flat/prettier'],
 	{
 		rules: {
+			eqeqeq: ['warn', 'smart'],
 			'svelte/block-lang': ['error', { script: 'ts' }],
 			'svelte/spaced-html-comment': 'warn'
 		}

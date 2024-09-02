@@ -53,7 +53,7 @@
 			events: { googleCalendarId },
 			eventDidMount: ({ el, event, view }) => {
 				let component: EventInfo | undefined;
-				if (view.type == 'listMonth') {
+				if (view.type === 'listMonth') {
 					el.querySelector('a')?.removeAttribute('href');
 				} else {
 					el.removeAttribute('href');
@@ -107,7 +107,7 @@
 <dialog
 	bind:this={addToOtherCalendarDialog}
 	on:click={(event) => {
-		if (event.target == addToOtherCalendarDialog) {
+		if (event.target === addToOtherCalendarDialog) {
 			addToOtherCalendarDialog.close();
 		}
 	}}

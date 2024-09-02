@@ -51,7 +51,7 @@
 						<a
 							href={page.url}
 							on:click={() => (menuExpanded = false)}
-							aria-current={$currentPage.url.pathname == page.url ? 'page' : undefined}
+							aria-current={$currentPage.url.pathname === page.url ? 'page' : undefined}
 						>
 							{page.name}
 						</a>

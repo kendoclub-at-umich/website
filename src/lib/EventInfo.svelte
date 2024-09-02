@@ -50,7 +50,7 @@
 		{dateRange}
 	</div>
 
-	{#if extendedProps.location != undefined}
+	{#if extendedProps.location !== undefined}
 		<SvgIcon label="Location" path={mdiMapMarkerOutline} />
 		<div>
 			<a href="https://www.google.com/maps/search/?api=1&query={extendedProps.location}">
@@ -59,7 +59,7 @@
 		</div>
 	{/if}
 
-	{#if extendedProps.description != undefined}
+	{#if extendedProps.description !== undefined}
 		<SvgIcon label="Description" path={mdiText} />
 		<div class="description">
 			<!-- eslint-disable-next-line svelte/no-at-html-tags -- because we trust the description from google calendar -->
