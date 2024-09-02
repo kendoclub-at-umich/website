@@ -27,7 +27,15 @@ export default ts.config(
 		rules: {
 			eqeqeq: ['warn', 'smart'],
 			'svelte/block-lang': ['error', { script: 'ts' }],
-			'svelte/spaced-html-comment': 'warn'
+			'svelte/spaced-html-comment': 'warn',
+			'@typescript-eslint/array-type': 'warn',
+			'@typescript-eslint/prefer-find': 'warn',
+			'@typescript-eslint/prefer-for-of': 'warn',
+			'@typescript-eslint/prefer-includes': 'warn',
+			'@typescript-eslint/prefer-nullish-coalescing': 'warn',
+			'@typescript-eslint/prefer-optional-chain': 'warn',
+			'@typescript-eslint/prefer-regexp-exec': 'warn',
+			'@typescript-eslint/prefer-string-starts-ends-with': 'warn'
 		}
 	},
 	{
