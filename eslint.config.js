@@ -8,23 +8,26 @@ import globals from 'globals';
 
 export default ts.config(
 	js.configs.recommended,
-	...ts.configs.strict,
+	...ts.configs.strictTypeChecked,
 	...svelte.configs['flat/recommended'],
 	prettier,
 	...svelte.configs['flat/prettier'],
 	{
-		rules: {
-			eqeqeq: ['warn', 'smart'],
-			'svelte/block-lang': ['error', { script: 'ts' }],
-			'svelte/spaced-html-comment': 'warn'
-		}
-	},
-	{
 		languageOptions: {
+			parserOptions: {
+				projectService: true,
+				tsconfigRootDir: import.meta.dirname,
+				extraFileExtensions: ['.svelte']
+			},
 			globals: {
 				...globals.browser,
 				...globals.node
 			}
+		},
+		rules: {
+			eqeqeq: ['warn', 'smart'],
+			'svelte/block-lang': ['error', { script: 'ts' }],
+			'svelte/spaced-html-comment': 'warn'
 		}
 	},
 	{
@@ -34,6 +37,10 @@ export default ts.config(
 				parser: ts.parser
 			}
 		}
+	},
+	{
+		files: ['*.js', '*.cjs'],
+		...ts.configs.disableTypeChecked
 	},
 	{
 		ignores: ['build/', '.svelte-kit/', 'dist/', '.netlify/']
