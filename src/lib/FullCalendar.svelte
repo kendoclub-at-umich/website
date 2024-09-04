@@ -51,13 +51,13 @@
 			},
 			googleCalendarApiKey,
 			events: { googleCalendarId },
-			eventDidMount: ({ el, event, view }) => {
-				let component: EventInfo | undefined;
-				if (view.type === 'listMonth') {
-					el.querySelector('a')?.removeAttribute('href');
-				} else {
-					el.removeAttribute('href');
+			eventSourceSuccess: (events) => {
+				for (const event of events) {
+					delete event.url;
 				}
+			},
+			eventDidMount: ({ el, event }) => {
+				let component: EventInfo | undefined;
 				el.setAttribute('tabindex', '0');
 
 				tippy(el, {
