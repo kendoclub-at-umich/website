@@ -1,10 +1,11 @@
+<script lang="ts">
+	import MetaTags from '$lib/MetaTags.svelte';
+</script>
+
 <svelte:head>
-	<title>
-		Kendo Japanese Pronunciations and Definitions | Kendo Club at the University of Michigan
-	</title>
-	<meta
-		name="description"
-		content="Basic Japanese pronunciation guide and a list of Kendo vocabulary with definitions."
+	<MetaTags
+		title="Kendo Japanese Pronunciations and Definitions"
+		description="Basic Japanese pronunciation guide and a list of Kendo vocabulary with definitions."
 	/>
 </svelte:head>
 

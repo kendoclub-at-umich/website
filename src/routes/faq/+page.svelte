@@ -1,8 +1,11 @@
+<script lang="ts">
+	import MetaTags from '$lib/MetaTags.svelte';
+</script>
+
 <svelte:head>
-	<title>FAQ | Kendo Club at the University of Michigan</title>
-	<meta
-		name="description"
-		content="Frequently asked questions about beginning kendo and practicing with our club."
+	<MetaTags
+		title="FAQ"
+		description="Frequently asked questions about beginning kendo and practicing with our club."
 	/>
 </svelte:head>
 
