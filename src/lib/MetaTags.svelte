@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import logoUrl from '$lib/logo.webp';
-	import defaultImageUrl from './combat-kamae-position.jpg?w=1200&h=630&format=webp';
+	import defaultImageUrl from '../routes/(home)/combat-kamae-position.jpg?w=1200&h=630&format=webp';
 
 	const siteName = 'Kendo Club at the University of Michigan';
 	const baseUrl = 'https://michigankendo.com';
