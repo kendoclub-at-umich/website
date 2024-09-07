@@ -60,13 +60,13 @@
 			viewDidMount: ({ view }) => {
 				selectedView = view.type;
 			},
-			eventDidMount: ({ el, event, view }) => {
-				let component: EventInfo | undefined;
-				if (view.type == 'listMonth') {
-					el.querySelector('a')?.removeAttribute('href');
-				} else {
-					el.removeAttribute('href');
+			eventSourceSuccess: (events) => {
+				for (const event of events) {
+					delete event.url;
 				}
+			},
+			eventDidMount: ({ el, event }) => {
+				let component: EventInfo | undefined;
 				el.setAttribute('tabindex', '0');
 
 				tippy(el, {
@@ -152,7 +152,7 @@
 		<button
 			class="outline today"
 			on:click={() => calendar?.today()}
-			disabled={selectedMonth == currentMonth}
+			disabled={selectedMonth === currentMonth}
 		>
 			<SvgIcon label="today" path={mdiCalendarToday} />
 			<span class="label">Today</span>
@@ -163,7 +163,7 @@
 		<button
 			class="outline"
 			on:click={() => calendar?.changeView('dayGridMonth')}
-			disabled={selectedView == 'dayGridMonth'}
+			disabled={selectedView === 'dayGridMonth'}
 		>
 			<SvgIcon label="grid" path={mdiViewComfy} />
 			<span class="label">Grid</span>
@@ -171,7 +171,7 @@
 		<button
 			class="outline"
 			on:click={() => calendar?.changeView('listMonth')}
-			disabled={selectedView == 'listMonth'}
+			disabled={selectedView === 'listMonth'}
 		>
 			<SvgIcon label="list" path={mdiViewSequential} />
 			<span class="label">List</span>
