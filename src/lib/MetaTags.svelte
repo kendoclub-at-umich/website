@@ -38,7 +38,7 @@
 <link rel="icon" href={logoUrl} />
 <link rel="canonical" href={canonicalUrl} />
 
-<title>{$page.url.pathname == '/' ? title : title + ' | ' + siteName}</title>
+<title>{$page.url.pathname === '/' ? title : title + ' | ' + siteName}</title>
 <meta name="description" content={description} />
 
 <meta property="og:title" content={title} />
