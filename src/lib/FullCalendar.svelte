@@ -117,7 +117,7 @@
 	}
 
 	function onTouchEnd(event: TouchEvent) {
-		if (event.touches.length > 0 || previousTouch == undefined) {
+		if (event.touches.length > 0 || previousTouch === undefined) {
 			return;
 		}
 
