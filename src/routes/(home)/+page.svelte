@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import MetaTags from '$lib/MetaTags.svelte';
 	import ogImageUrl from './combat-kamae-position.jpg?w=1200&h=630&format=webp';
 </script>
