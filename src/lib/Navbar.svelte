@@ -51,7 +51,7 @@
 						<a
 							href={page.url}
 							on:click={() => (menuExpanded = false)}
-							aria-current={$currentPage.url.pathname == page.url ? 'page' : undefined}
+							aria-current={$currentPage.url.pathname === page.url ? 'page' : undefined}
 						>
 							{page.name}
 						</a>
@@ -169,6 +169,20 @@
 
 		.menu a[aria-current] {
 			font-weight: 700;
+		}
+	}
+
+	@media print {
+		header {
+			position: relative;
+		}
+
+		header.elevated {
+			box-shadow: none;
+		}
+
+		ul:not(:has(.brand)) {
+			display: none;
 		}
 	}
 

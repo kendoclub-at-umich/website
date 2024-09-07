@@ -4,7 +4,7 @@
 	import dayGridPlugin from '@fullcalendar/daygrid';
 	import listPlugin from '@fullcalendar/list';
 	import googleCalendarPlugin from '@fullcalendar/google-calendar';
-	import shadowCss from './full-calendar-shadow.css?inline';
+	import './full-calendar.css';
 	import tippy, { type ReferenceElement } from 'tippy.js';
 	import 'tippy.js/dist/tippy.css';
 	import './tippy-theme.css';
@@ -16,22 +16,13 @@
 	export let googleCalendarApiKey: string;
 	export let googleCalendarId: string;
 
-	let calendarContainer: HTMLDivElement;
+	let calendarElement: HTMLDivElement;
 	let calendar: Calendar | undefined;
 
 	let addToOtherCalendarDialog: HTMLDialogElement;
 
 	onMount(() => {
 		const smallScreenQuery = matchMedia('(width < 768px)');
-
-		const shadowDom = calendarContainer.attachShadow({ mode: 'open' });
-
-		const styleSheet = new CSSStyleSheet();
-		styleSheet.replaceSync(shadowCss);
-		shadowDom.adoptedStyleSheets = [styleSheet];
-
-		const calendarElement = document.createElement('div');
-		shadowDom.appendChild(calendarElement);
 
 		calendar = new Calendar(calendarElement, {
 			plugins: [dayGridPlugin, listPlugin, googleCalendarPlugin],
@@ -60,13 +51,13 @@
 			},
 			googleCalendarApiKey,
 			events: { googleCalendarId },
-			eventDidMount: ({ el, event, view }) => {
-				let component: EventInfo | undefined;
-				if (view.type == 'listMonth') {
-					el.querySelector('a')?.removeAttribute('href');
-				} else {
-					el.removeAttribute('href');
+			eventSourceSuccess: (events) => {
+				for (const event of events) {
+					delete event.url;
 				}
+			},
+			eventDidMount: ({ el, event }) => {
+				let component: EventInfo | undefined;
 				el.setAttribute('tabindex', '0');
 
 				tippy(el, {
@@ -109,14 +100,14 @@
 	}
 </script>
 
-<div id="calendar-container" bind:this={calendarContainer} />
+<div id="full-calendar" class="no-pico" bind:this={calendarElement} />
 
 <!-- Reason: Dialog can be closed with esc key, so it's already able to be interacted with -->
-<!-- svelte-ignore a11y-click-events-have-key-events  a11y-no-noninteractive-element-interactions-->
+<!-- svelte-ignore a11y-click-events-have-key-events  a11y-no-noninteractive-element-interactions -->
 <dialog
 	bind:this={addToOtherCalendarDialog}
 	on:click={(event) => {
-		if (event.target == addToOtherCalendarDialog) {
+		if (event.target === addToOtherCalendarDialog) {
 			addToOtherCalendarDialog.close();
 		}
 	}}
@@ -129,7 +120,7 @@
 		<div role="group">
 			<input value={'https://' + icalUrl} readonly />
 			{#if browser && 'clipboard' in navigator}
-				<button aria-label="Copy" on:click={copyIcalUrl}>
+				<button class="copy-button" aria-label="Copy" on:click={copyIcalUrl}>
 					<SvgIcon label="" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
 				</button>
 			{/if}
@@ -138,13 +129,19 @@
 </dialog>
 
 <style>
-	:global(main:has(#calendar-container)) {
-		max-width: none;
+	:global(main:has(#full-calendar)) {
+		width: 100%;
 	}
 
-	#calendar-container {
+	#full-calendar {
 		margin: 0 auto;
 		font-size: min(18px, 0.75em);
 		max-width: max(640px, calc((4 / 3) * (100lvh - 225px)));
+	}
+
+	.copy-button {
+		display: grid;
+		place-items: center;
+		padding: var(--pico-form-element-spacing-vertical);
 	}
 </style>
