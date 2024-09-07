@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import logoUrl from '$lib/logo.webp';
+	import defaultImageUrl from './combat-kamae-position.jpg?w=1200&h=630&format=webp';
 
 	const siteName = 'Kendo Club at the University of Michigan';
 	const baseUrl = 'https://michigankendo.com';
@@ -24,12 +25,18 @@
 	/** A description of the page */
 	export let description: string;
 
-	/** The url of an image to display in link previews */
-	export let imageUrl: string;
-	$: fullImageUrl = new URL(imageUrl, baseUrl).href;
+	/** An image to display in link previews */
+	export let image: {
+		/** the URL of the image */
+		readonly url: string;
+		/** The alt text for the image */
+		readonly alt: string;
+	} = {
+		url: defaultImageUrl,
+		alt: 'Two club members in kendo armor holding bamboo practice swords, facing each other in the ready position.'
+	};
 
-	/** The alt text for `imageUrl` */
-	export let imageAlt: string;
+	$: fullImageUrl = new URL(image.url, baseUrl).href;
 
 	/** The Open graph type of the page */
 	export let type: 'website' | 'article' = 'website';
@@ -46,4 +53,4 @@
 <meta property="og:type" content={type} />
 <meta property="og:url" content={canonicalUrl} />
 <meta property="og:image:url" content={fullImageUrl} />
-<meta property="og:image:alt" content={imageAlt} />
+<meta property="og:image:alt" content={image.alt} />
