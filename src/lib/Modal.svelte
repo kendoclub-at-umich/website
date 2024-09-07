@@ -11,7 +11,7 @@
 </script>
 
 <!-- Reason: Dialog can be closed with esc key, so it's already able to be interacted with -->
-<!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions-->
+<!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
 <dialog bind:this={dialog} on:close={() => (open = false)} on:click|self={() => dialog.close()}>
 	<article>
 		<slot></slot>
