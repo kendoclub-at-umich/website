@@ -9,19 +9,6 @@
 	import 'tippy.js/dist/tippy.css';
 	import './tippy-theme.css';
 	import EventInfo from './EventInfo.svelte';
-	import SvgIcon from './SvgIcon.svelte';
-	import {
-		mdiCalendarToday,
-		mdiCheck,
-		mdiChevronLeft,
-		mdiChevronRight,
-		mdiContentCopy,
-		mdiViewComfy,
-		mdiViewSequential
-	} from '@mdi/js';
-	import { wait } from './promise-helper';
-	import { browser } from '$app/environment';
-	import Modal from './Modal.svelte';
 
 	export let googleCalendarApiKey: string;
 	export let googleCalendarId: string;
@@ -30,18 +17,18 @@
 	let calendar: Calendar | undefined;
 	let selectedMonth = '';
 	let currentMonth = '';
-	let selectedView: string | undefined;
+
+	export let selectedView: 'listMonth' | 'dayGridMonth' | undefined;
+	$: if (calendar !== undefined && selectedView !== undefined) {
+		calendar.changeView(selectedView);
+	}
 
 	const englishMonthFormatter = new Intl.DateTimeFormat('en-US', {
 		month: 'long',
 		year: 'numeric'
 	});
 
-	let supportsAppleCalendar = false;
-
 	onMount(() => {
-		supportsAppleCalendar = /Mac|iPhone|iPad|iPod/.test(navigator.userAgent);
-
 		const smallScreenQuery = matchMedia('(width < 768px)');
 
 		currentMonth = englishMonthFormatter.format(new Date());
@@ -58,7 +45,7 @@
 				selectedMonth = englishMonthFormatter.format(calendar?.getDate());
 			},
 			viewDidMount: ({ view }) => {
-				selectedView = view.type;
+				selectedView = view.type as 'listMonth' | 'dayGridMonth';
 			},
 			eventSourceSuccess: (events) => {
 				for (const event of events) {
@@ -97,19 +84,6 @@
 		calendar?.destroy();
 	});
 
-	let showAddToOtherCalendarDialog = false;
-
-	$: icalUrl = `calendar.google.com/calendar/ical/${googleCalendarId}/public/basic.ics`;
-
-	let recentlyCopiedToClipboard = false;
-
-	async function copyIcalUrl() {
-		await navigator.clipboard.writeText('https://' + icalUrl);
-		recentlyCopiedToClipboard = true;
-		await wait(2_000);
-		recentlyCopiedToClipboard = false;
-	}
-
 	let previousTouch: Touch | undefined;
 
 	function onTouchStart(event: TouchEvent) {
@@ -140,47 +114,19 @@
 </script>
 
 <div class="calendar-wrapper">
-	<div class="top-left">
-		<div role="group">
-			<button class="outline" on:click={() => calendar?.prev()}>
-				<SvgIcon label="previous month" path={mdiChevronLeft} />
-			</button>
-			<button class="outline" on:click={() => calendar?.next()}>
-				<SvgIcon label="next month" path={mdiChevronRight} />
-			</button>
-		</div>
-		<button
-			class="outline today"
-			on:click={() => calendar?.today()}
-			disabled={selectedMonth === currentMonth}
-		>
-			<SvgIcon label="today" path={mdiCalendarToday} />
-			<span class="label">Today</span>
-		</button>
-	</div>
-	<h2>{selectedMonth}</h2>
-	<div class="top-right" role="group">
-		<button
-			class="outline"
-			on:click={() => calendar?.changeView('dayGridMonth')}
-			disabled={selectedView === 'dayGridMonth'}
-		>
-			<SvgIcon label="grid" path={mdiViewComfy} />
-			<span class="label">Grid</span>
-		</button>
-		<button
-			class="outline"
-			on:click={() => calendar?.changeView('listMonth')}
-			disabled={selectedView === 'listMonth'}
-		>
-			<SvgIcon label="list" path={mdiViewSequential} />
-			<span class="label">List</span>
-		</button>
+	<div class="top">
+		<slot
+			name="top"
+			previous={() => calendar?.prev()}
+			next={() => calendar?.next()}
+			today={() => calendar?.today()}
+			todayDisabled={selectedMonth === currentMonth}
+			{selectedMonth}
+		></slot>
 	</div>
 
 	<div
-		id="full-calendar"
-		class="no-pico"
+		class="full-calendar no-pico"
 		bind:this={calendarElement}
 		on:touchstart|passive={onTouchStart}
 		on:touchend|passive={onTouchEnd}
@@ -189,108 +135,20 @@
 	</div>
 
 	<div class="bottom">
-		<a
-			role="button"
-			class="outline"
-			href="https://calendar.google.com/calendar/r?cid={googleCalendarId}"
-			target="_blank"
-			rel="noreferrer"
-		>
-			Add to Google Calendar
-		</a>
-		{#if supportsAppleCalendar}
-			<a role="button" class="outline" href="webcal://{icalUrl}" target="_blank" rel="noreferrer">
-				Add to Apple Calendar
-			</a>
-		{/if}
-		<button class="outline" on:click={() => (showAddToOtherCalendarDialog = true)}>
-			Add to Other Calendar
-		</button>
+		<slot name="bottom"></slot>
 	</div>
 </div>
 
-<Modal bind:open={showAddToOtherCalendarDialog}>
-	<h2>Add to Your Calendar</h2>
-	<p>Copy this iCal url into your calendar app to subscribe to the Kendo Club at Umich calendar.</p>
-	<div role="group">
-		<input value="https://{icalUrl}" readonly />
-		{#if browser && 'clipboard' in navigator}
-			<button aria-label="Copy" class="secondary" on:click={copyIcalUrl}>
-				<SvgIcon label="" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
-			</button>
-		{/if}
-	</div>
-</Modal>
-
 <style>
-	:global(main:has(#full-calendar)) {
-		width: 100%;
-	}
-
 	.calendar-wrapper {
-		--pico-form-element-spacing-vertical: 8px;
-		--pico-form-element-spacing-horizontal: 12px;
-		--pico-line-height: 1;
 		margin: 0 auto;
 		max-width: max(640px, calc((4 / 3) * (100lvh - (4.25rem + 104px))));
 		display: grid;
-		grid-template-columns: 1fr auto 1fr;
-		align-items: center;
 		gap: 16px;
 		margin-bottom: var(--pico-typography-spacing-vertical);
-
-		& * {
-			margin: 0;
-		}
-
-		& .top-left,
-		& .bottom {
-			justify-self: start;
-			display: flex;
-
-			gap: 12px;
-		}
-		& .top-right {
-			justify-self: end;
-		}
-		& .bottom {
-			grid-column: 1 / -1;
-			flex-wrap: wrap;
-		}
-
-		& [role='group'] {
-			width: unset;
-		}
-
-		& button .label {
-			padding-right: 4px;
-		}
-
-		& h2 {
-			font-size: 1.25rem;
-		}
 	}
 
-	@media (width <= 600px) {
-		button .label {
-			display: none;
-		}
-	}
-
-	@media (width <= 480px) {
-		.today {
-			display: none;
-		}
-	}
-
-	@media (width <= 400px) {
-		.calendar-wrapper {
-			--pico-form-element-spacing-vertical: 6px;
-		}
-	}
-
-	#full-calendar {
-		grid-column: 1 / -1;
+	.full-calendar {
 		font-size: min(18px, 0.75em);
 
 		& .placeholder {
