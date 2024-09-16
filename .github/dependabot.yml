@@ -4,7 +4,7 @@ updates:
     directory: /
     schedule:
       interval: daily
-      time: '9:00'
+      time: '06:00'
       timezone: America/Detroit
     commit-message:
       prefix: 'ci: 👷 '
@@ -12,7 +12,7 @@ updates:
     directory: /
     schedule:
       interval: daily
-      time: '9:00'
+      time: '06:00'
       timezone: America/Detroit
     commit-message:
       prefix: 'build: ⬆️ '
