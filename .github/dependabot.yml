@@ -2,9 +2,17 @@ version: 2
 updates:
   - package-ecosystem: github-actions
     directory: /
+    schedule:
+      interval: daily
+      time: '9:00'
+      timezone: America/Detroit
     commit-message:
       prefix: 'ci: 👷 '
   - package-ecosystem: npm
     directory: /
+    schedule:
+      interval: daily
+      time: '9:00'
+      timezone: America/Detroit
     commit-message:
       prefix: 'build: ⬆️ '
