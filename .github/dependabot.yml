@@ -8,4 +8,3 @@ updates:
     directory: /
     commit-message:
       prefix: 'build: ⬆️ '
-    open-pull-requests-limit: 10
