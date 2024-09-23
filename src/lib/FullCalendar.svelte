@@ -23,6 +23,7 @@
 
 	onMount(() => {
 		const smallScreenQuery = matchMedia('(width < 768px)');
+		const supportsAppleCalendar = /Mac|iPhone|iPad|iPod/.test(navigator.userAgent);
 
 		calendar = new Calendar(calendarElement, {
 			plugins: [dayGridPlugin, listPlugin, googleCalendarPlugin],
@@ -33,13 +34,21 @@
 				right: 'dayGridMonth,listMonth'
 			},
 			footerToolbar: {
-				left: 'addToGoogleCalendar addToOtherCalendar'
+				left: supportsAppleCalendar
+					? 'addToGoogleCalendar addToAppleCalendar addToOtherCalendar'
+					: 'addToGoogleCalendar addToOtherCalendar'
 			},
 			customButtons: {
 				addToGoogleCalendar: {
 					text: 'Add to Google Calendar',
 					click: () => {
 						window.open('https://calendar.google.com/calendar/r?cid=' + googleCalendarId, '_blank');
+					}
+				},
+				addToAppleCalendar: {
+					text: 'Add to Apple Calendar',
+					click: () => {
+						window.open('webcal://' + icalUrl, '_blank');
 					}
 				},
 				addToOtherCalendar: {
