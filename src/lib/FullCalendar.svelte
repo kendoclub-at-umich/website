@@ -39,7 +39,10 @@
 				addToGoogleCalendar: {
 					text: 'Add to Google Calendar',
 					click: () => {
-						window.open('https://calendar.google.com/calendar/r?cid=' + googleCalendarId, '_blank');
+						window.open(
+							'https://calendar.google.com/calendar/render?cid=' + googleCalendarId,
+							'_blank'
+						);
 					}
 				},
 				addToOtherCalendar: {
