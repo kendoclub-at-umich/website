@@ -148,6 +148,16 @@
 		max-width: max(640px, calc((4 / 3) * (100lvh - 225px)));
 	}
 
+	#full-calendar :global(:has(> .fc-addToGoogleCalendar-button)) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75em;
+
+		& > * {
+			margin: 0;
+		}
+	}
+
 	.copy-button {
 		display: grid;
 		place-items: center;
