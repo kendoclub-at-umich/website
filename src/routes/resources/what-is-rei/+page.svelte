@@ -1,8 +1,16 @@
+<script lang="ts">
+	import MetaTags from '$lib/MetaTags.svelte';
+</script>
+
 <svelte:head>
-	<title>What is Rei? | Kendo Club at the University of Michigan</title>
-	<meta
-		name="description"
-		content="An enlightening perspective about rei, an important part of kendo philosophy, by Ken Wakabayashi."
+	<MetaTags
+		title="What is Rei?"
+		description="An enlightening perspective about rei, an important part of kendo philosophy, by Ken Wakabayashi."
+		extraInfo={{
+			type: 'article',
+			author: 'Ken Wakabayashi',
+			publishedTime: new Date('February 2006')
+		}}
 	/>
 </svelte:head>
 

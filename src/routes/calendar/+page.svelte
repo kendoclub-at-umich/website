@@ -1,12 +1,12 @@
 <script lang="ts">
+	import MetaTags from '$lib/MetaTags.svelte';
 	import FullCalendar from '$lib/FullCalendar.svelte';
 </script>
 
 <svelte:head>
-	<title>Calendar | Kendo Club at the University of Michigan</title>
-	<meta
-		name="description"
-		content="Club practice times and information about upcoming kendo events."
+	<MetaTags
+		title="Calendar"
+		description="Club practice times and information about upcoming kendo events."
 	/>
 </svelte:head>
 

@@ -1,8 +1,11 @@
+<script lang="ts">
+	import MetaTags from '$lib/MetaTags.svelte';
+</script>
+
 <svelte:head>
-	<title>Things to Consider When Buying a Uniform | Kendo Club at the University of Michigan</title>
-	<meta
-		name="description"
-		content="Things to consider when buying a kendo uniform top (gi) and pants (hakama), such as fabric, color, and dye."
+	<MetaTags
+		title="Things to Consider When Buying a Uniform"
+		description="Things to consider when buying a kendo uniform top (gi) and pants (hakama), such as fabric, color, and dye."
 	/>
 </svelte:head>
 
