@@ -23,6 +23,7 @@
 
 	onMount(() => {
 		const smallScreenQuery = matchMedia('(width < 768px)');
+		const supportsAppleCalendar = /Mac|iPhone|iPad|iPod/.test(navigator.userAgent);
 
 		calendar = new Calendar(calendarElement, {
 			plugins: [dayGridPlugin, listPlugin, googleCalendarPlugin],
@@ -33,7 +34,9 @@
 				right: 'dayGridMonth,listMonth'
 			},
 			footerToolbar: {
-				left: 'addToGoogleCalendar addToOtherCalendar'
+				left: supportsAppleCalendar
+					? 'addToGoogleCalendar addToAppleCalendar addToOtherCalendar'
+					: 'addToGoogleCalendar addToOtherCalendar'
 			},
 			customButtons: {
 				addToGoogleCalendar: {
@@ -43,6 +46,12 @@
 							'https://calendar.google.com/calendar/render?cid=' + googleCalendarId,
 							'_blank'
 						);
+					}
+				},
+				addToAppleCalendar: {
+					text: 'Add to Apple Calendar',
+					click: () => {
+						window.open('webcal://' + icalUrl, '_blank');
 					}
 				},
 				addToOtherCalendar: {
@@ -140,6 +149,16 @@
 		margin: 0 auto;
 		font-size: min(18px, 0.75em);
 		max-width: max(640px, calc((4 / 3) * (100lvh - 225px)));
+	}
+
+	#full-calendar :global(:has(> .fc-addToGoogleCalendar-button)) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75em;
+
+		& > * {
+			margin: 0;
+		}
 	}
 
 	.copy-button {
