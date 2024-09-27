@@ -68,7 +68,7 @@
 <meta property="og:description" content={description} />
 <meta property="og:type" content={extraInfo.type} />
 <meta property="og:url" content={canonicalUrl} />
-<meta property="og:image:url" content={fullImageUrl} />
+<meta property="og:image" content={fullImageUrl} />
 <meta property="og:image:alt" content={image.alt} />
 
 {#if extraInfo.type === 'article'}
