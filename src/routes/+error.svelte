@@ -1,14 +1,17 @@
 <script lang="ts">
 	import { page } from '$app/stores';
+	import MetaTags from '$lib/MetaTags.svelte';
+
+	$: errorMessage = $page.error?.message ?? 'Unknown error!';
 </script>
 
 <svelte:head>
-	<title>{$page.status} | Kendo Club at the University of Michigan</title>
+	<MetaTags title={String($page.status)} description={errorMessage} />
 </svelte:head>
 
 <h1>
 	<span class="status-code">{$page.status}</span>
-	<span class="error-message">{$page.error?.message}</span>
+	<span class="error-message">{errorMessage}</span>
 </h1>
 
 <style>

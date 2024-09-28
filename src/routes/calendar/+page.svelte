@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
+	import MetaTags from '$lib/MetaTags.svelte';
 	import FullCalendar from '$lib/FullCalendar.svelte';
 	import SvgIcon from '$lib/SvgIcon.svelte';
 	import {
@@ -40,10 +41,9 @@
 </script>
 
 <svelte:head>
-	<title>Calendar | Kendo Club at the University of Michigan</title>
-	<meta
-		name="description"
-		content="Club practice times and information about upcoming kendo events."
+	<MetaTags
+		title="Calendar"
+		description="Club practice times and information about upcoming kendo events."
 	/>
 </svelte:head>
 
@@ -92,7 +92,7 @@
 		<a
 			role="button"
 			class="outline"
-			href="https://calendar.google.com/calendar/r?cid={googleCalendarId}"
+			href="https://calendar.google.com/calendar/render?cid={googleCalendarId}"
 			target="_blank"
 			rel="noreferrer"
 		>

@@ -1,8 +1,16 @@
+<script lang="ts">
+	import MetaTags from '$lib/MetaTags.svelte';
+	import ogImageUrl from './combat-kamae-position.jpg?w=1200&h=630&format=webp';
+</script>
+
 <svelte:head>
-	<title>Kendo Club at the University of Michigan</title>
-	<meta
-		name="description"
-		content="Student-led club at Umich that practices kendo, a Japanese martial art using swords. No experience needed. Open to everyone."
+	<MetaTags
+		title="Kendo Club at the University of Michigan"
+		description="Student-led club at Umich that practices kendo, a Japanese martial art using swords. No experience needed. Open to everyone."
+		image={{
+			url: ogImageUrl,
+			alt: 'Two club members in kendo armor holding bamboo practice swords, facing each other in the ready position.'
+		}}
 	/>
 </svelte:head>
 
