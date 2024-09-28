@@ -83,34 +83,6 @@
 	onDestroy(() => {
 		calendar?.destroy();
 	});
-
-	let previousTouch: Touch | undefined;
-
-	function onTouchStart(event: TouchEvent) {
-		previousTouch = event.touches[0];
-	}
-
-	function onTouchEnd(event: TouchEvent) {
-		if (event.touches.length > 0 || previousTouch === undefined) {
-			return;
-		}
-
-		const currentTouch = event.changedTouches[0];
-		const xDistance = currentTouch.clientX - previousTouch.clientX;
-		const yDistance = currentTouch.clientY - previousTouch.clientY;
-
-		if (Math.abs(yDistance) > Math.abs(xDistance) || Math.abs(xDistance) < 24) {
-			return;
-		}
-
-		if (xDistance > 0) {
-			calendar?.prev();
-		} else {
-			calendar?.next();
-		}
-
-		previousTouch = undefined;
-	}
 </script>
 
 <div class="calendar-wrapper">
@@ -125,12 +97,7 @@
 		></slot>
 	</div>
 
-	<div
-		class="full-calendar no-pico"
-		bind:this={calendarElement}
-		on:touchstart|passive={onTouchStart}
-		on:touchend|passive={onTouchEnd}
-	>
+	<div class="full-calendar no-pico" bind:this={calendarElement}>
 		<div class="placeholder"></div>
 	</div>
 
