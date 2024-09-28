@@ -61,12 +61,12 @@
 	:is(button, [role='button']).outline {
 		--pico-color: #{$slate-550};
 		--pico-underline: #{rgba($slate-550, 0.5)};
-		--pico-border-color: #{$slate-550};
+		--pico-border-color: #{$slate-200};
 
 		&:is([aria-current]:not([aria-current='false']), :hover, :active, :focus) {
 			--pico-color: #{$slate-650};
 			--pico-underline: #{$slate-650};
-			--pico-border-color: #{$slate-650};
+			--pico-border-color: #{$slate-550};
 		}
 	}
 
