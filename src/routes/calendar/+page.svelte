@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
 	import { browser } from '$app/environment';
 	import MetaTags from '$lib/MetaTags.svelte';
 	import FullCalendar from '$lib/FullCalendar.svelte';
@@ -20,11 +19,7 @@
 
 	let selectedView: 'listMonth' | 'dayGridMonth';
 
-	let supportsAppleCalendar = false;
-
-	onMount(() => {
-		supportsAppleCalendar = /Mac|iPhone|iPad|iPod/.test(navigator.userAgent);
-	});
+	const supportsAppleCalendar = browser && /Mac|iPhone|iPad|iPod/.test(navigator.userAgent);
 
 	let showAddToOtherCalendarDialog = false;
 
