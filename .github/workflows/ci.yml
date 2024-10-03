@@ -4,6 +4,7 @@ on:
   - workflow_dispatch
 
 env:
+  NO_COLOR: 0
   FORCE_COLOR: 1
 
 jobs:
