@@ -10,7 +10,14 @@ export default defineConfig({
 		sveltekit(),
 		virtual({ 'license-copyright': `export default ${JSON.stringify(getCopyright())};` })
 	],
-	build: { sourcemap: true }
+	build: {
+		sourcemap: true,
+		assetsInlineLimit: (file) => {
+			if (file.includes('/lib/logo/')) {
+				return false;
+			}
+		}
+	}
 });
 
 function getCopyright(): string {
