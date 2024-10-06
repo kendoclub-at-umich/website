@@ -75,3 +75,5 @@
 	<meta property="og:article:author" content={extraInfo.author} />
 	<meta property="og:article:published_time" content={extraInfo.publishedTime.toISOString()} />
 {/if}
+
+<meta name="twitter:card" content="summary_large_image" />
