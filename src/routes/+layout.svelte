@@ -1,7 +1,7 @@
 <script lang="ts">
 	import '$lib/styles.scss';
 	import Navbar from '$lib/Navbar.svelte';
-	import logoUrl from '$lib/logo.webp';
+	import logoUrl from '$lib/logo/any.svg';
 	import copyright from 'license-copyright';
 
 	const pages = [
