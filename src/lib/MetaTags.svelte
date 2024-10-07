@@ -64,6 +64,7 @@
 <title>{$page.url.pathname === '/' ? title : title + ' | ' + siteName}</title>
 <meta name="description" content={description} />
 
+<meta property="og:site_name" content={siteName} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:type" content={extraInfo.type} />
