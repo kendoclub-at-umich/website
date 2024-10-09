@@ -12,6 +12,8 @@ export const GET: RequestHandler = () => {
 	const manifest: WebAppManifest = {
 		name: 'Kendo Club at the University of Michigan',
 		short_name: 'Kendo at Umich',
+		theme_color: '#001b3e',
+		background_color: '#001b3e',
 		icons: [
 			{
 				src: any,
