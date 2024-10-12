@@ -70,6 +70,15 @@
 		}
 	}
 
+	:is(button, [role='button']).outline {
+		--pico-primary-focus: var(--pico-secondary-focus);
+	}
+
+	[role='group']:has(:is(button, [role='button']).outline:focus) {
+		--pico-group-box-shadow-focus-with-button: 0 0 0 var(--pico-outline-width)
+			var(--pico-secondary-focus);
+	}
+
 	:root {
 		// taken from https://tailwindcss.com/docs/box-shadow
 		--box-shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
