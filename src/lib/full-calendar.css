@@ -44,10 +44,6 @@
 	background-color: var(--pico-primary-focus);
 }
 
-.fc h2 {
-	color: var(--pico-h2-color);
-}
-
 .fc .fc-view-harness {
 	min-height: 400px;
 
