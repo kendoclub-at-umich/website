@@ -1,6 +1,7 @@
 <script lang="ts">
 	import { page } from '$app/stores';
-	import logoUrl from '$lib/logo.webp';
+	import logoUrl from '$lib/logo/any.svg';
+	import appleTouchIconUrl from '$lib/logo/square-180.png';
 	import defaultImageUrl from '../routes/(home)/combat-kamae-position.jpg?w=1200&h=630&format=webp';
 
 	const siteName = 'Kendo Club at the University of Michigan';
@@ -59,11 +60,13 @@
 </script>
 
 <link rel="icon" href={logoUrl} />
+<link rel="apple-touch-icon" href={appleTouchIconUrl} />
 <link rel="canonical" href={canonicalUrl} />
 
 <title>{$page.url.pathname === '/' ? title : title + ' | ' + siteName}</title>
 <meta name="description" content={description} />
 
+<meta property="og:site_name" content={siteName} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:type" content={extraInfo.type} />
@@ -75,3 +78,5 @@
 	<meta property="og:article:author" content={extraInfo.author} />
 	<meta property="og:article:published_time" content={extraInfo.publishedTime.toISOString()} />
 {/if}
+
+<meta name="twitter:card" content="summary_large_image" />
