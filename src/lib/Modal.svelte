@@ -1,18 +1,18 @@
 <script lang="ts">
-	import { browser } from '$app/environment';
-
-	export let open: boolean;
-
 	let dialog: HTMLDialogElement;
 
-	$: if (browser && open) {
+	export function open() {
 		dialog.showModal();
+	}
+
+	export function close() {
+		dialog.close();
 	}
 </script>
 
 <!-- Reason: Dialog can be closed with esc key, so it's already able to be interacted with -->
 <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
-<dialog bind:this={dialog} on:close={() => (open = false)} on:click|self={() => dialog.close()}>
+<dialog bind:this={dialog} on:click|self={close}>
 	<article>
 		<slot></slot>
 	</article>

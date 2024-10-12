@@ -21,7 +21,7 @@
 
 	const supportsAppleCalendar = browser && /Mac|iPhone|iPad|iPod/.test(navigator.userAgent);
 
-	let showAddToOtherCalendarDialog = false;
+	let addToOtherCalendarDialog: Modal;
 
 	const icalUrl = `calendar.google.com/calendar/ical/${googleCalendarId}/public/basic.ics`;
 
@@ -98,13 +98,13 @@
 				Add to Apple Calendar
 			</a>
 		{/if}
-		<button class="outline" on:click={() => (showAddToOtherCalendarDialog = true)}>
+		<button class="outline" on:click={addToOtherCalendarDialog.open}>
 			Add to Other Calendar
 		</button>
 	</div>
 </FullCalendar>
 
-<Modal bind:open={showAddToOtherCalendarDialog}>
+<Modal bind:this={addToOtherCalendarDialog}>
 	<h2>Add to Your Calendar</h2>
 	<p>Copy this iCal url into your calendar app to subscribe to the Kendo Club at Umich calendar.</p>
 	<div role="group">
