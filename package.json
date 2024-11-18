@@ -18,7 +18,7 @@
 		"@sveltejs/adapter-netlify": "^4.3.5",
 		"@sveltejs/enhanced-img": "^0.3.9",
 		"@sveltejs/kit": "^2.7.1",
-		"@sveltejs/vite-plugin-svelte": "^3.1.2",
+		"@sveltejs/vite-plugin-svelte": "^4.0.1",
 		"@types/eslint__js": "^8.42.3",
 		"@types/node": "^22.7.7",
 		"@types/web-app-manifest": "^1.0.8",
