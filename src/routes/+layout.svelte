@@ -1,8 +1,7 @@
 <script lang="ts">
 	import '$lib/styles.scss';
-	import { page } from '$app/stores';
 	import Navbar from '$lib/Navbar.svelte';
-	import logoUrl from './logo.webp';
+	import logoUrl from '$lib/logo/any.svg';
 	import copyright from 'license-copyright';
 
 	const pages = [
@@ -11,36 +10,15 @@
 		{ name: 'FAQ', url: '/faq' },
 		{ name: 'Resources', url: '/resources' }
 	] as const;
-
-	/**
-	 * @param url the url of the page
-	 * @returns the single canonical url for this page
-	 * @example ```ts
-	 * "https://michigankendo.com"            => "https://michigankendo.com"
-	 * "https://michigankendo.com/"           => "https://michigankendo.com"
-	 * "https://michigankendo.com/about"      => "https://michigankendo.com/about"
-	 * "https://michigankendo.com/about.html" => "https://michigankendo.com/about"
-	 * "https://michigankendo.com/index.html" => "https://michigankendo.com"
-	 * "https://kendoclub.netlify.app/about"  => "https://michigankendo.com/about"
-	 * ```
-	 */
-	function getCanonicalUrl(url: URL) {
-		return `https://michigankendo.com${url.pathname.replace(/\/?(index)?(\.html)?$/, '')}`;
-	}
 </script>
-
-<svelte:head>
-	<link rel="icon" href={logoUrl} />
-	<link rel="canonical" href={getCanonicalUrl($page.url)} />
-</svelte:head>
 
 <Navbar {logoUrl} siteName="Kendo Club at Umich" {pages} />
 
-<main class="container" class:pico={$page.route.id != '/calendar'}>
+<main class="container">
 	<slot />
 </main>
 
-<footer class="pico">
+<footer>
 	<div class="container">
 		<span>&copy; {copyright}</span>
 		<span>

@@ -1,8 +1,11 @@
+<script lang="ts">
+	import MetaTags from '$lib/MetaTags.svelte';
+</script>
+
 <svelte:head>
-	<title>Lineup Opening Commands | Kendo Club at the University of Michigan</title>
-	<meta
-		name="description"
-		content="Commands said during lineup at the beginning of practice, with instructions, English pronunciation, and Japanese characters."
+	<MetaTags
+		title="Lineup Opening Commands"
+		description="Commands said during lineup at the beginning of practice, with instructions, English pronunciation, and Japanese characters."
 	/>
 </svelte:head>
 

@@ -23,6 +23,7 @@
 
 	onMount(() => {
 		const smallScreenQuery = matchMedia('(width < 768px)');
+		const supportsAppleCalendar = /Mac|iPhone|iPad|iPod/.test(navigator.userAgent);
 
 		calendar = new Calendar(calendarElement, {
 			plugins: [dayGridPlugin, listPlugin, googleCalendarPlugin],
@@ -33,13 +34,24 @@
 				right: 'dayGridMonth,listMonth'
 			},
 			footerToolbar: {
-				left: 'addToGoogleCalendar addToOtherCalendar'
+				left: supportsAppleCalendar
+					? 'addToGoogleCalendar addToAppleCalendar addToOtherCalendar'
+					: 'addToGoogleCalendar addToOtherCalendar'
 			},
 			customButtons: {
 				addToGoogleCalendar: {
 					text: 'Add to Google Calendar',
 					click: () => {
-						window.open('https://calendar.google.com/calendar/r?cid=' + googleCalendarId, '_blank');
+						window.open(
+							'https://calendar.google.com/calendar/render?cid=' + googleCalendarId,
+							'_blank'
+						);
+					}
+				},
+				addToAppleCalendar: {
+					text: 'Add to Apple Calendar',
+					click: () => {
+						window.open('webcal://' + icalUrl, '_blank');
 					}
 				},
 				addToOtherCalendar: {
@@ -51,13 +63,13 @@
 			},
 			googleCalendarApiKey,
 			events: { googleCalendarId },
-			eventDidMount: ({ el, event, view }) => {
-				let component: EventInfo | undefined;
-				if (view.type == 'listMonth') {
-					el.querySelector('a')?.removeAttribute('href');
-				} else {
-					el.removeAttribute('href');
+			eventSourceSuccess: (events) => {
+				for (const event of events) {
+					delete event.url;
 				}
+			},
+			eventDidMount: ({ el, event }) => {
+				let component: EventInfo | undefined;
 				el.setAttribute('tabindex', '0');
 
 				tippy(el, {
@@ -100,14 +112,14 @@
 	}
 </script>
 
-<div id="full-calendar" bind:this={calendarElement} />
+<div id="full-calendar" class="no-pico" bind:this={calendarElement} />
 
 <!-- Reason: Dialog can be closed with esc key, so it's already able to be interacted with -->
-<!-- svelte-ignore a11y-click-events-have-key-events  a11y-no-noninteractive-element-interactions-->
+<!-- svelte-ignore a11y-click-events-have-key-events  a11y-no-noninteractive-element-interactions -->
 <dialog
 	bind:this={addToOtherCalendarDialog}
 	on:click={(event) => {
-		if (event.target == addToOtherCalendarDialog) {
+		if (event.target === addToOtherCalendarDialog) {
 			addToOtherCalendarDialog.close();
 		}
 	}}
@@ -120,7 +132,7 @@
 		<div role="group">
 			<input value={'https://' + icalUrl} readonly />
 			{#if browser && 'clipboard' in navigator}
-				<button aria-label="Copy" on:click={copyIcalUrl}>
+				<button class="copy-button" aria-label="Copy" on:click={copyIcalUrl}>
 					<SvgIcon label="" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
 				</button>
 			{/if}
@@ -137,5 +149,21 @@
 		margin: 0 auto;
 		font-size: min(18px, 0.75em);
 		max-width: max(640px, calc((4 / 3) * (100lvh - 225px)));
+	}
+
+	#full-calendar :global(:has(> .fc-addToGoogleCalendar-button)) {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.75em;
+
+		& > * {
+			margin: 0;
+		}
+	}
+
+	.copy-button {
+		display: grid;
+		place-items: center;
+		padding: var(--pico-form-element-spacing-vertical);
 	}
 </style>

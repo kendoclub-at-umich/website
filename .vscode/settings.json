@@ -21,5 +21,6 @@
 		"Watanabe",
 		"Yukio"
 	],
-	"eslint.validate": ["javascript", "typescript", "svelte"]
+	"eslint.validate": ["javascript", "typescript", "svelte"],
+	"eslint.rules.customizations": [{ "rule": "*", "severity": "downgrade" }]
 }

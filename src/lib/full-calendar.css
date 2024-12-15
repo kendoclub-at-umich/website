@@ -26,6 +26,11 @@
 	);
 }
 
+.fc ::before,
+.fc ::after {
+	vertical-align: unset;
+}
+
 .fc-h-event:hover {
 	--fc-event-bg-color: var(--pico-primary-hover-background);
 	--fc-event-border-color: var(--fc-event-bg-color);
