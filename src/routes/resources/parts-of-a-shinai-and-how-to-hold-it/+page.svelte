@@ -136,13 +136,23 @@
 	goes into the left hand. This positioning is very important.
 </p>
 
-<p>
-	Note how, in the images, the left hand comes over the edge slightly and that the handle is
-	actually at an angle in the hand. We do not hold a shinai as you would a flashlight or a baseball
-	bat. The angle allows us to strike at the top of our opponents men and also to have greater range
-	in our attack. Also notice that the hand is not tightly clenched. Only the final two fingers are
-	exerting pressure on the handle.
-</p>
+<div class="grid-container">
+	<figure>
+		<enhanced:img
+			src="./both-hands-shinai-grip-side-view.png?w=400;350;200"
+			sizes="(min-width:1280px) 400px,(min-width:450px) 350px, (min-width:0px) 200px"
+			alt="Woman in kendo uniform facing right, holding a shinai correctly. Left hand is at the bottom of the shinai handle. Right hand is directly under the hand guard."
+		/>
+	</figure>
+
+	<p>
+		Note how, in the images, the left hand comes over the edge slightly and that the handle is
+		actually at an angle in the hand. We do not hold a shinai as you would a flashlight or a
+		baseball bat. The angle allows us to strike at the top of our opponents men and also to have
+		greater range in our attack. Also notice that the hand is not tightly clenched. Only the final
+		two fingers are exerting pressure on the handle.
+	</p>
+</div>
 
 <div class="grid-container">
 	<figure>
@@ -194,27 +204,13 @@
 	</figure>
 
 	<p>
-		<strong>
-			Make every effort to avoid gripping the shinai as shown in the pictures of common mistakes.
-			They are all excellent examples of what not to do.
-		</strong>
-		When gripping the shinai correctly, you will naturally develop a strong kamae and be much less open
-		to attacks. Now that your hands are gripping the shinai properly, let's focus on the final aspect
-		of holding the shinai. The tip of the shinai, the kissaki, is always pointed toward your opponent's
-		throat. If the two of you walked directly towards each other, your kissaki would end up touching
-		each other's throat. When practicing alone, picture a perfect reflection of yourself as your target
-		and adjust the height of the tip of the shinai accordingly. It can help to practice facing a mirror.
+		Make every effort to avoid gripping the shinai as shown in the pictures of common mistakes. They
+		are all excellent examples of what not to do. When gripping the shinai correctly, you will
+		naturally develop a strong kamae and be much less open to attacks.
 	</p>
 </div>
 
 <div class="grid-container">
-	<figure>
-		<enhanced:img
-			src="./both-hands-shinai-grip-side-view.png?w=400;350;200"
-			sizes="(min-width:1280px) 400px,(min-width:450px) 350px, (min-width:0px) 200px"
-			alt="Woman in kendo uniform facing right, holding a shinai correctly. Left hand is at the bottom of the shinai handle. Right hand is directly under the hand guard."
-		/>
-	</figure>
 	<figure>
 		<enhanced:img
 			src="./both-hands-shinai-grip-in-bogu-front-view.jpg?w=400;350;200"
@@ -222,6 +218,15 @@
 			alt="Kendo practitioner in full armor, holding a shinai and facing forward. Demonstrates the angle of the shinai and where the tip points."
 		/>
 	</figure>
+
+	<p>
+		Now that your hands are gripping the shinai properly, let's focus on the final aspect of holding
+		the shinai. The tip of the shinai, the kissaki, is always pointed toward your opponent's throat.
+		If the two of you walked directly towards each other, your kissaki would end up touching each
+		other's throat. When practicing alone, picture a perfect reflection of yourself as your target
+		and adjust the height of the tip of the shinai accordingly. It can help to practice facing a
+		mirror.
+	</p>
 </div>
 
 <p>
