@@ -30,7 +30,7 @@
 		every member take the time to become familiar with how to take apart, adjust and reassemble the
 		shinai. With the ability to deconstruct the shinai, faulty or damaged pieces can be repaired or
 		replaced. A damaged shinai is not only a bad reflection of you the Kendoist, but also a
-		potentially serious threat to your fellow sempei and kohai. Ask one of your sempei how to take
+		potentially serious threat to your fellow senpai and kouhai. Ask one of your senpai how to take
 		it apart and inspect the pieces. You will eventually want to take the shinai apart so that you
 		can adjust the cord as the leather handle begins to stretch. This is also an excellent
 		opportunity to adjust the handle length if needed.
@@ -231,7 +231,7 @@
 </div>
 
 <p>
-	If you have any further questions, feel free to address them to your sempei or email them to us.
+	If you have any further questions, feel free to address them to your senpai or email them to us.
 </p>
 
 <style>
