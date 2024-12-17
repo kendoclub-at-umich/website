@@ -8,7 +8,7 @@
 
 <h1>Parts of a Shinai and How to Hold It</h1>
 
-<h2>Part 1:</h2>
+<h2>Anatomy of a Shinai</h2>
 
 <div class="grid-container">
 	<figure>
@@ -21,26 +21,24 @@
 	</figure>
 
 	<p>
-		Pictured to the left you will see an exploded version of the typical shinai. It is generally
-		comprised of: 4 slats of bamboo, leather cap, plastic plug, thin leather strap, handle, a very
-		small square of very thin steel, twine, cross guard and the cross guard support. As you can tell
-		from the age of the picture used, the overall design and components of the shinai have not
-		changed dramatically over the years. Although familiarity with the shinai is not required for
-		promotion testing, it is a very important safety factor in your Kendo practice. We request that
-		every member take the time to become familiar with how to take apart, adjust and reassemble the
-		shinai. With the ability to deconstruct the shinai, faulty or damaged pieces can be repaired or
-		replaced. A damaged shinai is not only a bad reflection of you the Kendoist, but also a
-		potentially serious threat to your fellow senpai and kouhai. Ask one of your senpai how to take
-		it apart and inspect the pieces. You will eventually want to take the shinai apart so that you
-		can adjust the cord as the leather handle begins to stretch. This is also an excellent
-		opportunity to adjust the handle length if needed.
+		A shinai is generally comprised of four slats of bamboo, a leather cap, a plastic plug, a thin
+		leather strap, a handle, a very small square of very thin steel, twine, a cross guard, and the
+		cross guard support. As you can tell from the age of the picture used, the overall design and
+		components of the shinai have not changed dramatically over the years. Although familiarity with
+		the shinai is not required for promotion testing, it is a very important safety factor in your
+		Kendo practice. We request that every member take the time to become familiar with how to take
+		apart, adjust, and reassemble the shinai. This enables you to repair or replace faulty or
+		damaged pieces. A damaged shinai is not only a bad reflection of you as a kendo practitioner,
+		but also a potentially serious threat to your fellow senpai and kouhai. Ask one of your senpai
+		how to take it apart and inspect the pieces. You will eventually want to take the shinai apart
+		so that you can adjust the cord as the leather handle begins to stretch. This is also an
+		excellent opportunity to adjust the handle length if needed.
 	</p>
 </div>
 
 <p>
-	Pictured below is a back view and a profile view of a typical shinai. The correct names of each of
-	the red points are given in English to the right. Becoming familiar with these terms. Having a
-	common reference for discussion greatly reduces confusion in conversation …
+	Here are some terms that refer to parts of a shinai. If you become familiar with them, you'll have
+	a common reference for discussion which can greatly reduce confusion in conversation.
 </p>
 
 <div class="grid-container">
@@ -56,42 +54,39 @@
 	</figure>
 
 	<div>
-		<p>Kissaki – this is the thrusting surface of the shinai, also the tip of the sword.</p>
-		<p>Sakigawa – the name of the leather cap that covers the tip.</p>
+		<p>Kissaki — Thrusting surface of the shinai, also the tip of the sword.</p>
+		<p>Sakigawa — Leather cap that covers the tip.</p>
 		<p>
-			Monouchi – this is the valid striking area of the shinai. It starts at the very tip of the
-			sword and goes to the top most edge of the Nakayui. Note: since the shinai only has a single
-			blade, this region only applies to the face of the shinai. You may not achieve a point hitting
-			someone with the side of the shinai, even if it is in the Monouchi.
+			Monouchi — Valid striking area of the shinai. It starts at the very tip of the sword and goes
+			to the top most edge of the nakayui. Since the shinai only has a single blade, this region
+			only applies to the face of the shinai. You may not achieve a point hitting someone with the
+			side of the shinai, even if it is in the monouchi.
 		</p>
 		<p>
-			Nakayui – the narrow leather strap, used to indicate the lowest portion of your shinai’s
+			Nakayui — Narrow leather strap, used to indicate the lowest portion of your shinai's
 			striking/cutting surface.
 		</p>
+		<p>Chikama — Any point below the nakayui to the tsuba which is not a valid scoring surface.</p>
 		<p>
-			Chikama – Any point below the Nakayui to the Tuba which is not a valid scoring surface. Tsuru
-			– the twine or strong cord that denotes the back of the shinai. This string also holds most of
-			the major components in place.
+			Tsuru — Twine or strong cord that denotes the back of the shinai. This string also holds most
+			of the major components in place.
 		</p>
 		<p>
-			Tsuba – this is the cross guard or hand guard of the shinai, unlike western style guards this
-			is generally round and small.
+			Tsuba — Cross guard or hand guard of the shinai. Unlike western style guards, this is
+			generally round and small.
 		</p>
 		<p>
-			Tsubadome – this is the supporting piece that holds the tsuba in place so it does not travel
-			during use.
+			Tsubadome — Supporting piece that holds the tsuba in place so it does not travel during use.
 		</p>
+		<p>Tsuka — Handle, generally made of leather, that acts as the grip for the shinai.</p>
 		<p>
-			Tsuka – is the name of the handle, generally leather, that acts as the grip for the shinai.
-		</p>
-		<p>
-			Tsukagashira – is the name of the end of the shinai, generally referred to as a pommel. The
-			bottom edge of your left hand wraps around here while holding the shinai.
+			Tsukagashira — End of the shinai, generally referred to as a pommel. The bottom edge of your
+			left hand wraps around here while holding the shinai.
 		</p>
 	</div>
 </div>
 
-<h2>PART 2: How to correctly hold the shinai.</h2>
+<h2>How to correctly hold the shinai.</h2>
 
 <div class="grid-container">
 	<figure>
@@ -113,9 +108,9 @@
 
 <p>
 	Lets begin this portion of the discussion with an exercise. Stand up with your hands at your belt
-	level. Place your open hands together as if you were going to pray. Fingertips are all together.
-	Your arms are comfortably relaxed and naturally bent at the elbows. Keep your shoulders and elbows
-	relaxed like the pictures to the left and right.
+	level. Place your open hands together as if you were going to pray. Put your fingertips all
+	together. Your arms should be comfortably relaxed and naturally bent at the elbows. Keep your
+	shoulders and elbows relaxed.
 </p>
 
 <div class="grid-container">
@@ -137,16 +132,16 @@
 </div>
 
 <p>
-	Now move you right hand ahead of your left hand by an imaged fist distance between them. The
-	shinai goes into the left hand as show on the right. This positioning is very important.
+	Now move you right hand ahead of your left hand with a fist's distance between them. The shinai
+	goes into the left hand. This positioning is very important.
 </p>
 
 <p>
-	Note how the left hand comes over the edge slightly and that the handle is actually at an angle in
-	the hand. We do not hold a shinai as you would a flashlight or a baseball bat. The angle allows us
-	to strike at the top of our opponents Men and also to have greater range in our attack. Also
-	notice that the hand is not tightly clenched, only the final two fingers are exerting pressure on
-	the tsuka/handle.
+	Note how, in the images, the left hand comes over the edge slightly and that the handle is
+	actually at an angle in the hand. We do not hold a shinai as you would a flashlight or a baseball
+	bat. The angle allows us to strike at the top of our opponents men and also to have greater range
+	in our attack. Also notice that the hand is not tightly clenched. Only the final two fingers are
+	exerting pressure on the handle.
 </p>
 
 <div class="grid-container">
@@ -162,7 +157,7 @@
 		The left hand grip is displayed here. The picture is from the other side for clarity. Correct
 		positioning is marked with an “O” where common mistakes are marked with the “X”. As with the
 		left hand, the right hand is not clenched tightly either. Notice in the second picture where the
-		fingers are noted to be relaxed, but not open.
+		fingers are shown to be relaxed, but not open.
 	</p>
 </div>
 
@@ -178,8 +173,7 @@
 	<div>
 		<p>
 			At any point during cutting, you should be able to open your fingers and they should be
-			pointing directly away from you at every moment in cutting. Looking top down you hands should
-			look like this.
+			pointing directly away from you at every moment in cutting.
 		</p>
 
 		<p>
@@ -201,15 +195,15 @@
 
 	<p>
 		<strong>
-			Make every effort to avoid gripping the shinai as shown to the left. They are all excellent
-			examples of what not to do.
+			Make every effort to avoid gripping the shinai as shown in the pictures of common mistakes.
+			They are all excellent examples of what not to do.
 		</strong>
-		When gripping the shinai correctly you will naturally develop a strong kamae and be much less open
-		to attacks. Now that the hands are gripping the shinai properly, let’s focus on the final aspect
-		of holding the shinai. The tip of the shinai or Kissaki is always pointed toward your opponent’s
-		throat. If the two of you were to walk directly at each other, when you met you should both have
-		the kissaki touching each others throat. When practicing alone, picture a perfect reflection of yourself
-		as your target and adjust the height of the tip of the shinai accordingly.
+		When gripping the shinai correctly, you will naturally develop a strong kamae and be much less open
+		to attacks. Now that your hands are gripping the shinai properly, let's focus on the final aspect
+		of holding the shinai. The tip of the shinai, the kissaki, is always pointed toward your opponent's
+		throat. If the two of you walked directly towards each other, your kissaki would end up touching
+		each other's throat. When practicing alone, picture a perfect reflection of yourself as your target
+		and adjust the height of the tip of the shinai accordingly. It can help to practice facing a mirror.
 	</p>
 </div>
 
