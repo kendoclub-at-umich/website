@@ -85,7 +85,7 @@
 	</div>
 </div>
 
-<h2>How to correctly hold the shinai.</h2>
+<h2>How to Correctly Hold</h2>
 
 <div class="grid-container">
 	<figure>
