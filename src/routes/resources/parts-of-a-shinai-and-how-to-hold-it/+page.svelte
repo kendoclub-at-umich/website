@@ -87,6 +87,8 @@
 
 <h2>How to Correctly Hold</h2>
 
+<h3>Practice Exercise</h3>
+
 <div class="grid-container">
 	<figure>
 		<enhanced:img
@@ -153,6 +155,8 @@
 	</p>
 </div>
 
+<h3>Common Mistakes</h3>
+
 <div class="grid-container">
 	<figure>
 		<enhanced:img
@@ -209,6 +213,7 @@
 	</p>
 </div>
 
+<h3>Point Your Shinai</h3>
 <div class="grid-container">
 	<figure>
 		<enhanced:img
