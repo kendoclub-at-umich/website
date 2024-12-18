@@ -11,7 +11,7 @@
 
 <hgroup>
 	<h1>Kendo Line-Up Commands End of Practice</h1>
-	<p>phonetically written for non-Japanese speaker and also with Japanese</p>
+	<p>With english transliterations and Japanese</p>
 </hgroup>
 
 <p>
@@ -19,7 +19,7 @@
 		After the final Waza or Keiko has been ended, Sensei will call out final Rei.<br />
 		Once the Sankyo and Rei is completed, call out...<br />
 	</span>
-	“Sigh Rets !!” This is the call to return to line up again.<br />
+	“Say Rets !!” This is the call to return to line up again.<br />
 	整列（せいれつ）<br />
 	<span class="secondary">
 		(This needs to be said loud enough for everyone to hear) As the lead in the line-up, remember
@@ -55,7 +55,7 @@
 </p>
 
 <p>
-	“Mok Sooooooooooo !!” Meditate.<br />
+	“Moak Sooooooooooo !!” Meditate.<br />
 	黙想（もくそう）<br />
 	<span class="secondary">
 		This command should be followed by a brief pause of silence so everyone can silently reflect on
@@ -65,12 +65,12 @@
 </p>
 
 <p>
-	“Mok So Yah May !!” Stop meditating.<br />
+	“Moak So Yah May !!” Stop meditating.<br />
 	黙想やめ（もくそうやめ）<br />
 </p>
 
 <p>
-	“Sho Men Ni !!” Face the Shomen direction.<br />
+	“Show-Men Ni !!” Face the Shomen direction.<br />
 	正面に（しょうめんに）<br />
 	<span class="secondary">Pause long enough for everyone to face toward the clock.</span><br />
 	“Ray !!” Bow from Seiza position.<br />

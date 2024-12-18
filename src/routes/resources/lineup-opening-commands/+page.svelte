@@ -11,14 +11,14 @@
 
 <hgroup>
 	<h1>Kendo Line-Up Commands Beginning Practice</h1>
-	<p>phonetically written for non-Japanese speaker and also with Japanese</p>
+	<p>With english transliterations and Japanese</p>
 </hgroup>
 
 <p>
 	<span class="secondary">
 		After the final Rei from the stretching or foot work drills, call out...
 	</span><br />
-	“Sigh Rets !!” This is the call to line up.<br />
+	“Say Rets !!” This is the call to line up.<br />
 	整列（せいれつ）<br />
 	<span class="secondary">(this needs to be said loud enough for everyone to hear)</span>
 </p>
@@ -47,7 +47,7 @@
 </p>
 
 <p>
-	“Mok Sooooooooooo !!” Meditate<br />
+	“Moak Sooooooooooo !!” Meditate<br />
 	黙想（もくそう<br />
 	<span class="secondary">
 		This command should be followed by a brief pause of silence so everyone can silently reflect.
@@ -55,12 +55,12 @@
 </p>
 
 <p>
-	“Mok-So Yah-May !!” Stop meditating.<br />
+	“Moak-So Yah-May !!” Stop meditating.<br />
 	黙想やめ（もくそうやめ<br />
 </p>
 
 <p>
-	“Sho-Men Ni !!” Face the Shomen direction.<br />
+	“Show-Men Ni !!” Face the Shomen direction.<br />
 	正面に（しょうめんに）<br />
 	<span class="secondary">Pause long enough for everyone to face toward the clock.</span><br />
 	“Ray !!” Bow from Seiza position.<br />
