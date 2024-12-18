@@ -13,3 +13,14 @@
 >
 	<path fill="currentColor" d={path} />
 </svg>
+
+<style>
+	:global(button:has(> svg[viewBox='0 0 24 24'])) {
+		padding: var(--pico-form-element-spacing-vertical);
+		display: grid;
+		grid-auto-flow: column;
+		place-content: center;
+		align-items: center;
+		gap: 8px;
+	}
+</style>
