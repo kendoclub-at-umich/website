@@ -54,17 +54,16 @@
 	</figure>
 
 	<div>
-		<p>Kissaki — Thrusting surface of the shinai, also the tip of the sword.</p>
+		<p>Kissaki — Thrusting surface of the shinai. Tip of the sword.</p>
 		<p>Sakigawa — Leather cap that covers the tip.</p>
 		<p>
-			Monouchi — Valid striking area of the shinai. It starts at the very tip of the sword and goes
-			to the top most edge of the nakayui. Since the shinai only has a single blade, this region
+			Monouchi — Valid striking area of the shinai. It includes the area from the very tip of the
+			sword to the first edge of the nakayui. Since the shinai only has a single blade, this region
 			only applies to the face of the shinai. You may not achieve a point hitting someone with the
 			side of the shinai, even if it is in the monouchi.
 		</p>
 		<p>
-			Nakayui — Narrow leather strap, used to indicate the lowest portion of your shinai's
-			striking/cutting surface.
+			Nakayui — Narrow leather strap indicating the end of the shinai's striking/cutting surface.
 		</p>
 		<p>Chikama — Any point below the nakayui to the tsuba which is not a valid scoring surface.</p>
 		<p>
