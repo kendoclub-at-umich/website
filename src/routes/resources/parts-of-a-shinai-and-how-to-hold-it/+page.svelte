@@ -85,7 +85,7 @@
 	</div>
 </div>
 
-<h2>How to Correctly Hold</h2>
+<h2>How to Correctly Hold a Shinai</h2>
 
 <h3>Practice Exercise</h3>
 
