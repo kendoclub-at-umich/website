@@ -256,6 +256,12 @@
 </p>
 
 <style>
+	dt {
+		font-weight: 500;
+	}
+	dd {
+		color: var(--pico-secondary);
+	}
 	figure {
 		margin-bottom: 15px;
 		display: table;
