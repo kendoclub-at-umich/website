@@ -107,7 +107,7 @@
 
 <h3>Practice Exercise</h3>
 
-<div class="grid-container">
+<div class="grid-container side-by-side-img">
 	<figure>
 		<enhanced:img
 			src="./arm-position-front-view.png"
@@ -132,7 +132,7 @@
 	shoulders and elbows relaxed.
 </p>
 
-<div class="grid-container">
+<div class="grid-container side-by-side-img">
 	<figure>
 		<enhanced:img
 			src="./arm-position-side-view-hands-apart.png"
@@ -272,5 +272,18 @@
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 		column-gap: 15px;
+	}
+	@media (min-width: 1024px) {
+		.grid-container {
+			display: grid;
+			grid-template-columns: 300px 1fr;
+			column-gap: 15px;
+		}
+		.grid-container.side-by-side-img {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			column-gap: 15px;
+			align-items: center;
+		}
 	}
 </style>
