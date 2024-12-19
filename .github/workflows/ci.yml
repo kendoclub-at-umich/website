@@ -3,6 +3,10 @@ on:
   - push
   - workflow_dispatch
 
+env:
+  NO_COLOR: 0
+  FORCE_COLOR: 1
+
 jobs:
   lint:
     name: ESLint and Prettier
