@@ -275,14 +275,10 @@
 	}
 	@media (min-width: 1024px) {
 		.grid-container {
-			display: grid;
 			grid-template-columns: 300px 1fr;
-			column-gap: 15px;
 		}
 		.grid-container.side-by-side-img {
-			display: grid;
 			grid-template-columns: 1fr 1fr;
-			column-gap: 15px;
 			align-items: center;
 		}
 	}
