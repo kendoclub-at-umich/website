@@ -18,7 +18,7 @@
 	<span class="secondary">
 		After the final Rei from the stretching or foot work drills, call out...
 	</span><br />
-	“Say Rets !!” This is the call to line up.<br />
+	“Say-Rets !!” This is the call to line up.<br />
 	整列（せいれつ）<br />
 	<span class="secondary">(this needs to be said loud enough for everyone to hear)</span>
 </p>
@@ -29,7 +29,7 @@
 		Wait for all of the people to line up standing along-side your position. After the last of the
 		Sensei/teachers moves to sitting position, call out…
 	</span><br />
-	“Chyak Sa !!” or “Say-Za !!” Move to Seiza position and quickly set up your equipment.<br />
+	“Chyak-Sa !!” or “Say-Za !!” Move to Seiza position and quickly set up your equipment.<br />
 	着座（ちゃくざ）又は正座（せいざ<br />
 	<span class="secondary">
 		Everyone will be looking to you for where to place their equipment, so be as quick as you can
@@ -47,7 +47,7 @@
 </p>
 
 <p>
-	“Moak Sooooooooooo !!” Meditate<br />
+	“Moak-Sooooooooooo !!” Meditate<br />
 	黙想（もくそう<br />
 	<span class="secondary">
 		This command should be followed by a brief pause of silence so everyone can silently reflect.
@@ -68,7 +68,7 @@
 </p>
 
 <p>
-	“Sensei Knee !!” or “Sensei Gata Knee !!” Face the Sensei.<br />
+	“Sen-sei Knee !!” or “Sen-sei Ga-ta Knee !!” Face the Sensei.<br />
 	先生に（せんせいに）又は先生方に（せんせいがたに）<br />
 	<span class="secondary">
 		If there is only one Sensei, then the first or if there are two or more use the second. Pause
@@ -80,7 +80,7 @@
 </p>
 
 <p>
-	“Ota Gai Knee !!” Face the direction of your partners.<br />
+	“Ota-Gai Knee !!” Face the direction of your partners.<br />
 	お互いに（おたがいに）<br />
 	<span class="secondary">
 		This will always be the same direction as Sensei.<br />
