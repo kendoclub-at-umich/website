@@ -264,16 +264,13 @@
 	}
 	figure {
 		margin-bottom: 15px;
-		display: table;
 	}
-	figcaption {
-		display: table-caption;
-		caption-side: bottom;
+	figure * {
+		width: 100%;
 	}
 	.grid-container {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
 		column-gap: 15px;
-		justify-items: center;
 	}
 </style>
