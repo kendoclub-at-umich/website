@@ -56,36 +56,51 @@
 		</figcaption>
 	</figure>
 
-	<div>
-		<p>Kissaki — Thrusting surface of the shinai. Tip of the sword.</p>
-		<p>Sakigawa — Leather cap that covers the tip.</p>
-		<p>
-			Monouchi — Valid striking area of the shinai. It includes the area from the very tip of the
-			sword to the first edge of the nakayui. Since the shinai only has a single blade, this region
-			only applies to the face of the shinai. You may not achieve a point hitting someone with the
-			side of the shinai, even if it is in the monouchi.
-		</p>
-		<p>
-			Nakayui — Narrow leather strap indicating the end of the shinai's striking/cutting surface.
-		</p>
-		<p>Chikama — Any point below the nakayui to the tsuba which is not a valid scoring surface.</p>
-		<p>
-			Tsuru — Twine or strong cord that denotes the back of the shinai. This string also holds most
-			of the major components in place.
-		</p>
-		<p>
-			Tsuba — Cross guard or hand guard of the shinai. Unlike western style guards, this is
-			generally round and small.
-		</p>
-		<p>
-			Tsubadome — Supporting piece that holds the tsuba in place so it does not travel during use.
-		</p>
-		<p>Tsuka — Handle, generally made of leather, that acts as the grip for the shinai.</p>
-		<p>
-			Tsukagashira — End of the shinai, generally referred to as a pommel. The bottom edge of your
-			left hand wraps around here while holding the shinai.
-		</p>
-	</div>
+	<dl>
+		<dt>Kissaki: 切先【けんせん】</dt>
+		<dd>Thrusting surface of the shinai. Tip of the sword.</dd>
+
+		<dt>Sakigawa: 先革【さきがわ】</dt>
+		<dd>Leather cap that covers the tip.</dd>
+
+		<dt>Monouchi: 物打【ものうち】</dt>
+		<dd>
+			Valid striking area of the shinai. It includes the area from the very tip of the sword to the
+			first edge of the nakayui. Since the shinai only has a single blade, this region only applies
+			to the face of the shinai. You may not achieve a point hitting someone with the side of the
+			shinai, even if it is in the monouchi.
+		</dd>
+
+		<dt>Nakayui: 中結【なかゆい】</dt>
+		<dd>Narrow leather strap indicating the end of the shinai's striking/cutting surface.</dd>
+
+		<dt>Chikama: 近間【ちかま】</dt>
+		<dd>Any point below the nakayui to the tsuba which is not a valid scoring surface.</dd>
+
+		<dt>Tsuru: 弦【つる】</dt>
+		<dd>
+			Twine or strong cord that denotes the back of the shinai. This string also holds most of the
+			major components in place.
+		</dd>
+
+		<dt>Tsuba: 鍔【つば】</dt>
+		<dd>
+			Cross guard or hand guard of the shinai. Unlike western style guards, this is generally round
+			and small.
+		</dd>
+
+		<dt>Tsubadome: 鍔止め【つばどめ】</dt>
+		<dd>Supporting piece that holds the tsuba in place so it does not travel during use.</dd>
+
+		<dt>Tsuka: 柄【がら】</dt>
+		<dd>Handle, generally made of leather, that acts as the grip for the shinai.</dd>
+
+		<dt>Tsukagashira: 柄頭【つかがしら】</dt>
+		<dd>
+			End of the shinai, generally referred to as a pommel. The bottom edge of your left hand wraps
+			around here while holding the shinai.
+		</dd>
+	</dl>
 </div>
 
 <h2>How to Correctly Hold a Shinai</h2>
