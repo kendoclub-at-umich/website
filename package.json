@@ -19,7 +19,7 @@
 		"@sveltejs/enhanced-img": "^0.3.10",
 		"@sveltejs/kit": "^2.7.1",
 		"@sveltejs/vite-plugin-svelte": "^3.1.2",
-		"@types/chroma-js": "^2.4.4",
+		"@types/chroma-js": "^2.4.5",
 		"@types/eslint__js": "^8.42.3",
 		"@types/node": "^22.10.2",
 		"@types/web-app-manifest": "^1.0.8",
