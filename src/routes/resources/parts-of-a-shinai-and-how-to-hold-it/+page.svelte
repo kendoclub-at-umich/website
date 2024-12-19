@@ -11,6 +11,12 @@
 
 <h1>Parts of a Shinai and How to Hold It</h1>
 
+<p>
+	In this article, you'll learn about the names of different parts of shinai (bamboo swords used to
+	practice Kendo), and you'll have the opportunity to practice proper hand placement for holding a
+	shinai.
+</p>
+
 <h2>Anatomy of a Shinai</h2>
 
 <div class="grid-container">
