@@ -263,7 +263,7 @@
 		color: var(--pico-secondary);
 	}
 	figure {
-		margin-bottom: 15px;
+		margin-bottom: 18px;
 	}
 	figure * {
 		width: 100%;
@@ -271,7 +271,7 @@
 	.grid-container {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-		column-gap: 15px;
+		column-gap: 18px;
 	}
 	@media (min-width: 1024px) {
 		.grid-container {
