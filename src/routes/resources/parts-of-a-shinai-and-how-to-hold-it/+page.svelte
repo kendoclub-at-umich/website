@@ -39,9 +39,11 @@
 	</p>
 </div>
 
+<h3>Names of Shinai Parts</h3>
+
 <p>
-	Here are some terms that refer to parts of a shinai. If you become familiar with them, you'll have
-	a common reference for discussion which can greatly reduce confusion in conversation.
+	By becoming familiar with these terms, you'll have a common reference for discussion which can
+	greatly reduce confusion in conversation.
 </p>
 
 <div class="grid-container">
