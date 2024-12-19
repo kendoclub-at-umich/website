@@ -197,7 +197,7 @@
 
 <h3>At the start and end of practice:</h3>
 <dl>
-	<dt>Retsu: 列 【れつ】</dt>
+	<dt>Seiretsu: 整列 【せいれつ】</dt>
 	<dd>line, or to form a line</dd>
 
 	<dt>Kiwotsuke (pronounced Kyotsuke): 気を付け 【きをつけ】</dt>
@@ -401,10 +401,10 @@
 	<dt>Shiai: 試合 【しあい】</dt>
 	<dd>competition</dd>
 
-	<dt>Waza: 業 【わざ】</dt>
+	<dt>Waza: 技 【わざ】</dt>
 	<dd>technique</dd>
 
-	<dt>Kihon waza: 基本業【きほんわざ】</dt>
+	<dt>Kihon waza: 基本技【きほんわざ】</dt>
 	<dd>basic techniques</dd>
 
 	<dt>Sashi-men: 差し面【さしめん】</dt>
@@ -496,7 +496,7 @@
 		a long time to develop or extend it.
 	</dd>
 
-	<dt>Issoku-ittou: 一束一刀 【いっそくいっとう】</dt>
+	<dt>Issoku-ittou: 一足一刀 【いっそくいっとう】</dt>
 	<dd>“One step, one sword”</dd>
 
 	<dt>To-ma : 遠間 【とおま】</dt>
