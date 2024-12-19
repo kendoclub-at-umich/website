@@ -16,8 +16,8 @@
 <div class="grid-container">
 	<figure>
 		<enhanced:img
-			src="./deconstructed-shinai.jpg?w=400;350;200"
-			sizes="(min-width:1280px) 400px,(min-width:450px) 350px, (min-width:0px) 200px"
+			src="./deconstructed-shinai.jpg"
+			sizes="min(100px, 100vw)"
 			alt="In black and white, parts of a shinai laid out on the floor."
 		/>
 		<figcaption>A deconstructed shinai</figcaption>
@@ -47,8 +47,8 @@
 <div class="grid-container">
 	<figure>
 		<enhanced:img
-			src="./shinai-diagram-japanese-labels.jpg?w=400;350;200"
-			sizes="(min-width:1280px) 400px,(min-width:450px) 350px, (min-width:0px) 200px"
+			src="./shinai-diagram-japanese-labels.jpg"
+			sizes="min(100px, 100vw)"
 			alt="Diagram of two shinai labelled in japanese."
 		/>
 		<figcaption>
@@ -110,16 +110,16 @@
 <div class="grid-container">
 	<figure>
 		<enhanced:img
-			src="./arm-position-front-view.png?w=400;350;200"
-			sizes="(min-width:1280px) 400px,(min-width:450px) 350px, (min-width:0px) 200px"
+			src="./arm-position-front-view.png"
+			sizes="min(100px, 100vw)"
 			alt="Woman in kendo uniform facing forward, demonstrating arm position."
 		/>
 	</figure>
 
 	<figure>
 		<enhanced:img
-			src="./arm-position-side-view.png?w=400;350;200"
-			sizes="(min-width:1280px) 400px,(min-width:450px) 350px, (min-width:0px) 200px"
+			src="./arm-position-side-view.png"
+			sizes="min(100px, 100vw)"
 			alt="Woman in kendo uniform facing right, demonstrating arm position."
 		/>
 	</figure>
@@ -135,7 +135,7 @@
 <div class="grid-container">
 	<figure>
 		<enhanced:img
-			src="./arm-position-side-view-hands-apart.png?w=400;350;200"
+			src="./arm-position-side-view-hands-apart.png"
 			sizes="(min-width:1280px) 400px, (min-width:450px) 350px, (min-width:0px) 200px"
 			alt="Woman in kendo uniform facing right, demonstrating arm position. Hands apart showing where to place on a shinai."
 		/>
@@ -143,7 +143,7 @@
 
 	<figure>
 		<enhanced:img
-			src="./left-hand-shinai-grip.png?w=400;350;200"
+			src="./left-hand-shinai-grip.png"
 			sizes="(min-width:1280px) 400px, (min-width:450px) 350px, (min-width:0px) 200px"
 			alt="Close up of left hand correctly holding the shinai handle at the very bottom. Nails are painted a pearly pink."
 		/>
@@ -158,8 +158,8 @@
 <div class="grid-container">
 	<figure>
 		<enhanced:img
-			src="./both-hands-shinai-grip-side-view.png?w=400;350;200"
-			sizes="(min-width:1280px) 400px,(min-width:450px) 350px, (min-width:0px) 200px"
+			src="./both-hands-shinai-grip-side-view.png"
+			sizes="min(100px, 100vw)"
 			alt="Woman in kendo uniform facing right, holding a shinai correctly. Left hand is at the bottom of the shinai handle. Right hand is directly under the hand guard."
 		/>
 	</figure>
@@ -178,8 +178,8 @@
 <div class="grid-container">
 	<figure>
 		<enhanced:img
-			src="./right-hand-shinai-grip-and-mistakes.jpg?w=400;350;200"
-			sizes="(min-width:1280px) 400px,(min-width:450px) 350px, (min-width:0px) 200px"
+			src="./right-hand-shinai-grip-and-mistakes.jpg"
+			sizes="min(100px, 100vw)"
 			alt="Two examples of right hand grip, one correct and one incorrect, each shown with and without a shinai."
 		/>
 	</figure>
@@ -195,8 +195,8 @@
 <div class="grid-container">
 	<figure>
 		<enhanced:img
-			src="./both-hands-shinai-grip-top-view.jpg?w=400;350;200"
-			sizes="(min-width:1280px) 400px,(min-width:450px) 350px, (min-width:0px) 200px"
+			src="./both-hands-shinai-grip-top-view.jpg"
+			sizes="min(100px, 100vw)"
 			alt="View from above of gripping a shinai, as if looking down at one's own hands. Dotted lines show a V shape made between the thumb and index finger of each hands, and the V shapes lining up along the shinai handle."
 		/>
 	</figure>
@@ -218,8 +218,8 @@
 <div class="grid-container">
 	<figure>
 		<enhanced:img
-			src="./both-hands-shinai-grip-mistakes.jpg?w=400;350;200"
-			sizes="(min-width:1280px) 400px,(min-width:450px) 350px, (min-width:0px) 200px"
+			src="./both-hands-shinai-grip-mistakes.jpg"
+			sizes="min(100px, 100vw)"
 			alt="Three examples of incorrect shinai grips, two from above and one from the side. First and second examples show baseball bat grips. Third example shows left hand a few inches up from the end of shinai handle."
 		/>
 	</figure>
@@ -235,8 +235,8 @@
 <div class="grid-container">
 	<figure>
 		<enhanced:img
-			src="./both-hands-shinai-grip-in-bogu-front-view.jpg?w=400;350;200"
-			sizes="(min-width:1280px) 400px,(min-width:450px) 350px, (min-width:0px) 200px"
+			src="./both-hands-shinai-grip-in-bogu-front-view.jpg"
+			sizes="min(100px, 100vw)"
 			alt="Kendo practitioner in full armor, holding a shinai and facing forward. Demonstrates the angle of the shinai and where the tip points."
 		/>
 	</figure>
