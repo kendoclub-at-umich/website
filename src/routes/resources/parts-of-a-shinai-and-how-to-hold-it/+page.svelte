@@ -259,7 +259,6 @@
 	figure {
 		margin-bottom: 15px;
 		display: table;
-		/* max-width: 47%; */
 	}
 	figcaption {
 		display: table-caption;
