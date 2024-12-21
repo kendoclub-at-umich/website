@@ -32,14 +32,14 @@
 		A shinai is generally comprised of four slats of bamboo, a leather cap, a plastic plug, a thin
 		leather strap, a handle, a small square of thin steel, twine, a cross guard, and a cross guard
 		support. The overall design and components of the shinai have not changed dramatically over the
-		years. Although you are not required to be familiar with the shinai for promotion testing, it
-		factors into the safety of Kendo practice. We request that every member takes the time to become
-		familiar with how to take apart, adjust, and reassemble the shinai. This enables you to repair
-		or replace faulty or damaged pieces. A damaged shinai not only reflects badly on you as a kendo
-		practitioner, but also poses a potentially serious danger to your fellow senpai and kouhai. Ask
-		one of your senpai how to take it apart and inspect the pieces. You will eventually need to
-		adjust the cord as the leather handle begins to stretch. This is also an excellent opportunity
-		to adjust the handle length if needed.
+		years. Although you are not required to be familiar with the shinai for promotion testing
+		(testing to increase rank), it factors into the safety of Kendo practice. We request that every
+		member takes the time to become familiar with how to take apart, adjust, and reassemble the
+		shinai. This enables you to repair or replace faulty or damaged pieces. A damaged shinai not
+		only reflects badly on you as a kendo practitioner, but also poses a potentially serious danger
+		to your fellow senpai and kouhai. Ask one of your senpai how to take it apart and inspect the
+		pieces. You will eventually need to adjust the cord as the leather handle begins to stretch.
+		This is also an excellent opportunity to adjust the handle length if needed.
 	</p>
 </div>
 
@@ -173,9 +173,9 @@
 	<p>
 		Notice how, in the images, the left hand comes over the edge slightly and that the handle is
 		actually at an angle in the hand. We do not hold a shinai as you would a flashlight or a
-		baseball bat. The angle allows us to strike at the top of our opponents' men and also to have
-		greater range in our attack. Also notice that the hand is not tightly clenched. Only the ring
-		and pinkie fingers are exerting pressure on the handle.
+		baseball bat. The angle allows us to strike at the top of our opponents' men (striking point on
+		the head) and also to have greater range in our attack. Also notice that the hand is not tightly
+		clenched. Only the ring and pinkie fingers are exerting pressure on the handle.
 	</p>
 </div>
 
@@ -213,9 +213,10 @@
 		</p>
 
 		<p>
-			In bogu it is difficult to see correct placement of the hands because of the kote. But your
-			cuts will reflect to everyone else if your positioning is incorrect. It is important to always
-			be aware of correct grip on the shinai. Check yourself until it becomes second nature to you.
+			In bogu it is difficult to see correct placement of the hands because of the kote (striking
+			point on the wrist). But your cuts will reflect to everyone else if your positioning is
+			incorrect. It is important to always be aware of correct grip on the shinai. Check yourself
+			until it becomes second nature to you.
 		</p>
 	</div>
 </div>
@@ -232,7 +233,7 @@
 	<p>
 		Make every effort to avoid gripping the shinai as shown in the pictures of common mistakes. They
 		are all excellent examples of what not to do. When gripping the shinai correctly, you will
-		naturally develop a strong kamae and be much less open to attacks.
+		naturally develop a strong kamae (stance or position) and be much less open to attacks.
 	</p>
 </div>
 
