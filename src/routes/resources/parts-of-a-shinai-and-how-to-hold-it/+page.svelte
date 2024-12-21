@@ -175,7 +175,7 @@
 	<p>
 		Note how, in the images, the left hand comes over the edge slightly and that the handle is
 		actually at an angle in the hand. We do not hold a shinai as you would a flashlight or a
-		baseball bat. The angle allows us to strike at the top of our opponents men and also to have
+		baseball bat. The angle allows us to strike at the top of our opponents' men and also to have
 		greater range in our attack. Also notice that the hand is not tightly clenched. Only the final
 		two fingers are exerting pressure on the handle.
 	</p>
