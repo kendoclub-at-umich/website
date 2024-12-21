@@ -135,9 +135,9 @@
 
 <p>
 	Lets begin this portion of the discussion with an exercise. Stand up with your hands at your belt
-	level. Place your open hands together as if you were going to pray. Put your fingertips all
-	together. Your arms should be comfortably relaxed and naturally bent at the elbows. Keep your
-	shoulders and elbows relaxed.
+	level. Place your open hands together, with your palms flat and your fingertips all together. Your
+	arms should be comfortably relaxed and naturally bent at the elbows. Keep your shoulders and
+	elbows relaxed.
 </p>
 
 <div class="one-or-two-columns side-by-side-img">
