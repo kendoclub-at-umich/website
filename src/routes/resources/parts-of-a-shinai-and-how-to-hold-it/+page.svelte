@@ -19,7 +19,7 @@
 
 <h2>Anatomy of a Shinai</h2>
 
-<div class="grid-container">
+<div class="one-or-two-columns">
 	<figure>
 		<enhanced:img
 			src="./deconstructed-shinai.jpg"
@@ -52,7 +52,7 @@
 	greatly reduce confusion in conversation.
 </p>
 
-<div class="grid-container">
+<div class="one-or-two-columns">
 	<figure>
 		<enhanced:img
 			src="./shinai-diagram-japanese-labels.jpg"
@@ -115,7 +115,7 @@
 
 <h3>Practice Exercise</h3>
 
-<div class="grid-container side-by-side-img">
+<div class="one-or-two-columns side-by-side-img">
 	<figure>
 		<enhanced:img
 			src="./arm-position-front-view.png"
@@ -140,7 +140,7 @@
 	shoulders and elbows relaxed.
 </p>
 
-<div class="grid-container side-by-side-img">
+<div class="one-or-two-columns side-by-side-img">
 	<figure>
 		<enhanced:img
 			src="./arm-position-side-view-hands-apart.png"
@@ -163,7 +163,7 @@
 	goes into the left hand. This positioning is very important.
 </p>
 
-<div class="grid-container">
+<div class="one-or-two-columns">
 	<figure>
 		<enhanced:img
 			src="./both-hands-shinai-grip-side-view.png"
@@ -183,7 +183,7 @@
 
 <h3>Common Mistakes</h3>
 
-<div class="grid-container">
+<div class="one-or-two-columns">
 	<figure>
 		<enhanced:img
 			src="./right-hand-shinai-grip-and-mistakes.jpg"
@@ -200,7 +200,7 @@
 	</p>
 </div>
 
-<div class="grid-container">
+<div class="one-or-two-columns">
 	<figure>
 		<enhanced:img
 			src="./both-hands-shinai-grip-top-view.jpg"
@@ -223,7 +223,7 @@
 	</div>
 </div>
 
-<div class="grid-container">
+<div class="one-or-two-columns">
 	<figure>
 		<enhanced:img
 			src="./both-hands-shinai-grip-mistakes.jpg"
@@ -240,7 +240,7 @@
 </div>
 
 <h3>Point Your Shinai</h3>
-<div class="grid-container">
+<div class="one-or-two-columns">
 	<figure>
 		<enhanced:img
 			src="./both-hands-shinai-grip-in-bogu-front-view.jpg"
@@ -270,18 +270,18 @@
 	figure * {
 		width: 100%;
 	}
-	.grid-container {
+	.one-or-two-columns {
 		display: grid;
 		grid-template-columns: 1fr;
 		column-gap: 18px;
 	}
-	.grid-container.side-by-side-img {
+	.one-or-two-columns.side-by-side-img {
 		grid-template-columns: minmax(0, 288px) minmax(0, 288px);
 		align-items: center;
 		justify-content: space-evenly;
 	}
 	@media (min-width: 768px) {
-		.grid-container {
+		.one-or-two-columns {
 			grid-template-columns: 288px 1fr;
 		}
 	}
