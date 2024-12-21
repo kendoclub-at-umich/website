@@ -849,13 +849,6 @@
 <p>Please feel free to explore the web or seek additional instruction/information.</p>
 
 <style>
-	dt {
-		font-weight: 500;
-	}
-	dd {
-		color: var(--pico-secondary);
-	}
-
 	.overflow-auto table {
 		margin-bottom: 0;
 	}
