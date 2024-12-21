@@ -12,9 +12,8 @@
 <h1>Parts of a Shinai and How to Hold It</h1>
 
 <p>
-	In this article, you'll learn about the names of different parts of shinai (bamboo swords used to
-	practice Kendo), and you'll have the opportunity to practice proper hand placement for holding a
-	shinai.
+	In this article, you'll learn about the different parts of shinai (bamboo swords used to practice
+	Kendo), and you'll have the opportunity to practice proper hand placement for holding a shinai.
 </p>
 
 <h2>Anatomy of a Shinai</h2>
@@ -31,17 +30,16 @@
 
 	<p>
 		A shinai is generally comprised of four slats of bamboo, a leather cap, a plastic plug, a thin
-		leather strap, a handle, a very small square of very thin steel, twine, a cross guard, and a
-		cross guard support. As you can tell from the age of the picture used, the overall design and
-		components of the shinai have not changed dramatically over the years. Although you are not
-		required to be familiar with the shinai for promotion testing, it factors into the safety of
-		Kendo practice. We request that every member takes the time to become familiar with how to take
-		apart, adjust, and reassemble the shinai. This enables you to repair or replace faulty or
-		damaged pieces. A damaged shinai not only reflects badly on you as a kendo practitioner, but
-		also poses a potentially serious threat to your fellow senpai and kouhai. Ask one of your senpai
-		how to take it apart and inspect the pieces. You will eventually want to take the shinai apart
-		so that you can adjust the cord as the leather handle begins to stretch. This is also an
-		excellent opportunity to adjust the handle length if needed.
+		leather strap, a handle, a small square of thin steel, twine, a cross guard, and a cross guard
+		support. The overall design and components of the shinai have not changed dramatically over the
+		years. Although you are not required to be familiar with the shinai for promotion testing, it
+		factors into the safety of Kendo practice. We request that every member takes the time to become
+		familiar with how to take apart, adjust, and reassemble the shinai. This enables you to repair
+		or replace faulty or damaged pieces. A damaged shinai not only reflects badly on you as a kendo
+		practitioner, but also poses a potentially serious danger to your fellow senpai and kouhai. Ask
+		one of your senpai how to take it apart and inspect the pieces. You will eventually need to
+		adjust the cord as the leather handle begins to stretch. This is also an excellent opportunity
+		to adjust the handle length if needed.
 	</p>
 </div>
 
@@ -135,7 +133,7 @@
 
 <p>
 	Lets begin this portion of the discussion with an exercise. Stand up with your hands at your belt
-	level. Place your open hands together, with your palms flat and your fingertips all together. Your
+	level. Place your open hands together, with your palms flat and your fingertips together. Your
 	arms should be comfortably relaxed and naturally bent at the elbows. Keep your shoulders and
 	elbows relaxed.
 </p>
@@ -173,11 +171,11 @@
 	</figure>
 
 	<p>
-		Note how, in the images, the left hand comes over the edge slightly and that the handle is
+		Notice how, in the images, the left hand comes over the edge slightly and that the handle is
 		actually at an angle in the hand. We do not hold a shinai as you would a flashlight or a
 		baseball bat. The angle allows us to strike at the top of our opponents' men and also to have
-		greater range in our attack. Also notice that the hand is not tightly clenched. Only the final
-		two fingers are exerting pressure on the handle.
+		greater range in our attack. Also notice that the hand is not tightly clenched. Only the ring
+		and pinkie fingers are exerting pressure on the handle.
 	</p>
 </div>
 
@@ -193,10 +191,9 @@
 	</figure>
 
 	<p>
-		The left hand grip is displayed here. The picture is from the other side for clarity. Correct
-		positioning is marked with an “O” where common mistakes are marked with the “X”. As with the
-		left hand, the right hand is not clenched tightly either. Notice in the second picture where the
-		fingers are shown to be relaxed, but not open.
+		The left hand grip is displayed here. As with the left hand, the right hand is not clenched
+		tightly either. Notice in the second picture where the fingers are shown to be relaxed, but not
+		open.
 	</p>
 </div>
 
@@ -212,13 +209,13 @@
 	<div>
 		<p>
 			At any point during cutting, you should be able to open your fingers and they should be
-			pointing directly away from you at every moment in cutting.
+			pointing directly away from you.
 		</p>
 
 		<p>
-			In bogu it is difficult to see correct placement of the hands, because of the kote. But your
-			cuts will reflect to everyone else if you positioning is incorrect. It is important to always
-			be aware of correct grip on the shinai. Check yourself, until it becomes second nature to you.
+			In bogu it is difficult to see correct placement of the hands because of the kote. But your
+			cuts will reflect to everyone else if your positioning is incorrect. It is important to always
+			be aware of correct grip on the shinai. Check yourself until it becomes second nature to you.
 		</p>
 	</div>
 </div>
@@ -251,17 +248,15 @@
 
 	<p>
 		Now that your hands are gripping the shinai properly, let's focus on the final aspect of holding
-		the shinai. The tip of the shinai, the kissaki, is always pointed toward your opponent's throat.
-		If the two of you walked directly towards each other, your kissaki would end up touching each
-		other's throat. When practicing alone, picture a perfect reflection of yourself as your target
-		and adjust the height of the tip of the shinai accordingly. It can help to practice facing a
-		mirror.
+		the shinai. The tip of the shinai, the kissaki, should always bw pointed toward your opponent's
+		throat. If the two of you walked directly towards each other, your kissaki would end up touching
+		each other's throat. When practicing alone, picture a perfect reflection of yourself as your
+		target and adjust the height of the tip of the shinai accordingly. It can help to practice
+		facing a mirror.
 	</p>
 </div>
 
-<p>
-	If you have any further questions, feel free to address them to your senpai or email them to us.
-</p>
+<p>If you have any further questions, feel free to address them with your senpai or email us.</p>
 
 <style>
 	figure {
