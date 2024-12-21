@@ -65,7 +65,7 @@
 	</figure>
 
 	<dl>
-		<dt>Kissaki: 切先【けんせん】</dt>
+		<dt>Kissaki: 切先【きっさき】</dt>
 		<dd>Thrusting surface of the shinai. Tip of the sword.</dd>
 
 		<dt>Sakigawa: 先革【さきがわ】</dt>
