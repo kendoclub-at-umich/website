@@ -31,14 +31,14 @@
 
 	<p>
 		A shinai is generally comprised of four slats of bamboo, a leather cap, a plastic plug, a thin
-		leather strap, a handle, a very small square of very thin steel, twine, a cross guard, and the
+		leather strap, a handle, a very small square of very thin steel, twine, a cross guard, and a
 		cross guard support. As you can tell from the age of the picture used, the overall design and
-		components of the shinai have not changed dramatically over the years. Although familiarity with
-		the shinai is not required for promotion testing, it is a very important safety factor in your
-		Kendo practice. We request that every member take the time to become familiar with how to take
+		components of the shinai have not changed dramatically over the years. Although you are not
+		required to be familiar with the shinai for promotion testing, it factors into the safety of
+		Kendo practice. We request that every member takes the time to become familiar with how to take
 		apart, adjust, and reassemble the shinai. This enables you to repair or replace faulty or
-		damaged pieces. A damaged shinai is not only a bad reflection of you as a kendo practitioner,
-		but also a potentially serious threat to your fellow senpai and kouhai. Ask one of your senpai
+		damaged pieces. A damaged shinai not only reflects badly on you as a kendo practitioner, but
+		also poses a potentially serious threat to your fellow senpai and kouhai. Ask one of your senpai
 		how to take it apart and inspect the pieces. You will eventually want to take the shinai apart
 		so that you can adjust the cord as the leather handle begins to stretch. This is also an
 		excellent opportunity to adjust the handle length if needed.
