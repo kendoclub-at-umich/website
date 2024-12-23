@@ -26,8 +26,8 @@
 		</a>
 	</li>
 	<li>
-		<a href="/resources/Parts of a Shinai and How To Hold It.pdf">
-			Parts of a Shinai and How To Hold It.pdf
+		<a href="/resources/parts-of-a-shinai-and-how-to-hold-it">
+			Parts of a Shinai and How to Hold It
 		</a>
 	</li>
 	<li><a href="/resources/what-is-rei">What is Rei?</a></li>
