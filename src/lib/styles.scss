@@ -129,3 +129,10 @@ h6,
 hgroup {
 	break-after: avoid;
 }
+
+dt {
+	font-weight: 500;
+}
+dd {
+	color: var(--pico-secondary);
+}
