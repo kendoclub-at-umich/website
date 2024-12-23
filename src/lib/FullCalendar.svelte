@@ -9,60 +9,44 @@
 	import 'tippy.js/dist/tippy.css';
 	import './tippy-theme.css';
 	import EventInfo from './EventInfo.svelte';
-	import { mdiCheck, mdiContentCopy } from '@mdi/js';
-	import SvgIcon from './SvgIcon.svelte';
-	import { browser } from '$app/environment';
 
 	export let googleCalendarApiKey: string;
 	export let googleCalendarId: string;
 
 	let calendarElement: HTMLDivElement;
 	let calendar: Calendar | undefined;
+	let selectedMonth = '';
+	let currentMonth = '';
 
-	let addToOtherCalendarDialog: HTMLDialogElement;
+	export let selectedView: 'listMonth' | 'dayGridMonth' | undefined;
+	$: if (calendar !== undefined && selectedView !== undefined) {
+		calendar.changeView(selectedView);
+	}
+
+	const englishMonthFormatter = new Intl.DateTimeFormat('en-US', {
+		month: 'long',
+		year: 'numeric'
+	});
 
 	onMount(() => {
 		const smallScreenQuery = matchMedia('(width < 768px)');
-		const supportsAppleCalendar = /Mac|iPhone|iPad|iPod/.test(navigator.userAgent);
+
+		currentMonth = englishMonthFormatter.format(new Date());
+		selectedMonth = currentMonth;
 
 		calendar = new Calendar(calendarElement, {
 			plugins: [dayGridPlugin, listPlugin, googleCalendarPlugin],
 			initialView: smallScreenQuery.matches ? 'listMonth' : 'dayGridMonth',
-			headerToolbar: {
-				left: 'prev,next today',
-				center: 'title',
-				right: 'dayGridMonth,listMonth'
-			},
-			footerToolbar: {
-				left: supportsAppleCalendar
-					? 'addToGoogleCalendar addToAppleCalendar addToOtherCalendar'
-					: 'addToGoogleCalendar addToOtherCalendar'
-			},
-			customButtons: {
-				addToGoogleCalendar: {
-					text: 'Add to Google Calendar',
-					click: () => {
-						window.open(
-							'https://calendar.google.com/calendar/render?cid=' + googleCalendarId,
-							'_blank'
-						);
-					}
-				},
-				addToAppleCalendar: {
-					text: 'Add to Apple Calendar',
-					click: () => {
-						window.open('webcal://' + icalUrl, '_blank');
-					}
-				},
-				addToOtherCalendar: {
-					text: 'Add to Other Calendar',
-					click: () => {
-						addToOtherCalendarDialog.showModal();
-					}
-				}
-			},
+			headerToolbar: false,
 			googleCalendarApiKey,
 			events: { googleCalendarId },
+			aspectRatio: 4 / 3,
+			datesSet: () => {
+				selectedMonth = englishMonthFormatter.format(calendar?.getDate());
+			},
+			viewDidMount: ({ view }) => {
+				selectedView = view.type as 'listMonth' | 'dayGridMonth';
+			},
 			eventSourceSuccess: (events) => {
 				for (const event of events) {
 					delete event.url;
@@ -99,71 +83,43 @@
 	onDestroy(() => {
 		calendar?.destroy();
 	});
-
-	$: icalUrl = `calendar.google.com/calendar/ical/${googleCalendarId}/public/basic.ics`;
-	let recentlyCopiedToClipboard = false;
-
-	async function copyIcalUrl() {
-		await navigator.clipboard.writeText('https://' + icalUrl);
-		recentlyCopiedToClipboard = true;
-		setTimeout(() => {
-			recentlyCopiedToClipboard = false;
-		}, 2_000);
-	}
 </script>
 
-<div id="full-calendar" class="no-pico" bind:this={calendarElement} />
+<div class="calendar-wrapper">
+	<div class="top">
+		<slot
+			name="top"
+			previous={() => calendar?.prev()}
+			next={() => calendar?.next()}
+			today={() => calendar?.today()}
+			todayDisabled={selectedMonth === currentMonth}
+			{selectedMonth}
+		></slot>
+	</div>
 
-<!-- Reason: Dialog can be closed with esc key, so it's already able to be interacted with -->
-<!-- svelte-ignore a11y-click-events-have-key-events  a11y-no-noninteractive-element-interactions -->
-<dialog
-	bind:this={addToOtherCalendarDialog}
-	on:click={(event) => {
-		if (event.target === addToOtherCalendarDialog) {
-			addToOtherCalendarDialog.close();
-		}
-	}}
->
-	<article>
-		<h2>Add to Your Calendar</h2>
-		<p>
-			Copy this iCal url into your calendar app to subscribe to the Kendo Club at Umich calendar.
-		</p>
-		<div role="group">
-			<input value={'https://' + icalUrl} readonly />
-			{#if browser && 'clipboard' in navigator}
-				<button class="copy-button" aria-label="Copy" on:click={copyIcalUrl}>
-					<SvgIcon label="" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
-				</button>
-			{/if}
-		</div>
-	</article>
-</dialog>
+	<div class="full-calendar no-pico" bind:this={calendarElement}>
+		<div class="placeholder"></div>
+	</div>
+
+	<div class="bottom">
+		<slot name="bottom"></slot>
+	</div>
+</div>
 
 <style>
-	:global(main:has(#full-calendar)) {
-		width: 100%;
-	}
-
-	#full-calendar {
+	.calendar-wrapper {
 		margin: 0 auto;
-		font-size: min(18px, 0.75em);
-		max-width: max(640px, calc((4 / 3) * (100lvh - 225px)));
-	}
-
-	#full-calendar :global(:has(> .fc-addToGoogleCalendar-button)) {
-		display: flex;
-		flex-wrap: wrap;
-		gap: 0.75em;
-
-		& > * {
-			margin: 0;
-		}
-	}
-
-	.copy-button {
+		max-width: max(640px, calc((4 / 3) * (100lvh - (4.25rem + 104px))));
 		display: grid;
-		place-items: center;
-		padding: var(--pico-form-element-spacing-vertical);
+		gap: 16px;
+		margin-bottom: var(--pico-typography-spacing-vertical);
+	}
+
+	.full-calendar {
+		font-size: min(18px, 0.75em);
+
+		& .placeholder {
+			aspect-ratio: 4/3;
+		}
 	}
 </style>
