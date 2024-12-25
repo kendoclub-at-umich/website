@@ -44,10 +44,6 @@
 	background-color: var(--pico-primary-focus);
 }
 
-.fc h2 {
-	color: var(--pico-h2-color);
-}
-
 .fc .fc-view-harness {
 	min-height: 400px;
 
@@ -68,10 +64,4 @@
 .fc-list .fc-event:focus::before,
 .fc-list .fc-event:focus::after {
 	content: none;
-}
-
-@media (width < 480px) {
-	.fc .fc-button.fc-today-button {
-		display: none;
-	}
 }

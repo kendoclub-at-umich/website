@@ -57,14 +57,26 @@
 
 @media (prefers-color-scheme: light) {
 	:where(a:not([role='button'])),
-	[role='link'] {
+	[role='link'],
+	:is(button, [role='button']).outline {
 		--pico-color: #{$slate-550};
 		--pico-underline: #{rgba($slate-550, 0.5)};
+		--pico-border-color: #{$slate-300};
 
 		&:is([aria-current]:not([aria-current='false']), :hover, :active, :focus) {
 			--pico-color: #{$slate-650};
 			--pico-underline: #{$slate-650};
+			--pico-border-color: #{$slate-500};
 		}
+	}
+
+	:is(button, [role='button']).outline {
+		--pico-primary-focus: var(--pico-secondary-focus);
+	}
+
+	[role='group']:has(:is(button, [role='button']).outline:focus) {
+		--pico-group-box-shadow-focus-with-button: 0 0 0 var(--pico-outline-width)
+			var(--pico-secondary-focus);
 	}
 
 	:root {
