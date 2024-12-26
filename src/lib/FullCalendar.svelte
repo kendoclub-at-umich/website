@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { onDestroy, onMount } from 'svelte';
+	import { mount, onDestroy, onMount, unmount } from 'svelte';
 	import { Calendar } from '@fullcalendar/core';
 	import dayGridPlugin from '@fullcalendar/daygrid';
 	import listPlugin from '@fullcalendar/list';
@@ -53,7 +53,7 @@
 				}
 			},
 			eventDidMount: ({ el, event }) => {
-				let component: EventInfo | undefined;
+				let component: Record<string, unknown> | undefined;
 				el.setAttribute('tabindex', '0');
 
 				tippy(el, {
@@ -64,11 +64,13 @@
 					hideOnClick: false,
 					onShow: (instance) => {
 						const container = document.createElement('div');
-						component = new EventInfo({ target: container, props: { event } });
+						component = mount(EventInfo, { target: container, props: { event } });
 						instance.setContent(container);
 					},
 					onHidden: () => {
-						component?.$destroy();
+						if (component !== undefined) {
+							void unmount(component);
+						}
 					}
 				});
 			},
