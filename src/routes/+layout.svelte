@@ -3,6 +3,9 @@
 	import Navbar from '$lib/Navbar.svelte';
 	import logoUrl from '$lib/logo/any.svg';
 	import copyright from 'license-copyright';
+	import type { Snippet } from 'svelte';
+
+	const { children }: { children: Snippet } = $props();
 
 	const pages = [
 		{ name: 'Calendar', url: '/calendar' },
@@ -15,7 +18,7 @@
 <Navbar {logoUrl} siteName="Kendo Club at Umich" {pages} />
 
 <main class="container">
-	<slot />
+	{@render children()}
 </main>
 
 <footer>

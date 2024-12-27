@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { mount, onDestroy, onMount, unmount } from 'svelte';
+	import { mount, onDestroy, onMount, unmount, type Snippet } from 'svelte';
 	import { Calendar } from '@fullcalendar/core';
 	import dayGridPlugin from '@fullcalendar/daygrid';
 	import listPlugin from '@fullcalendar/list';
@@ -10,14 +10,26 @@
 	import './tippy-theme.css';
 	import EventInfo from './EventInfo.svelte';
 
+	type TopSnippetArgs = {
+		previous: () => void;
+		next: () => void;
+		today: () => void;
+		todayDisabled: boolean;
+		selectedMonth: string;
+	};
+
 	let {
 		googleCalendarApiKey,
 		googleCalendarId,
-		selectedView = $bindable()
+		selectedView = $bindable(),
+		top,
+		bottom
 	}: {
 		googleCalendarApiKey: string;
 		googleCalendarId: string;
 		selectedView: 'listMonth' | 'dayGridMonth' | undefined;
+		top: Snippet<[TopSnippetArgs]>;
+		bottom: Snippet;
 	} = $props();
 
 	let calendarElement: HTMLDivElement;
@@ -97,14 +109,13 @@
 
 <div class="calendar-wrapper">
 	<div class="top">
-		<slot
-			name="top"
-			previous={() => calendar?.prev()}
-			next={() => calendar?.next()}
-			today={() => calendar?.today()}
-			todayDisabled={selectedMonth === currentMonth}
-			{selectedMonth}
-		></slot>
+		{@render top({
+			previous: () => calendar?.prev(),
+			next: () => calendar?.next(),
+			today: () => calendar?.today(),
+			todayDisabled: selectedMonth === currentMonth,
+			selectedMonth
+		})}
 	</div>
 
 	<div class="full-calendar no-pico" bind:this={calendarElement}>
@@ -112,7 +123,7 @@
 	</div>
 
 	<div class="bottom">
-		<slot name="bottom"></slot>
+		{@render bottom()}
 	</div>
 </div>
 
