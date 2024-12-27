@@ -50,14 +50,14 @@
 	<div slot="top" class="top" let:previous let:next let:today let:todayDisabled let:selectedMonth>
 		<div class="top-left">
 			<div role="group">
-				<button class="outline" on:click={previous}>
+				<button class="outline" onclick={previous}>
 					<SvgIcon label="previous month" path={mdiChevronLeft} />
 				</button>
-				<button class="outline" on:click={next}>
+				<button class="outline" onclick={next}>
 					<SvgIcon label="next month" path={mdiChevronRight} />
 				</button>
 			</div>
-			<button class="outline today" on:click={today} disabled={todayDisabled}>
+			<button class="outline today" onclick={today} disabled={todayDisabled}>
 				<SvgIcon label="today" path={mdiCalendarToday} />
 				<span class="label">Today</span>
 			</button>
@@ -66,7 +66,7 @@
 		<div class="top-right" role="group">
 			<button
 				class="outline"
-				on:click={() => (selectedView = 'dayGridMonth')}
+				onclick={() => (selectedView = 'dayGridMonth')}
 				disabled={selectedView === 'dayGridMonth'}
 			>
 				<SvgIcon label="grid" path={mdiViewComfy} />
@@ -74,7 +74,7 @@
 			</button>
 			<button
 				class="outline"
-				on:click={() => (selectedView = 'listMonth')}
+				onclick={() => (selectedView = 'listMonth')}
 				disabled={selectedView === 'listMonth'}
 			>
 				<SvgIcon label="list" path={mdiViewSequential} />
@@ -98,9 +98,7 @@
 				Add to Apple Calendar
 			</a>
 		{/if}
-		<button class="outline" on:click={addToOtherCalendarDialog.open}>
-			Add to Other Calendar
-		</button>
+		<button class="outline" onclick={addToOtherCalendarDialog.open}> Add to Other Calendar </button>
 	</div>
 </FullCalendar>
 
@@ -110,7 +108,7 @@
 	<div role="group">
 		<input value="https://{icalUrl}" readonly />
 		{#if browser && 'clipboard' in navigator}
-			<button aria-label="Copy" class="secondary" on:click={copyIcalUrl}>
+			<button aria-label="Copy" class="secondary" onclick={copyIcalUrl}>
 				<SvgIcon label="" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
 			</button>
 		{/if}

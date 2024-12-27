@@ -12,7 +12,14 @@
 
 <!-- Reason: Dialog can be closed with esc key, so it's already able to be interacted with -->
 <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
-<dialog bind:this={dialog} on:click|self={close}>
+<dialog
+	bind:this={dialog}
+	onclick={(event) => {
+		if (event.target === dialog) {
+			close();
+		}
+	}}
+>
 	<article>
 		<slot></slot>
 	</article>

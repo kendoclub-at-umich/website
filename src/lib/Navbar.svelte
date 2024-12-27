@@ -23,14 +23,14 @@
 	onMount(checkIfElevated);
 </script>
 
-<svelte:document on:scroll={checkIfElevated} />
+<svelte:document onscroll={checkIfElevated} />
 
 <header class:elevated>
 	<div class="container">
 		<nav>
 			<ul>
 				<li>
-					<a href="/" class="brand contrast" on:click={() => (menuExpanded = false)}>
+					<a href="/" class="brand contrast" onclick={() => (menuExpanded = false)}>
 						<img src={logoUrl} alt="" />{siteName}
 					</a>
 				</li>
@@ -39,7 +39,7 @@
 				<li>
 					<button
 						aria-label={menuExpanded ? 'Close' : 'Menu'}
-						on:click={() => (menuExpanded = !menuExpanded)}
+						onclick={() => (menuExpanded = !menuExpanded)}
 					>
 						<SvgIcon label="" path={menuExpanded ? mdiClose : mdiMenu} />
 					</button>
@@ -50,7 +50,7 @@
 					<li>
 						<a
 							href={page.url}
-							on:click={() => (menuExpanded = false)}
+							onclick={() => (menuExpanded = false)}
 							aria-current={$currentPage.url.pathname === page.url ? 'page' : undefined}
 						>
 							{page.name}
