@@ -17,24 +17,26 @@
 
 <h2>General Scheduled Topics</h2>
 <table>
-	<tr>
-		<td>Rei, etiquette and Mitori Geiko</td><td>First session</td>
-	</tr>
-	<tr>
-		<td>Ashisabaki / Learning to walk correct</td><td>1<sup>st</sup> - 4<sup>th</sup> week</td>
-	</tr>
-	<tr>
-		<td>Suburi / Cutting for the first time</td><td>2<sup>nd</sup> - 6<sup>th</sup> week</td>
-	</tr>
-	<tr>
-		<td>Receiving / Uchikomi</td><td>4<sup>th</sup> - 8<sup>th</sup> week </td>
-	</tr>
-	<tr>
-		<td>Tying it all together / Fumikomi, Maai, Kiri Keishi</td><td>8<sup>th</sup> - ongoing</td>
-	</tr>
-	<tr>
-		<td>Bogu</td><td>As directed</td>
-	</tr>
+	<tbody>
+		<tr>
+			<td>Rei, etiquette and Mitori Geiko</td><td>First session</td>
+		</tr>
+		<tr>
+			<td>Ashisabaki / Learning to walk correct</td><td>1<sup>st</sup> - 4<sup>th</sup> week</td>
+		</tr>
+		<tr>
+			<td>Suburi / Cutting for the first time</td><td>2<sup>nd</sup> - 6<sup>th</sup> week</td>
+		</tr>
+		<tr>
+			<td>Receiving / Uchikomi</td><td>4<sup>th</sup> - 8<sup>th</sup> week </td>
+		</tr>
+		<tr>
+			<td>Tying it all together / Fumikomi, Maai, Kiri Keishi</td><td>8<sup>th</sup> - ongoing</td>
+		</tr>
+		<tr>
+			<td>Bogu</td><td>As directed</td>
+		</tr>
+	</tbody>
 </table>
 <p>
 	These are approximations of the time required, some people progress more rapidly than others. Do
@@ -172,33 +174,39 @@
 
 <h2>Short List of Helpful Japanese Vocabulary</h2>
 <table>
-	<tr><td>Ya-me</td><td>Stop what you are doing.</td></tr>
-	<tr><td>Haji-me</td><td>Start</td></tr>
-	<tr><td>Men, Kote, Do, Tsu-ki</td><td>Head, Right forearm, Lower right abdomen, Throat.</td></tr>
-	<tr><td>Suburi</td><td>To cut, or a type of cut: Men suburi, cutting the head</td></tr>
-	<tr><td>Joge suburi</td><td>Giant stretching cut, used in warm ups</td></tr>
-	<tr><td>Oni-gai-shimasu</td><td>Let’s begin</td></tr>
-	<tr><td>Domo arigatou gozaimashita</td><td>Thank you for what we just did.</td></tr>
-	<tr><td>Chyak-sa, Seiza</td><td>Sit in seiza position</td></tr>
-	<tr><td>Kyot skay</td><td>Attention or straighten up your posture</td></tr>
-	<tr><td>Chudan no kamae (Chudan)</td><td>Center stance, typically used in most practices</td></tr>
-	<tr><td>Rei</td><td>Said as a command, signifies when to bow</td></tr>
-	<tr><td>Kamae</td><td>Be ready</td></tr>
-	<tr><td>Tai toe</td><td>Sword ready to draw at the hip</td></tr>
-	<tr><td>Nuk toe</td><td>Draw the sword</td></tr>
-	<tr><td>Osame toe</td><td>Put the sword away</td></tr>
+	<tbody>
+		<tr><td>Ya-me</td><td>Stop what you are doing.</td></tr>
+		<tr><td>Haji-me</td><td>Start</td></tr>
+		<tr><td>Men, Kote, Do, Tsu-ki</td><td>Head, Right forearm, Lower right abdomen, Throat.</td></tr
+		>
+		<tr><td>Suburi</td><td>To cut, or a type of cut: Men suburi, cutting the head</td></tr>
+		<tr><td>Joge suburi</td><td>Giant stretching cut, used in warm ups</td></tr>
+		<tr><td>Oni-gai-shimasu</td><td>Let’s begin</td></tr>
+		<tr><td>Domo arigatou gozaimashita</td><td>Thank you for what we just did.</td></tr>
+		<tr><td>Chyak-sa, Seiza</td><td>Sit in seiza position</td></tr>
+		<tr><td>Kyot skay</td><td>Attention or straighten up your posture</td></tr>
+		<tr>
+			<td>Chudan no kamae (Chudan)</td>
+			<td>Center stance, typically used in most practices</td>
+		</tr>
+		<tr><td>Rei</td><td>Said as a command, signifies when to bow</td></tr>
+		<tr><td>Kamae</td><td>Be ready</td></tr>
+		<tr><td>Tai toe</td><td>Sword ready to draw at the hip</td></tr>
+		<tr><td>Nuk toe</td><td>Draw the sword</td></tr>
+		<tr><td>Osame toe</td><td>Put the sword away</td></tr>
 
-	<tr><td colspan="2"><br />Counting to ten... </td></tr>
-	<tr><td>Ich</td><td>1</td></tr>
-	<tr><td>Ni</td><td>2</td></tr>
-	<tr><td>San</td><td>3</td></tr>
-	<tr><td>Shi</td><td>4</td></tr>
-	<tr><td>Go</td><td>5</td></tr>
-	<tr><td>Rok</td><td>6</td></tr>
-	<tr><td>Shich</td><td>7</td></tr>
-	<tr><td>Hach</td><td>8</td></tr>
-	<tr><td>Kyu</td><td>9</td></tr>
-	<tr><td>Ju</td><td>10</td></tr>
+		<tr><td colspan="2"><br />Counting to ten... </td></tr>
+		<tr><td>Ich</td><td>1</td></tr>
+		<tr><td>Ni</td><td>2</td></tr>
+		<tr><td>San</td><td>3</td></tr>
+		<tr><td>Shi</td><td>4</td></tr>
+		<tr><td>Go</td><td>5</td></tr>
+		<tr><td>Rok</td><td>6</td></tr>
+		<tr><td>Shich</td><td>7</td></tr>
+		<tr><td>Hach</td><td>8</td></tr>
+		<tr><td>Kyu</td><td>9</td></tr>
+		<tr><td>Ju</td><td>10</td></tr>
+	</tbody>
 </table>
 
 <h2>Benefits Of Kendo Training</h2>
