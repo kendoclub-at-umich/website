@@ -17,7 +17,7 @@
 
 	const googleCalendarId = 'c_1pcp6odi9qfe276tpuob8h00ms@group.calendar.google.com';
 
-	let selectedView: 'listMonth' | 'dayGridMonth';
+	let selectedView: 'listMonth' | 'dayGridMonth' | undefined = $state();
 
 	const supportsAppleCalendar = browser && /Mac|iPhone|iPad|iPod/.test(navigator.userAgent);
 
@@ -25,7 +25,7 @@
 
 	const icalUrl = `calendar.google.com/calendar/ical/${googleCalendarId}/public/basic.ics`;
 
-	let recentlyCopiedToClipboard = false;
+	let recentlyCopiedToClipboard = $state(false);
 
 	async function copyIcalUrl() {
 		await navigator.clipboard.writeText('https://' + icalUrl);
@@ -98,7 +98,10 @@
 				Add to Apple Calendar
 			</a>
 		{/if}
-		<button class="outline" onclick={addToOtherCalendarDialog.open}> Add to Other Calendar </button>
+		<!-- eslint-disable-next-line -- eslint seems confused. vscode knows what open() is -->
+		<button class="outline" onclick={() => addToOtherCalendarDialog.open()}>
+			Add to Other Calendar
+		</button>
 	</div>
 </FullCalendar>
 

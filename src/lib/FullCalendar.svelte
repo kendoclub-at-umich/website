@@ -10,18 +10,26 @@
 	import './tippy-theme.css';
 	import EventInfo from './EventInfo.svelte';
 
-	export let googleCalendarApiKey: string;
-	export let googleCalendarId: string;
+	let {
+		googleCalendarApiKey,
+		googleCalendarId,
+		selectedView = $bindable()
+	}: {
+		googleCalendarApiKey: string;
+		googleCalendarId: string;
+		selectedView: 'listMonth' | 'dayGridMonth' | undefined;
+	} = $props();
 
 	let calendarElement: HTMLDivElement;
-	let calendar: Calendar | undefined;
-	let selectedMonth = '';
-	let currentMonth = '';
+	let calendar: Calendar | undefined = $state();
+	let selectedMonth = $state('');
+	let currentMonth = $state('');
 
-	export let selectedView: 'listMonth' | 'dayGridMonth' | undefined;
-	$: if (calendar !== undefined && selectedView !== undefined) {
-		calendar.changeView(selectedView);
-	}
+	$effect(() => {
+		if (calendar !== undefined && selectedView !== undefined) {
+			calendar.changeView(selectedView);
+		}
+	});
 
 	const englishMonthFormatter = new Intl.DateTimeFormat('en-US', {
 		month: 'long',

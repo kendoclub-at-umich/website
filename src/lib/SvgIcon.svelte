@@ -1,6 +1,5 @@
 <script lang="ts">
-	export let label: string;
-	export let path: string;
+	const { label, path }: { label: string; path: string } = $props();
 </script>
 
 <svg

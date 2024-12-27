@@ -1,20 +1,30 @@
 <script lang="ts">
-	import { page as currentPage } from '$app/stores';
+	import { page as currentPage } from '$app/state';
 	import { mdiMenu, mdiClose } from '@mdi/js';
 	import { onMount } from 'svelte';
 	import SvgIcon from './SvgIcon.svelte';
 
-	export let logoUrl: string;
-	export let siteName: string;
 	type Page = { name: string; url: string };
-	export let pages: readonly Page[];
 
-	let menuExpanded = false;
+	const {
+		logoUrl,
+		siteName,
+		pages
+	}: {
+		logoUrl: string;
+		siteName: string;
+		pages: readonly Page[];
+	} = $props();
 
-	// close the menu if the url changes for any reason
-	$: menuExpanded = ($currentPage, false);
+	let menuExpanded = $state(false);
 
-	let elevated = false;
+	$effect(() => {
+		// eslint-disable-next-line @typescript-eslint/no-unused-expressions -- makes the effect run every time the route changes
+		currentPage.route;
+		menuExpanded = false;
+	});
+
+	let elevated = $state(false);
 
 	function checkIfElevated() {
 		elevated = window.scrollY >= 1;
@@ -51,7 +61,7 @@
 						<a
 							href={page.url}
 							onclick={() => (menuExpanded = false)}
-							aria-current={$currentPage.url.pathname === page.url ? 'page' : undefined}
+							aria-current={currentPage.url.pathname === page.url ? 'page' : undefined}
 						>
 							{page.name}
 						</a>
