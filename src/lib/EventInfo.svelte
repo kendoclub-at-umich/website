@@ -4,7 +4,7 @@
 	import { getFileIconByMimeType } from './mime-types';
 	import SvgIcon from './SvgIcon.svelte';
 
-	export let event: EventImpl;
+	const { event }: { event: EventImpl } = $props();
 
 	const englishDateTimeFormatter = new Intl.DateTimeFormat('en-US', {
 		weekday: 'short',
@@ -20,10 +20,12 @@
 		day: 'numeric'
 	});
 
-	$: dateFormatter = event.allDay ? englishDateOnlyFormatter : englishDateTimeFormatter;
+	const dateFormatter = $derived(
+		event.allDay ? englishDateOnlyFormatter : englishDateTimeFormatter
+	);
 
 	// eslint-disable-next-line @typescript-eslint/no-non-null-assertion -- Google Calendar events always have a start and end date
-	$: dateRange = dateFormatter.formatRange(event.start!, event.end!);
+	const dateRange = $derived(dateFormatter.formatRange(event.start!, event.end!));
 
 	type Attachment = {
 		fileId: string;
@@ -39,7 +41,7 @@
 		location?: string;
 	};
 
-	$: extendedProps = event.extendedProps as ExtendedProps;
+	const extendedProps = $derived(event.extendedProps as ExtendedProps);
 </script>
 
 <div class="event-detail-grid">

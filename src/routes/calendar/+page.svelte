@@ -17,7 +17,7 @@
 
 	const googleCalendarId = 'c_1pcp6odi9qfe276tpuob8h00ms@group.calendar.google.com';
 
-	let selectedView: 'listMonth' | 'dayGridMonth';
+	let selectedView: 'listMonth' | 'dayGridMonth' | undefined = $state();
 
 	const supportsAppleCalendar = browser && /Mac|iPhone|iPad|iPod/.test(navigator.userAgent);
 
@@ -25,7 +25,7 @@
 
 	const icalUrl = `calendar.google.com/calendar/ical/${googleCalendarId}/public/basic.ics`;
 
-	let recentlyCopiedToClipboard = false;
+	let recentlyCopiedToClipboard = $state(false);
 
 	async function copyIcalUrl() {
 		await navigator.clipboard.writeText('https://' + icalUrl);
@@ -47,61 +47,66 @@
 	{googleCalendarId}
 	bind:selectedView
 >
-	<div slot="top" class="top" let:previous let:next let:today let:todayDisabled let:selectedMonth>
-		<div class="top-left">
-			<div role="group">
-				<button class="outline" on:click={previous}>
-					<SvgIcon label="previous month" path={mdiChevronLeft} />
-				</button>
-				<button class="outline" on:click={next}>
-					<SvgIcon label="next month" path={mdiChevronRight} />
+	{#snippet top({ previous, next, today, todayDisabled, selectedMonth })}
+		<div class="top">
+			<div class="top-left">
+				<div role="group">
+					<button class="outline" onclick={previous}>
+						<SvgIcon label="previous month" path={mdiChevronLeft} />
+					</button>
+					<button class="outline" onclick={next}>
+						<SvgIcon label="next month" path={mdiChevronRight} />
+					</button>
+				</div>
+				<button class="outline today" onclick={today} disabled={todayDisabled}>
+					<SvgIcon label="today" path={mdiCalendarToday} />
+					<span class="label">Today</span>
 				</button>
 			</div>
-			<button class="outline today" on:click={today} disabled={todayDisabled}>
-				<SvgIcon label="today" path={mdiCalendarToday} />
-				<span class="label">Today</span>
-			</button>
+			<h2>{selectedMonth}</h2>
+			<div class="top-right" role="group">
+				<button
+					class="outline"
+					onclick={() => (selectedView = 'dayGridMonth')}
+					disabled={selectedView === 'dayGridMonth'}
+				>
+					<SvgIcon label="grid" path={mdiViewComfy} />
+					<span class="label">Grid</span>
+				</button>
+				<button
+					class="outline"
+					onclick={() => (selectedView = 'listMonth')}
+					disabled={selectedView === 'listMonth'}
+				>
+					<SvgIcon label="list" path={mdiViewSequential} />
+					<span class="label">List</span>
+				</button>
+			</div>
 		</div>
-		<h2>{selectedMonth}</h2>
-		<div class="top-right" role="group">
-			<button
-				class="outline"
-				on:click={() => (selectedView = 'dayGridMonth')}
-				disabled={selectedView === 'dayGridMonth'}
-			>
-				<SvgIcon label="grid" path={mdiViewComfy} />
-				<span class="label">Grid</span>
-			</button>
-			<button
-				class="outline"
-				on:click={() => (selectedView = 'listMonth')}
-				disabled={selectedView === 'listMonth'}
-			>
-				<SvgIcon label="list" path={mdiViewSequential} />
-				<span class="label">List</span>
-			</button>
-		</div>
-	</div>
+	{/snippet}
 
-	<div slot="bottom" class="bottom">
-		<a
-			role="button"
-			class="outline"
-			href="https://calendar.google.com/calendar/render?cid={googleCalendarId}"
-			target="_blank"
-			rel="noreferrer"
-		>
-			Add to Google Calendar
-		</a>
-		{#if supportsAppleCalendar}
-			<a role="button" class="outline" href="webcal://{icalUrl}" target="_blank" rel="noreferrer">
-				Add to Apple Calendar
+	{#snippet bottom()}
+		<div class="bottom">
+			<a
+				role="button"
+				class="outline"
+				href="https://calendar.google.com/calendar/render?cid={googleCalendarId}"
+				target="_blank"
+				rel="noreferrer"
+			>
+				Add to Google Calendar
 			</a>
-		{/if}
-		<button class="outline" on:click={addToOtherCalendarDialog.open}>
-			Add to Other Calendar
-		</button>
-	</div>
+			{#if supportsAppleCalendar}
+				<a role="button" class="outline" href="webcal://{icalUrl}" target="_blank" rel="noreferrer">
+					Add to Apple Calendar
+				</a>
+			{/if}
+			<!-- eslint-disable-next-line -- eslint seems confused. vscode knows what open() is -->
+			<button class="outline" onclick={() => addToOtherCalendarDialog.open()}>
+				Add to Other Calendar
+			</button>
+		</div>
+	{/snippet}
 </FullCalendar>
 
 <Modal bind:this={addToOtherCalendarDialog}>
@@ -110,7 +115,7 @@
 	<div role="group">
 		<input value="https://{icalUrl}" readonly />
 		{#if browser && 'clipboard' in navigator}
-			<button aria-label="Copy" class="secondary" on:click={copyIcalUrl}>
+			<button aria-label="Copy" class="secondary" onclick={copyIcalUrl}>
 				<SvgIcon label="" path={recentlyCopiedToClipboard ? mdiCheck : mdiContentCopy} />
 			</button>
 		{/if}

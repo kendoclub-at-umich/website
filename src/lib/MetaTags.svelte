@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { page } from '$app/stores';
+	import { page } from '$app/state';
 	import logoUrl from '$lib/logo/any.svg';
 	import appleTouchIconUrl from '$lib/logo/square-180.png';
 	import defaultImageUrl from '../routes/(home)/combat-kamae-position.jpg?w=1200&h=630&format=webp';
@@ -18,13 +18,7 @@
 	 * "https://kendoclub.netlify.app/about"  => "https://michigankendo.com/about"
 	 * ```
 	 */
-	$: canonicalUrl = baseUrl + $page.url.pathname.replace(/\/?(index)?(\.html)?$/, '');
-
-	/** The title of the page */
-	export let title: string;
-
-	/** A description of the page */
-	export let description: string;
+	const canonicalUrl = $derived(baseUrl + page.url.pathname.replace(/\/?(index)?(\.html)?$/, ''));
 
 	type Image = {
 		/** the URL of the image */
@@ -32,14 +26,6 @@
 		/** The alt text for the image */
 		readonly alt: string;
 	};
-
-	/** An image to display in link previews */
-	export let image: Image = {
-		url: defaultImageUrl,
-		alt: 'Two club members in kendo armor holding bamboo practice swords, facing each other in the ready position.'
-	};
-
-	$: fullImageUrl = new URL(image.url, baseUrl).href;
 
 	type ExtraInfo =
 		| {
@@ -55,15 +41,38 @@
 				readonly publishedTime: Date;
 		  };
 
-	/** Extra information about the page depending on what type of page it is */
-	export let extraInfo: ExtraInfo = { type: 'website' };
+	type Properties = {
+		/** The title of the page */
+		title: string;
+
+		/** A description of the page */
+		description: string;
+
+		/** An image to display in link previews */
+		image?: Image;
+
+		/** Extra information about the page depending on what type of page it is */
+		extraInfo?: ExtraInfo;
+	};
+
+	const {
+		title,
+		description,
+		image = {
+			url: defaultImageUrl,
+			alt: 'Two club members in kendo armor holding bamboo practice swords, facing each other in the ready position.'
+		},
+		extraInfo = { type: 'website' }
+	}: Properties = $props();
+
+	const fullImageUrl = $derived(new URL(image.url, baseUrl).href);
 </script>
 
 <link rel="icon" href={logoUrl} />
 <link rel="apple-touch-icon" href={appleTouchIconUrl} />
 <link rel="canonical" href={canonicalUrl} />
 
-<title>{$page.url.pathname === '/' ? title : title + ' | ' + siteName}</title>
+<title>{page.url.pathname === '/' ? title : title + ' | ' + siteName}</title>
 <meta name="description" content={description} />
 
 <meta property="og:site_name" content={siteName} />

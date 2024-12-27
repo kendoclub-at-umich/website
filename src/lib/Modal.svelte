@@ -1,4 +1,7 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte';
+	const { children }: { children: Snippet } = $props();
+
 	let dialog: HTMLDialogElement;
 
 	export function open() {
@@ -11,10 +14,18 @@
 </script>
 
 <!-- Reason: Dialog can be closed with esc key, so it's already able to be interacted with -->
-<!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
-<dialog bind:this={dialog} on:click|self={close}>
+<!-- svelte-ignore a11y_click_events_have_key_events -->
+<!-- svelte-ignore a11y_no_noninteractive_element_interactions  -->
+<dialog
+	bind:this={dialog}
+	onclick={(event) => {
+		if (event.target === dialog) {
+			close();
+		}
+	}}
+>
 	<article>
-		<slot></slot>
+		{@render children()}
 	</article>
 </dialog>
 
