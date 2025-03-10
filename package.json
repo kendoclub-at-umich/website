@@ -21,7 +21,7 @@
 		"@sveltejs/vite-plugin-svelte": "^5.0.3",
 		"@types/chroma-js": "^3.1.1",
 		"@types/eslint__js": "^8.42.3",
-		"@types/node": "^22.13.9",
+		"@types/node": "^22.13.10",
 		"@types/web-app-manifest": "^1.0.9",
 		"chroma-js": "^3.1.2",
 		"eslint": "^9.8.0",
