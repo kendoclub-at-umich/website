@@ -44,7 +44,7 @@
 		"@fullcalendar/google-calendar": "^6.1.17",
 		"@fullcalendar/list": "^6.1.17",
 		"@mdi/js": "^7.4.47",
-		"@picocss/pico": "^2.0.6",
+		"@picocss/pico": "^2.1.1",
 		"tippy.js": "^6.3.7"
 	}
 }
