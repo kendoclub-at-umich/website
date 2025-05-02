@@ -69,7 +69,7 @@
 		</div>
 	{/if}
 
-	{#each extendedProps.attachments as attachment}
+	{#each extendedProps.attachments as attachment (attachment.fileUrl)}
 		<SvgIcon label="Attachment" path={getFileIconByMimeType(attachment.mimeType)} />
 		<div><a href={attachment.fileUrl}>{attachment.title}</a></div>
 	{/each}

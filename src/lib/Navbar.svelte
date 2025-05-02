@@ -56,7 +56,7 @@
 				</li>
 			</ul>
 			<ul class="menu" class:expanded={menuExpanded}>
-				{#each pages as page}
+				{#each pages as page (page.url)}
 					<li>
 						<a
 							href={page.url}
