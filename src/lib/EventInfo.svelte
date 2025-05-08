@@ -3,7 +3,6 @@
 	import { mdiMapMarkerOutline, mdiText, mdiClockOutline } from '@mdi/js';
 	import { getFileIconByMimeType } from './mime-types';
 	import SvgIcon from './SvgIcon.svelte';
-
 	const { event }: { event: EventImpl } = $props();
 
 	const englishDateTimeFormatter = new Intl.DateTimeFormat('en-US', {
@@ -69,7 +68,7 @@
 		</div>
 	{/if}
 
-	{#each extendedProps.attachments as attachment (attachment.fileUrl)}
+	{#each extendedProps.attachments as attachment (attachment.fileId)}
 		<SvgIcon label="Attachment" path={getFileIconByMimeType(attachment.mimeType)} />
 		<div><a href={attachment.fileUrl}>{attachment.title}</a></div>
 	{/each}
