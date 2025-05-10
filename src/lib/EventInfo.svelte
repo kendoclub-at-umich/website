@@ -3,6 +3,7 @@
 	import { mdiMapMarkerOutline, mdiText, mdiClockOutline } from '@mdi/js';
 	import { getFileIconByMimeType } from './mime-types';
 	import SvgIcon from './SvgIcon.svelte';
+
 	const { event }: { event: EventImpl } = $props();
 
 	const englishDateTimeFormatter = new Intl.DateTimeFormat('en-US', {
