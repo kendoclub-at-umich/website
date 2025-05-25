@@ -6,6 +6,9 @@ on:
 env:
   FORCE_COLOR: 1
 
+permissions:
+  contents: read
+
 jobs:
   lint:
     name: ESLint and Prettier
