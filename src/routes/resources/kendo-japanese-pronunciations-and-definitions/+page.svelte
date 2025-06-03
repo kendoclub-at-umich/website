@@ -1,5 +1,6 @@
 <script lang="ts">
 	import MetaTags from '$lib/MetaTags.svelte';
+	import PronunciationButton from '$lib/PronunciationButton.svelte';
 </script>
 
 <svelte:head>
@@ -10,6 +11,9 @@
 </svelte:head>
 
 <h1>Kendo Japanese Pronunciations and Definitions</h1>
+
+<PronunciationButton text="どうもありがとうございます"></PronunciationButton>
+
 <p>
 	This document is intended to define and provide a basic pronunciation key for basic Japanese used
 	during kendo practices. The many of our definitions are taken from Jim Breen’s World Wide Web
