@@ -27,7 +27,7 @@
 		"chroma-js": "^3.1.2",
 		"eslint": "^9.8.0",
 		"eslint-config-prettier": "^10.1.5",
-		"eslint-plugin-svelte": "^3.9.1",
+		"eslint-plugin-svelte": "^3.9.2",
 		"prettier": "^3.5.3",
 		"prettier-plugin-svelte": "^3.4.0",
 		"sass": "^1.87.0",
