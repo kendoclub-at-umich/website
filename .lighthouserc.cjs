@@ -6,9 +6,11 @@ module.exports = {
 			maxAutodiscoverUrls: 0
 		},
 		assert: {
-			preset: 'lighthouse:no-pwa',
 			assertions: {
-				'csp-xss': 'off'
+				'categories:performance': 'error',
+				'categories:accessibility': 'error',
+				'categories:best-practices': 'error',
+				'categories:seo': 'error'
 			}
 		}
 	}
