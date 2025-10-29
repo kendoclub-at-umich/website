@@ -38,7 +38,7 @@ jobs:
           key: optimized-images-${{ hashFiles('src/**/*.png', 'src/**/*.jpg', 'src/**/*.webp') }}
           restore-keys: optimized-images-
       - run: npm run build
-      - uses: actions/upload-artifact@v4
+      - uses: actions/upload-artifact@v5
         with:
           name: build
           path: build/
