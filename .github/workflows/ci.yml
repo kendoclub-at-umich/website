@@ -56,6 +56,7 @@ jobs:
       - uses: treosh/lighthouse-ci-action@v12
         with:
           configPath: '.lighthouserc.cjs'
+          runs: 3
           temporaryPublicStorage: true
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
