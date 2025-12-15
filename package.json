@@ -43,7 +43,7 @@
 		"@fullcalendar/core": "^6.1.11",
 		"@fullcalendar/daygrid": "^6.1.19",
 		"@fullcalendar/google-calendar": "^6.1.17",
-		"@fullcalendar/list": "^6.1.17",
+		"@fullcalendar/list": "^6.1.19",
 		"@mdi/js": "^7.4.47",
 		"@picocss/pico": "^2.1.1",
 		"tippy.js": "^6.3.7"
