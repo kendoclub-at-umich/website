@@ -32,14 +32,14 @@ jobs:
     steps:
       - uses: actions/checkout@v6
       - run: npm ci
-        env:
-          URL: http://localhost:4173
       - uses: actions/cache@v5
         with:
           path: node_modules/.cache/imagetools
           key: optimized-images-${{ hashFiles('src/**/*.png', 'src/**/*.jpg', 'src/**/*.webp') }}
           restore-keys: optimized-images-
       - run: npm run build
+        env:
+          URL: http://localhost:4173
       - uses: actions/upload-artifact@v6
         with:
           name: build
