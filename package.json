@@ -46,6 +46,7 @@
 		"@fullcalendar/list": "^6.1.19",
 		"@mdi/js": "^7.4.47",
 		"@picocss/pico": "^2.1.1",
+		"super-sitemap": "^1.0.5",
 		"tippy.js": "^6.3.7"
 	}
 }
