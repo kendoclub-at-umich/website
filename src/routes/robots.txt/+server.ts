@@ -1,6 +1,8 @@
 import { URL } from '$env/static/private';
 import type { RequestHandler } from './$types';
 
+export const prerender = true;
+
 const body = `
 	User-agent: *
 	Allow: /
