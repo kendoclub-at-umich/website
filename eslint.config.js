@@ -30,6 +30,7 @@ export default ts.config(
 			eqeqeq: ['error', 'smart'],
 			'svelte/block-lang': ['error', { script: 'ts' }],
 			'svelte/spaced-html-comment': 'error',
+			'svelte/no-navigation-without-resolve': 'off',
 			'@typescript-eslint/no-confusing-void-expression': ['error', { ignoreArrowShorthand: true }],
 			'@typescript-eslint/consistent-indexed-object-style': 'off',
 			'@typescript-eslint/consistent-type-definitions': 'off',
