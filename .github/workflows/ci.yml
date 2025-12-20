@@ -54,7 +54,8 @@ jobs:
       - run: npm ci
       - uses: actions/download-artifact@v7
         with:
-          pattern: build-artifacts/*
+          name: build-artifacts
+          path: ./
       - uses: treosh/lighthouse-ci-action@v12
         with:
           configPath: '.lighthouserc.cjs'
