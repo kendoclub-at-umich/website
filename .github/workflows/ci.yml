@@ -52,8 +52,7 @@ jobs:
       - run: npm ci
       - uses: actions/download-artifact@v7
         with:
-          name: build
-          path: build/
+          name: \@(.svelte-kit|build)
       - uses: treosh/lighthouse-ci-action@v12
         with:
           configPath: '.lighthouserc.cjs'
