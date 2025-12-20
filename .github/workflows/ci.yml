@@ -41,7 +41,9 @@ jobs:
       - uses: actions/upload-artifact@v6
         with:
           name: build
-          path: \@(.svelte-kit|build)
+          path: |
+            .svelte-kit/
+            build/
 
   lighthouse:
     name: Lighthouse
