@@ -1,11 +1,11 @@
 <script lang="ts">
 	import { page } from '$app/state';
+	import { PUBLIC_BASE_URL } from '$env/static/public';
 	import logoUrl from '$lib/logo/any.svg';
 	import appleTouchIconUrl from '$lib/logo/square-180.png';
 	import defaultImageUrl from '../routes/(home)/combat-kamae-position.jpg?w=1200&h=630&format=webp';
 
 	const siteName = 'Kendo Club at the University of Michigan';
-	const baseUrl = 'https://michigankendo.com';
 
 	/**
 	 * the single canonical url for this page
@@ -18,7 +18,9 @@
 	 * "https://kendoclub.netlify.app/about"  => "https://michigankendo.com/about"
 	 * ```
 	 */
-	const canonicalUrl = $derived(baseUrl + page.url.pathname.replace(/\/?(index)?(\.html)?$/, ''));
+	const canonicalUrl = $derived(
+		PUBLIC_BASE_URL + page.url.pathname.replace(/\/?(index)?(\.html)?$/, '')
+	);
 
 	type Image = {
 		/** the URL of the image */
@@ -65,7 +67,7 @@
 		extraInfo = { type: 'website' }
 	}: Properties = $props();
 
-	const fullImageUrl = $derived(new URL(image.url, baseUrl).href);
+	const fullImageUrl = $derived(new URL(image.url, PUBLIC_BASE_URL).href);
 </script>
 
 <link rel="icon" href={logoUrl} />
