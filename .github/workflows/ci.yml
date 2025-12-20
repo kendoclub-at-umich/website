@@ -42,7 +42,7 @@ jobs:
         with:
           name: build-artifacts
           path: |
-            [.]svelte-kit/
+            *svelte-kit/
             build/
 
   lighthouse:
