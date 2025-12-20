@@ -40,7 +40,7 @@ jobs:
       - run: npm run build
       - uses: actions/upload-artifact@v6
         with:
-          name: build
+          name: build-artifacts
           path: |
             .svelte-kit/
             build/
@@ -53,6 +53,8 @@ jobs:
       - uses: actions/checkout@v6
       - run: npm ci
       - uses: actions/download-artifact@v7
+        with:
+          pattern: build-artifacts/*
       - uses: treosh/lighthouse-ci-action@v12
         with:
           configPath: '.lighthouserc.cjs'
