@@ -26,8 +26,8 @@ jobs:
       - run: npm ci
       - run: npm run check
 
-  build:
-    name: Build
+  build-and-lighthouse:
+    name: Build and Lighthouse
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v6
@@ -38,24 +38,6 @@ jobs:
           key: optimized-images-${{ hashFiles('src/**/*.png', 'src/**/*.jpg', 'src/**/*.webp') }}
           restore-keys: optimized-images-
       - run: npm run build
-      - uses: actions/upload-artifact@v6
-        with:
-          name: build-artifacts
-          path: |
-            *svelte-kit/
-            build/
-
-  lighthouse:
-    name: Lighthouse
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
-      - uses: actions/checkout@v6
-      - run: npm ci
-      - uses: actions/download-artifact@v7
-        with:
-          name: build-artifacts
-          path: ./
       - uses: treosh/lighthouse-ci-action@v12
         with:
           configPath: '.lighthouserc.cjs'
