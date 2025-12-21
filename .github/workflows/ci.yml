@@ -44,3 +44,4 @@ jobs:
           temporaryPublicStorage: true
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
+          LHCI_SETTINGS__THROTTLING__CPU_SLOWDOWN_MULTIPLIER: 1
