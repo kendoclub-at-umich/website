@@ -36,6 +36,7 @@
 </script>
 
 <svelte:head>
+	<link rel="preconnect" href="https://www.googleapis.com" />
 	<MetaTags
 		title="Calendar"
 		description="Club practice times and information about upcoming kendo events."
