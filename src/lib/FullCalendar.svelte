@@ -79,11 +79,6 @@
 			viewDidMount: ({ view }) => {
 				selectedView = view.type as 'listMonth' | 'dayGridMonth';
 			},
-			eventSourceSuccess: (events) => {
-				for (const event of events) {
-					delete event.url;
-				}
-			},
 			eventDidMount: ({ el, event }) => {
 				let component: Record<string, unknown> | undefined;
 				el.setAttribute('tabindex', '0');
