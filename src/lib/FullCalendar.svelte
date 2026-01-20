@@ -1,9 +1,9 @@
 <script lang="ts">
 	import { mount, onDestroy, onMount, unmount, type Snippet } from 'svelte';
-	import { Calendar, type EventInput, type EventSourceFuncArg } from '@fullcalendar/core';
+	import { Calendar } from '@fullcalendar/core';
 	import dayGridPlugin from '@fullcalendar/daygrid';
 	import listPlugin from '@fullcalendar/list';
-	import GoogleCalendarEventFetcher from 'google-calendar-event-fetcher';
+	import googleCalendarPlugin from 'google-calendar-event-fetcher/fullcalendar';
 	import './full-calendar.css';
 	import tippy, { type ReferenceElement } from 'tippy.js';
 	import 'tippy.js/dist/tippy.css';
@@ -54,24 +54,11 @@
 		currentMonth = englishMonthFormatter.format(new Date());
 		selectedMonth = currentMonth;
 
-		const googleCalendarEventFetcher = new GoogleCalendarEventFetcher<EventInput>({
-			apiKey: googleCalendarApiKey,
-			calendarId: googleCalendarId,
-			transform: ({ summary, description, start, end, location, attachments }) => ({
-				title: summary,
-				allDay: 'date' in start,
-				start: 'date' in start ? start.date : start.dateTime,
-				end: 'date' in end ? end.date : end.dateTime,
-				extendedProps: { attachments, description, location }
-			})
-		});
-
 		calendar = new Calendar(calendarElement, {
-			plugins: [dayGridPlugin, listPlugin],
+			plugins: [dayGridPlugin, listPlugin, googleCalendarPlugin],
 			initialView: smallScreenQuery.matches ? 'listMonth' : 'dayGridMonth',
 			headerToolbar: false,
-			events: ({ start, end }: EventSourceFuncArg) =>
-				googleCalendarEventFetcher.fetchEvents(start, end),
+			events: { googleCalendarApiKey, googleCalendarId },
 			aspectRatio: 4 / 3,
 			datesSet: () => {
 				selectedMonth = englishMonthFormatter.format(calendar?.getDate());
