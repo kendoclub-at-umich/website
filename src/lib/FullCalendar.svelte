@@ -3,7 +3,7 @@
 	import { Calendar } from '@fullcalendar/core';
 	import dayGridPlugin from '@fullcalendar/daygrid';
 	import listPlugin from '@fullcalendar/list';
-	import googleCalendarPlugin from '@fullcalendar/google-calendar';
+	import googleCalendarPlugin from 'google-calendar-event-fetcher/fullcalendar';
 	import './full-calendar.css';
 	import tippy, { type ReferenceElement } from 'tippy.js';
 	import 'tippy.js/dist/tippy.css';
@@ -58,19 +58,13 @@
 			plugins: [dayGridPlugin, listPlugin, googleCalendarPlugin],
 			initialView: smallScreenQuery.matches ? 'listMonth' : 'dayGridMonth',
 			headerToolbar: false,
-			googleCalendarApiKey,
-			events: { googleCalendarId },
+			events: { googleCalendarApiKey, googleCalendarId },
 			aspectRatio: 4 / 3,
 			datesSet: () => {
 				selectedMonth = englishMonthFormatter.format(calendar?.getDate());
 			},
 			viewDidMount: ({ view }) => {
 				selectedView = view.type as 'listMonth' | 'dayGridMonth';
-			},
-			eventSourceSuccess: (events) => {
-				for (const event of events) {
-					delete event.url;
-				}
 			},
 			eventDidMount: ({ el, event }) => {
 				let component: Record<string, unknown> | undefined;
