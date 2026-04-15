@@ -45,7 +45,7 @@
 		"@mdi/js": "^7.4.47",
 		"@picocss/pico": "^2.1.1",
 		"google-calendar-event-fetcher": "^0.2.0",
-		"super-sitemap": "^1.0.7",
+		"super-sitemap": "^1.0.12",
 		"tippy.js": "^6.3.7"
 	}
 }
