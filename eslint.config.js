@@ -9,11 +9,11 @@ import globals from 'globals';
 
 export default defineConfig([
 	js.configs.recommended,
-	...ts.configs.strictTypeChecked,
-	...ts.configs.stylisticTypeChecked,
-	...svelte.configs['flat/recommended'],
+	ts.configs.strictTypeChecked,
+	ts.configs.stylisticTypeChecked,
+	svelte.configs['flat/recommended'],
 	prettier,
-	...svelte.configs['flat/prettier'],
+	svelte.configs['flat/prettier'],
 	{
 		languageOptions: {
 			parserOptions: {
