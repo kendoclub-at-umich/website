@@ -249,7 +249,7 @@
 
 	<p>
 		Now that your hands are gripping the shinai properly, let's focus on the final aspect of holding
-		the shinai. The tip of the shinai, the kissaki, should always bw pointed toward your opponent's
+		the shinai. The tip of the shinai, the kissaki, should always be pointed toward your opponent's
 		throat. If the two of you walked directly towards each other, your kissaki would end up touching
 		each other's throat. When practicing alone, picture a perfect reflection of yourself as your
 		target and adjust the height of the tip of the shinai accordingly. It can help to practice
