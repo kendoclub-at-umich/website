@@ -9,7 +9,7 @@
 		extraInfo={{
 			type: 'article',
 			author: 'Ken Wakabayashi',
-			publishedTime: new Date('February 2006')
+			publishedTime: new Date('2006-02')
 		}}
 	/>
 </svelte:head>
