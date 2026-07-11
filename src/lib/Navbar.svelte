@@ -74,10 +74,13 @@
 
 <style>
 	.container {
-		padding-top: env(safe-area-inset-top);
+		margin-top: env(safe-area-inset-top);
 	}
 
 	header {
+		grid-column: 1 / -1;
+		display: grid;
+		grid-template-columns: subgrid;
 		--menu-transition-time: 0.1s;
 		position: sticky;
 		z-index: 3;
