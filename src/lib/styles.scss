@@ -107,19 +107,6 @@
 	scrollbar-color: light-dark($zinc-200, $slate-750) light-dark($zinc-50, $slate-850);
 }
 
-.container {
-	width: min(40rem, 75dvw + 120px, 100vw);
-	margin-inline: auto;
-	padding-left: max(var(--pico-spacing), env(safe-area-inset-left));
-	padding-right: max(var(--pico-spacing), env(safe-area-inset-right));
-}
-
-@media print {
-	.container {
-		width: 100%;
-	}
-}
-
 h1,
 h2,
 h3,

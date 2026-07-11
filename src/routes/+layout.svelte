@@ -21,14 +21,12 @@
 	{@render children()}
 </main>
 
-<footer>
-	<div class="container">
-		<span>&copy; {copyright}</span>
-		<span>
-			Code available on
-			<a class="contrast" href="https://github.com/kendoclub-at-umich/website">Github</a>
-		</span>
-	</div>
+<footer class="container">
+	<span>&copy; {copyright}</span>
+	<span>
+		Code available on
+		<a class="contrast" href="https://github.com/kendoclub-at-umich/website">Github</a>
+	</span>
 </footer>
 
 <style>
@@ -36,23 +34,42 @@
 		min-height: 100dvh;
 		display: grid;
 		grid-template-rows: auto minmax(auto, 1fr) auto;
+		grid-template-columns:
+			max(var(--pico-spacing), env(safe-area-inset-left))
+			minmax(0, 1fr)
+			max(var(--pico-spacing), env(safe-area-inset-right));
+	}
+
+	:global(.container) {
+		grid-column: 2 / -2;
+		justify-self: center;
+		width: min(40rem, 75dvw + 120px, 100%);
+	}
+
+	@media print {
+		:global(body) {
+			grid-template-columns: 0 minmax(0, 1fr) 0;
+		}
+		:global(.container) {
+			width: 100%;
+		}
 	}
 
 	main {
 		padding-top: 32px;
-		padding-bottom: env(safe-area-inset-bottom);
 	}
 
-	footer > div {
+	footer {
 		display: flex;
 		justify-content: space-between;
-		padding-block: calc(var(--pico-spacing) / 2);
+		padding-top: calc(var(--pico-spacing) / 2);
+		padding-bottom: max(var(--pico-spacing) / 2, env(safe-area-inset-bottom));
 		font-weight: 200;
 		font-size: 0.75em;
 	}
 
 	@media (width<480px) {
-		footer > div {
+		footer {
 			flex-direction: column;
 		}
 	}
