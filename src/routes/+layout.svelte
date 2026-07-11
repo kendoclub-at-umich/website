@@ -40,13 +40,13 @@
 
 	main {
 		padding-top: 32px;
-		padding-bottom: env(safe-area-inset-bottom);
 	}
 
 	footer > div {
 		display: flex;
 		justify-content: space-between;
-		padding-block: calc(var(--pico-spacing) / 2);
+		padding-top: calc(var(--pico-spacing) / 2);
+		padding-bottom: max(var(--pico-spacing) / 2, env(safe-area-inset-bottom));
 		font-weight: 200;
 		font-size: 0.75em;
 	}
