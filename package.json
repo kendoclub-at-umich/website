@@ -40,7 +40,7 @@
 	"type": "module",
 	"dependencies": {
 		"@fullcalendar/core": "^6.1.21",
-		"@fullcalendar/daygrid": "^6.1.20",
+		"@fullcalendar/daygrid": "^6.1.21",
 		"@fullcalendar/list": "^6.1.20",
 		"@mdi/js": "^7.4.47",
 		"@picocss/pico": "^2.1.1",
